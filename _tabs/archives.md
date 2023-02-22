@@ -1,5 +1,5 @@
 ---
 layout: archives
-icon: fas fa-gamepad
+icon: fas fa-bath
 order: 3
 ---
