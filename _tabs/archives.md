@@ -1,5 +1,5 @@
 ---
-layout: archives
+layout: Privacy Privacy
 icon: fas fa-bath
-order: 3
+order: 4
 ---
