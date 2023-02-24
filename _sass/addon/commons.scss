@@ -746,7 +746,8 @@ $sidebar-display: "sidebar-display";
   } /* #avatar */
 
   .site-title {
-    margin-top: 0.55rem;
+    margin-top: 0.20rem;
+    text-align: center;
 
     a {
       @extend %clickable-transition;
