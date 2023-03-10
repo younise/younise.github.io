@@ -159,11 +159,6 @@ blockquote {
   @include prompt("danger", "\f071");
 }
 
-mjx-container {
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
 kbd {
   font-family: inherit;
   display: inline-block;
@@ -679,6 +674,12 @@ figure .mfp-title {
   text-align: center;
 }
 
+/* MathJax */
+mjx-container {
+  overflow-y: hidden;
+  min-width: auto !important;
+}
+
 /* --- sidebar layout --- */
 
 $sidebar-display: "sidebar-display";
@@ -746,8 +747,7 @@ $sidebar-display: "sidebar-display";
   } /* #avatar */
 
   .site-title {
-    margin-top: 0.20rem;
-    text-align: center;
+    margin-top: 0.55rem;
 
     a {
       @extend %clickable-transition;
@@ -757,14 +757,6 @@ $sidebar-display: "sidebar-display";
       letter-spacing: 0.5px;
       color: rgba(134, 133, 133, 0.99);
     }
-  }
-
-  .site-about {
-    margin: 0.2rem 1.5rem 0.5rem 1.5rem;
-    min-height: 3rem; /* avoid vertical shifting in multi-line words */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
   }
 
   .site-subtitle {
@@ -917,7 +909,7 @@ $sidebar-display: "sidebar-display";
 }
 
 .profile-wrapper {
-  margin-top: 0.4rem;
+  margin-top: 2rem;
   width: 100%;
 }
 
