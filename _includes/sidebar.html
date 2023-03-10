@@ -35,15 +35,12 @@
           <i class="fas fa-toggle-on"></i>
         </button>
 
-        <!--
         {% if site.data.contact.size > 0 %}
           <span class="icon-border"></span>
         {% endif %}
-        -->
-        
       {% endunless %}
 
-      <br/>
+      <div><br/></div>
 
       {% for entry in site.data.contact %}
         {% case entry.type %}
