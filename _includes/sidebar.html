@@ -32,13 +32,17 @@
 
       {% unless site.theme_mode %}
         <button class="mode-toggle btn" aria-label="Switch Mode">
-          <i class="fas fa-adjust"></i>
+          <i class="fas fa-toggle-on"></i>
         </button>
+
+        <p>Flip out.</p>
 
         {% if site.data.contact.size > 0 %}
           <span class="icon-border"></span>
         {% endif %}
       {% endunless %}
+
+      <br/>
 
       {% for entry in site.data.contact %}
         {% case entry.type %}
