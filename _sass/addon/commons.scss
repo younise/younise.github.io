@@ -1691,7 +1691,7 @@ $sidebar-display: "sidebar-display";
       padding-left: 3.5rem;
       width: 100%;
 
-      $icon-block-size: 4rem;
+      $icon-block-size: 3rem;
 
       &.justify-content-center {
         justify-content: flex-start !important;
@@ -1708,7 +1708,7 @@ $sidebar-display: "sidebar-display";
 
       i {
         background-color: var(--sidebar-btn-bg);
-        font-size: 1rem;
+        font-size: 2rem;
         width: $icon-block-size;
         height: $icon-block-size;
         border-radius: 50%;
