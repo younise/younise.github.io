@@ -4,6 +4,12 @@
 
 <div id="sidebar" class="d-flex flex-column align-items-end">
   <div class="profile-wrapper text-center">
+
+    <div class="site-title">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </div>
+    <div class="site-subtitle font-italic">{{ site.tagline }}</div>
+
     <div id="avatar">
       <a href="{{ '/' | relative_url }}" class="mx-auto">
         {% if site.avatar != empty and site.avatar %}
@@ -20,11 +26,6 @@
         {% endif %}
       </a>
     </div>
-
-    <div class="site-title">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    </div>
-    <div class="site-subtitle font-italic">{{ site.tagline }}</div>
 
   </div><!-- .profile-wrapper -->
 
