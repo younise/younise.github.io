@@ -1,0 +1,7 @@
+# MacOS
+## Ignore desktop services files.
+**/.DS_Store
+
+# Jekyll
+## Ignore site directory.
+_site
