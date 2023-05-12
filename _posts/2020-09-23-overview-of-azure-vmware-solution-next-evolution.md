@@ -6,7 +6,7 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=2564'
 permalink: /overview-of-azure-vmware-solution-next-evolution/
-image: 'http://emadyounis.com/wp-content/uploads/2020/09/Feature-Image-AVS.jpg'
+image: 'https://emadyounis.com/assets/img/2020/09/Feature-Image-AVS.jpg'
 categories:
     - 'Azure VMware Solution'
 tags:
