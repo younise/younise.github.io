@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=2520'
 permalink: /introduction-to-google-cloud-vmware-engine/
-image: 'http://emadyounis.com/wp-content/uploads/2020/07/GCVE-Feature-Image.jpg'
+image: 'https://emadyounis.com/assets/img/2020/07/GCVE-Feature-Image.jpg'
 categories:
     - 'Google Cloud VMware Engine'
 tags:

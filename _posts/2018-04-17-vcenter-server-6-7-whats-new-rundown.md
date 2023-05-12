@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=1021'
 permalink: /vcenter-server-6-7-whats-new-rundown/
-image: 'http://emadyounis.com/wp-content/uploads/2018/04/VCSA-Blog-Feature-Image.png'
+image: 'https://emadyounis.com/assets/img/2018/04/VCSA-Blog-Feature-Image.png'
 categories:
     - vCenter
 tags:

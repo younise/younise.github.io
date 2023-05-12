@@ -42,7 +42,7 @@ Does having high availability guarantee 99% up time? How often do we design with
 
 1. Log in identity appliance console.
 2. Create a backup directory “**mkdir /backup**“.
-3. Run the following [command](http://emadyounis.com/wp-content/uploads/2014/11/Identity-Appliance-DB-backup.jpg) “**/usr/lib/vmware-vmdir/bin/vdcbackup <span style="color: #ff0000;">(space)</span> /storage/db/vmware-vmdir /backup/**“.
+3. Run the following [command](https://emadyounis.com/assets/img/2014/11/Identity-Appliance-DB-backup.jpg) “**/usr/lib/vmware-vmdir/bin/vdcbackup <span style="color: #ff0000;">(space)</span> /storage/db/vmware-vmdir /backup/**“.
 4. Verify the following files (data.mdb &amp; lock.mdb)are in the backup directory “/backup”.
 
 [![](https://emadyounis.com/assets/img/2014/11/Identity-Appliance-DB-backup-2.jpg?resize=312%2C32)](https://emadyounis.com/assets/img/2014/11/Identity-Appliance-DB-backup-2.jpg)

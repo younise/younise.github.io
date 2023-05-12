@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=482'
 permalink: /vm-time-travel-with-tintris-syncvm/
-image: 'http://emadyounis.com/wp-content/uploads/2015/04/sync_vm.jpg'
+image: 'https://emadyounis.com/assets/img/2015/04/sync_vm.jpg'
 categories:
     - Storage
 tags:

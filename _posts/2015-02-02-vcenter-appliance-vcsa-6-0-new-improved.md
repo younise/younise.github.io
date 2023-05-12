@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=279'
 permalink: /vcenter-appliance-vcsa-6-0-new-improved/
-image: 'http://emadyounis.com/wp-content/uploads/2015/01/vCenter-6.0.jpg'
+image: 'https://emadyounis.com/assets/img/2015/01/vCenter-6.0.jpg'
 categories:
     - vCenter
 tags:

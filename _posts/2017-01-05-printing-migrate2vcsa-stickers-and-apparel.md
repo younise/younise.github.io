@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=883'
 permalink: /printing-migrate2vcsa-stickers-and-apparel/
-image: 'http://emadyounis.com/wp-content/uploads/2017/01/Penguin-1-e1483570355141.png'
+image: 'https://emadyounis.com/assets/img/2017/01/Penguin-1-e1483570355141.png'
 categories:
     - vCenter
 tags:

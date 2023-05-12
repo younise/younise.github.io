@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=472'
 permalink: /vmware-vcp6-dcv-beta-availability/
-image: 'http://emadyounis.com/wp-content/uploads/2015/04/Exam-Request.jpg'
+image: 'https://emadyounis.com/assets/img/2015/04/Exam-Request.jpg'
 categories:
     - VMware
 tags:

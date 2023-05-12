@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=547'
 permalink: /unsupported-vmware-integrated-openstack-vio-configuration/
-image: 'http://emadyounis.com/wp-content/uploads/2015/07/VIO-Unsupported-Config1.jpg'
+image: 'https://emadyounis.com/assets/img/2015/07/VIO-Unsupported-Config1.jpg'
 categories:
     - OpenStack
 tags:

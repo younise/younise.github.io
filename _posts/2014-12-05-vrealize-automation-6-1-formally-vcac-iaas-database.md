@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=206'
 permalink: /vrealize-automation-6-1-formally-vcac-iaas-database/
-image: 'http://emadyounis.com/wp-content/uploads/2014/11/vcac-logo.jpg'
+image: 'https://emadyounis.com/assets/img/2014/11/vcac-logo.jpg'
 categories:
     - 'vRealize Automation'
 tags:

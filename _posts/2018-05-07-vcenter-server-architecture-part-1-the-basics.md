@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=1042'
 permalink: /vcenter-server-architecture-part-1-the-basics/
-image: 'http://emadyounis.com/wp-content/uploads/2018/05/Ring.png'
+image: 'https://emadyounis.com/assets/img/2018/05/Ring.png'
 categories:
     - vCenter
 tags:

@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=244'
 permalink: /and-then-there-were-twelve-vfd4-delegates-announced/
-image: 'http://emadyounis.com/wp-content/uploads/2014/12/VFD-Logo-400x398.png'
+image: 'https://emadyounis.com/assets/img/2014/12/VFD-Logo-400x398.png'
 categories:
     - 'Tech Field Day'
 tags:

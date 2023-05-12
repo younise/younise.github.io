@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=305'
 permalink: /simplivitys-approach-to-deduplication/
-image: 'http://emadyounis.com/wp-content/uploads/2015/02/Simplivity-Bigger.jpg'
+image: 'https://emadyounis.com/assets/img/2015/02/Simplivity-Bigger.jpg'
 categories:
     - 'Tech Field Day'
 tags:

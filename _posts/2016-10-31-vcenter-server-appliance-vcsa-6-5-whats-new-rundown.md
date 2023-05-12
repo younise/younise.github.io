@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=829'
 permalink: /vcenter-server-appliance-vcsa-6-5-whats-new-rundown/
-image: 'http://emadyounis.com/wp-content/uploads/2016/10/VCSA-6.5-Whats-New-Rundown-e1477888912313.png'
+image: 'https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Whats-New-Rundown-e1477888912313.png'
 categories:
     - vCenter
 tags:

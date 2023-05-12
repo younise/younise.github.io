@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=301'
 permalink: /upgrading-vrealize-automation-6-1-formally-vcac-to-6-2/
-image: 'http://emadyounis.com/wp-content/uploads/2015/01/vRealize1.jpg'
+image: 'https://emadyounis.com/assets/img/2015/01/vRealize1.jpg'
 categories:
     - 'vRealize Automation'
 tags:

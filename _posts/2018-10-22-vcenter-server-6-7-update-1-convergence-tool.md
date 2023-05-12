@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=1153'
 permalink: /vcenter-server-6-7-update-1-convergence-tool/
-image: 'http://emadyounis.com/wp-content/uploads/2018/10/Convergence-Tool-Image.png'
+image: 'https://emadyounis.com/assets/img/2018/10/Convergence-Tool-Image.png'
 categories:
     - vCenter
 tags:

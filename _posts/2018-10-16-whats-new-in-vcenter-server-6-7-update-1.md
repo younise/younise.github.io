@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=1135'
 permalink: /whats-new-in-vcenter-server-6-7-update-1/
-image: 'http://emadyounis.com/wp-content/uploads/2018/10/VCSA-6.7-Update-1-Blog-Feature-Image.png'
+image: 'https://emadyounis.com/assets/img/2018/10/VCSA-6.7-Update-1-Blog-Feature-Image.png'
 categories:
     - vCenter
 tags:

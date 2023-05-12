@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=848'
 permalink: /vcenter-server-appliance-vcsa-6-5-installer-improvements/
-image: 'http://emadyounis.com/wp-content/uploads/2016/11/Installer.png'
+image: 'https://emadyounis.com/assets/img/2016/11/Installer.png'
 categories:
     - vCenter
 tags:

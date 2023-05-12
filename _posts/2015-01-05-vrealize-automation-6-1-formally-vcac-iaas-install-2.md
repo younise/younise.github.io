@@ -6,7 +6,7 @@ author: 'Emad Younis'
 layout: post
 guid: 'http://emadyounis.com/?p=249'
 permalink: /vrealize-automation-6-1-formally-vcac-iaas-install-2/
-image: 'http://emadyounis.com/wp-content/uploads/2015/01/vRealize.jpg'
+image: 'https://emadyounis.com/assets/img/2015/01/vRealize.jpg'
 categories:
     - 'vRealize Automation'
 tags:
