@@ -17,7 +17,7 @@ tags:
     - 'Virtualization Field Day'
 ---
 
-![Platform9](https://younise.github.io/assets/img/2015/01/Platform9.jpg?resize=254%2C147)I have to be honest, [Platform9](http://platform9.com/) caught me by surprise at VFD4 with what seemed to be their answer for an AWS like offering. Their approach is private clouds should be simple without the worry of large IT staffs and ROI. Their solution is delivered onto your existing infrastructure using a SaaS managed approached to OpenStack. Of course; as you read this and think no way can a private cloud utilizing OpenStack be simple. Well tell that to the folks at Platform9, because they’re doing it. Here are 10 reasons to consider:
+![Platform9](https://emadyounis.com/assets/img/2015/01/Platform9.jpg?resize=254%2C147)I have to be honest, [Platform9](http://platform9.com/) caught me by surprise at VFD4 with what seemed to be their answer for an AWS like offering. Their approach is private clouds should be simple without the worry of large IT staffs and ROI. Their solution is delivered onto your existing infrastructure using a SaaS managed approached to OpenStack. Of course; as you read this and think no way can a private cloud utilizing OpenStack be simple. Well tell that to the folks at Platform9, because they’re doing it. Here are 10 reasons to consider:
 
 **<span style="color: #ff0000;">Disclaimer:</span> I was a delegate at Virtualization Field Day 4. Gestalt IT paid my travel, lodging, and meals. I don’t receive any compensation nor am I required to write anything related to the event.**
 
@@ -27,13 +27,13 @@ tags:
 
 <span style="text-decoration: underline;">**3. Price**</span> – Not only are you provided with a simple setup and the ability to leverage your own hardware but reasonable pricing and 3 tier model too! This model includes Lite, Business, and Enterprise. Lite is free, yes free and provides a way to get familiar with Platform9’s services while learning OpenStack. Can you say lab environment. Business offers a production ready competitive price point of $49 per CPU per month with an annual commitment. Definitely competitive for this type of service. Enterprise uses the same model as the Business tier, but offers the most services including 24/7 email and phone support with SSO and other features coming soon. More information can be found [here](http://platform9.com/product/pricing.html)
 
-**![Platform9-2](https://younise.github.io/assets/img/2015/01/Platform9-2.jpg?resize=487%2C292)**
+**![Platform9-2](https://emadyounis.com/assets/img/2015/01/Platform9-2.jpg?resize=487%2C292)**
 
 **<span style="text-decoration: underline;">4. Supported Platforms</span>** – Platform9 wants users to care about their applications and not the platform they’re running on. Which is why their vision of private cloud must be flexible and not limited to only a single virtualization platform or hypervisor. Supporting KVM, ESXi (currently in beta), and containers with Docker (coming soon) allows them to leverage greenfield and brownfield deployments. Hyper-V was mentioned several time during the discussion but there is no mention from Platform9, including their website when or if they plan on supporting, sorry [Jeff](https://twitter.com/agnostic_node1).
 
 <span style="text-decoration: underline;">**5. Updates / Patches** </span>– One of the biggest pains is having to keep up with updates or patches, well don’t have to worry about it here. Platform9 does all the heavy lifting. Maintaining at least 1 version behind the latest releases and providing at least a months notice prior to update. They also maintain a regular patch cycle providing a weeks notice prior to patching. They also follow this approach internally within their own environment.
 
-![Platform9 agent](https://younise.github.io/assets/img/2015/01/Platform9-agent.jpg?resize=176%2C71)<span style="text-decoration: underline;">**6. Agents**</span> – The magic really starts when you download and install the bootstrap agent provided to your specific environment once you sign up for an account. These are light weight agents that will be installed on your Linux servers and in the case of vSphere an OVF appliance. A few things to keep in mind when it comes to the agents:
+![Platform9 agent](https://emadyounis.com/assets/img/2015/01/Platform9-agent.jpg?resize=176%2C71)<span style="text-decoration: underline;">**6. Agents**</span> – The magic really starts when you download and install the bootstrap agent provided to your specific environment once you sign up for an account. These are light weight agents that will be installed on your Linux servers and in the case of vSphere an OVF appliance. A few things to keep in mind when it comes to the agents:
 
 - You only have to install an agent on the servers you want to be part of your private cloud in Platform9.
 - The agent then goes through a discovery process, gathering information from your infrastructure that will later be displayed on your dashboard.
@@ -51,7 +51,7 @@ tags:
 - Host Role Assignment / Tagging
 - Deployment Customization
 
-![Platform9-4](https://younise.github.io/assets/img/2015/01/Platform9-4.jpg?resize=1024%2C210)
+![Platform9-4](https://emadyounis.com/assets/img/2015/01/Platform9-4.jpg?resize=1024%2C210)
 
 **<span style="text-decoration: underline;">9. Monitoring / Troubleshooting</span>** – Platform9 continuously monitors your infrastructure and maintains its health but also can detect issues before you do. This causes more work for them but ensures that customers get the best service they can possibly get.
 
@@ -61,7 +61,7 @@ tags:
 
 Since I mentioned 10 reasons above here are a few honorable mentions.
 
-![rich_executive_who_just_got_a_bonus_or_raise_0521-1011-0416-4349_SMU](https://younise.github.io/assets/img/2015/01/rich_executive_who_just_got_a_bonus_or_raise_0521-1011-0416-4349_SMU.jpg?resize=150%2C144)
+![rich_executive_who_just_got_a_bonus_or_raise_0521-1011-0416-4349_SMU](https://emadyounis.com/assets/img/2015/01/rich_executive_who_just_got_a_bonus_or_raise_0521-1011-0416-4349_SMU.jpg?resize=150%2C144)
 
 <span style="text-decoration: underline;">**Security**</span> – How secure is this solution you ask? well the following measures are in place:
 

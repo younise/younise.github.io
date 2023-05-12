@@ -24,7 +24,7 @@ During VMworld Barcelona 2016, VMware announced vSphere 6.5. With lots of new fe
 
 Starting with the VCSA 6.5 ISO, improvements are easily visible when comparing to 6.O:
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-ISO.png?resize=1024%2C550)](https://younise.github.io/assets/img/2016/10/VCSA-ISO.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-ISO.png?resize=1024%2C550)](https://emadyounis.com/assets/img/2016/10/VCSA-ISO.png)
 
 - The Migration Tool is now built into the VCSA installer.
 - One of the biggest asks from customers is now part of this release. VMware Update Manager (VUM) **no longer requires a Windows Server and runs natively on the VCSA**. Included on the ISO is Update Manager Download Service (UMDS). UMDS is available for those that have restrictions on internet connectivity to VUM.
@@ -32,7 +32,7 @@ Starting with the VCSA 6.5 ISO, improvements are easily visible when comparing t
 - My favorite part, the JSON templates have been updated and include improvements. This release includes around 30 templates covering install, upgrade, and migrate
 - The VCSA installer now sports a new modern look, independent of a browser. There is also support for macOS, Linux, and Windows. Deploying VCSA from my macOS, yes, please!
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Installer.png?resize=1024%2C619)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Installer.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Installer.png?resize=1024%2C619)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Installer.png)
 
 ## VCSA Only Features
 
@@ -45,7 +45,7 @@ As mentioned earlier the Migration Tool in the VCSA 6.5 is now built-in. This ve
 - More options for historical and performance data selection
 - VMware Update Manager migration part of the VCSA
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Migration.png?resize=709%2C113)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Migration.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Migration.png?resize=709%2C113)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Migration.png)
 
 **vCenter High Availability**
 
@@ -56,7 +56,7 @@ This solution consists of an Active, Passive, and Witness nodes. The Passive and
 
 Remember, this is a <span style="font-weight: bold;">High Availability solution, not a Disaster Recovery solution. </span>Make sure to repeat that as you’re deploying VCHA.
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-VCHA.png?resize=1024%2C344)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-VCHA.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-VCHA.png?resize=1024%2C344)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-VCHA.png)
 
 <span style="font-weight: bold;">Backup / Restore</span>
 
@@ -69,17 +69,17 @@ A native file-based solution allows the backup of an embedded or external deploy
 - Launch the Restore workflow from the VCSA ISO and point to the protocol used to backup.
 - Deployed is a new VCSA, keeping its personality (FQDN, IP, UUID, etc.) and configuration including inventory.
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Backup.png?resize=1024%2C159)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Backup.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Backup.png?resize=1024%2C159)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Backup.png)
 
 **Management Interface**
 
 The VMware vSphere Appliance Management Interface (VAMI) has a new sexy facelift in 6.5.
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-VAMI.png?resize=1195%2C591)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-VAMI.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-VAMI.png?resize=1195%2C591)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-VAMI.png)
 
 Not only that but new features that prove the much-needed visibility to the VCSA. This interface now shows CPU, Memory, and Network statistics. Also visibility to the VCSA Database statistics, disk space, and health providing improved monitoring. Syslog Configuration is now part of the VAMI as well.
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-VMAI-Monitoring.png?resize=1024%2C448)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-VMAI-Monitoring.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-VMAI-Monitoring.png?resize=1024%2C448)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-VMAI-Monitoring.png)
 
 ## More Improvements
 
@@ -99,9 +99,9 @@ The ISO is the not the only place you’ll see improvements. The vCenter Server 
 - **Client Integration Plugin (CIP)** – is no longer required, replaced by native browser functions.
 - **Enhanced Authentication Plugin** – only If you plan on using Windows Authentication (SSPI) or Smart Card Authentication.
 
-[![](https://younise.github.io/assets/img/2016/10/Windows-Auth.png?resize=986%2C522)](https://younise.github.io/assets/img/2016/10/Windows-Auth.png)
+[![](https://emadyounis.com/assets/img/2016/10/Windows-Auth.png?resize=986%2C522)](https://emadyounis.com/assets/img/2016/10/Windows-Auth.png)
 
-[![](https://younise.github.io/assets/img/2016/10/Smart-Card.png?resize=580%2C153)](https://younise.github.io/assets/img/2016/10/Smart-Card.png)
+[![](https://emadyounis.com/assets/img/2016/10/Smart-Card.png?resize=580%2C153)](https://emadyounis.com/assets/img/2016/10/Smart-Card.png)
 
 **Clients**
 
@@ -112,7 +112,7 @@ Before I talk about the Web Client, let me state the C# (thick) client is gone a
 - Limited functionality of the vSphere Client is available in this release.
 - Future updates of the vSphere Client will be available separately from vCenter Server.
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Clients.png?resize=580%2C181)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Clients.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Clients.png?resize=580%2C181)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Clients.png)
 
 - vSphere Web Client – Adobe Flex (<span style="color: #0000ff;">**https://FQDN or IP Address of VCSA/vsphere<span style="color: #0000ff;">–</span>client**</span>)
 - vSphere Client -HTML5 (**<span style="color: #0000ff;">https://FDQN or IP Address of VCSA/UI</span>**)
@@ -128,13 +128,13 @@ Before I talk about the Web Client, let me state the C# (thick) client is gone a
 
 - Simplified Bash Shell now just type “shell”
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Bash-Shell.png?resize=580%2C278)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Bash-Shell.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Bash-Shell.png?resize=580%2C278)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Bash-Shell.png)
 
 - REST APIs / API Explorer.
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Rest-APIs.png?resize=580%2C205)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-Rest-APIs.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Rest-APIs.png?resize=580%2C205)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-Rest-APIs.png)
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-API-Explorer-1024x500.png?resize=580%2C283)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-API-Explorer.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-API-Explorer-1024x500.png?resize=580%2C283)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-API-Explorer.png)
 
 - **Datacenter CLI (DCLI)** – a native client for the REST APIs. 
     - Accessible via vCLI, VCSA Shell, Windows CMD prompt.
@@ -142,8 +142,8 @@ Before I talk about the Web Client, let me state the C# (thick) client is gone a
 
 **Note:** example below using SSH from my Mac to VCSA 6.5.
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-DCLI-1.png?resize=580%2C278)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-DCLI-1.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-DCLI-1.png?resize=580%2C278)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-DCLI-1.png)
 
-[![](https://younise.github.io/assets/img/2016/10/VCSA-6.5-DCLI-2.png?resize=580%2C278)](https://younise.github.io/assets/img/2016/10/VCSA-6.5-DCLI-2.png)
+[![](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-DCLI-2.png?resize=580%2C278)](https://emadyounis.com/assets/img/2016/10/VCSA-6.5-DCLI-2.png)
 
 The VCSA has seen a lot of improvements since its initial release in vSphere 5.0. Now with the vSphere 6.5 release, the VCSA will show why it’s the first choice deployment. In this release the VCSA has an abundant amount of exclusive features and improvements. Not only that, now there are Migration Tools that will do all the heavy lifting to get you there. Future blog posts will cover these feature and improvements more in depth, so stay tuned. In the mean time start planning those VCSA deployments and migrations 🙂

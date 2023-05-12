@@ -34,11 +34,11 @@ The wait is finally over! We now have a fully featured vSphere client in vSphere
 
 There are two features I want to highlight from the vSphere Client in vSphere 6.7 Update 1. The first is the improved searching capabilities. Customers can now search objects with a string and filter based attributes. These attributes include Tags, Custom Attributes, and VM power state to name a few. For common searches, there is also an option to save the search for future usage.
 
-![](https://younise.github.io/assets/img/2018/10/HTML5-Search.png?resize=1280%2C332)
+![](https://emadyounis.com/assets/img/2018/10/HTML5-Search.png?resize=1280%2C332)
 
 The second feature I want to highlight is considered one of the top feature requests. The vSphere team has been listening and now the dark theme option is available. Now customers can switch between the traditional light theme to the new dark theme in a single click. When switching to dark theme a blue information banner appears at the top of the screen. In this release dark theme supports vSphere features and plugins. Keep in mind other features and plugins may not render well until the necessary changes are in place. Glad the vSphere team was able to get this nice surprise in this release.
 
-![](https://younise.github.io/assets/img/2018/10/HTML5-Dark-Theme-vSphere-Client.png?resize=1280%2C687)
+![](https://emadyounis.com/assets/img/2018/10/HTML5-Dark-Theme-vSphere-Client.png?resize=1280%2C687)
 
 ## Convergence Tool
 
@@ -55,19 +55,19 @@ The PSC has two deployment models, embedded and external. The only reason to use
 
 The convergence tool is available in a directory called “VCSA-Converge-CLI” on the VCSA 6.7 Update 1 ISO. Before using the convergence tool there are two important prerequisites. First, a vSphere environment must be running vSphere 6.7 Update 1. This includes all the external PSCs and vCenter Servers in the vSphere SSO domains. Second, the convergence tool does not support Windows PSCs or vCenters Servers. Meaning migrate to the vCenter Server Appliance (VCSA) you should!
 
-![](https://younise.github.io/assets/img/2018/10/Converge.png?resize=1008%2C347)
+![](https://emadyounis.com/assets/img/2018/10/Converge.png?resize=1008%2C347)
 
 There are two JSON template options, converge and decommission. We start by using the converge JSON which will install the necessary PSC RPMs on the external VCSA. After the PSC service gets registered on the external VCSA, its now converted to embedded. But we’re not done, we still need to replicate the vSphere SSO data between the external PSC and the embedded PSC. This is actually taken care of as part of the JSON template and requires no manual intervention. The final step is to decommission the external PSC using the decommission JSON template. Stay tuned, there will be a more detailed blog post with examples coming soon.
 
 <span style="color: #ff0000;">**Note:**</span> Embedded PSC is the recommended deployment model for vCenter Server.
 
-![](https://younise.github.io/assets/img/2018/10/converge.png?resize=874%2C253)
+![](https://emadyounis.com/assets/img/2018/10/converge.png?resize=874%2C253)
 
 ## Embedded Domain Repoint
 
 Domain repoint is a feature available in vSphere 6.7 using the cmsso-util CLI command. Customers can repoint an external vCenter Server across a vSphere SSO domain. New in vSphere 6.7 Update 1 is support for embedded deployment domain repoint. Remember the time you selected a new vSphere SSO domain instead of an existing? Leaving you with several single embedded deployment instances. With domain repoint we can now join them to a single vSphere SSO domain. Other use cases are merges or acquisitions, no longer requiring a setup of a new vSphere SSO domain.
 
-![](https://younise.github.io/assets/img/2018/10/Domain-Repoint.png?resize=874%2C521)
+![](https://emadyounis.com/assets/img/2018/10/Domain-Repoint.png?resize=874%2C521)
 
 ## vCenter High Availability
 
@@ -77,11 +77,11 @@ vCenter Server native high availability was first introduced in vSphere 6.5. Thi
 - Resource settings for the Passive and Witness nodes including compute, storage, and network
 - IP Settings for the Passive and Witness nodes
 
-![](https://younise.github.io/assets/img/2018/10/VCSA-HA-Main.png?resize=1280%2C800)
+![](https://emadyounis.com/assets/img/2018/10/VCSA-HA-Main.png?resize=1280%2C800)
 
 Also included is auto-creation of the Active node clones to create the Passive and Witness nodes. A prerequisite for auto clone provisioning is entering the vSphere SSO domain credentials. Regardless of its self-managed or managed by another vCenter Server. Other enhancements including auto-detection of VCHA during an upgrade. Customers no longer have to destroy a VCHA configuration before upgrading to vSphere 6.7 U1. The upgrade wizard is aware of the configuration and will handle it as part of the upgrade process. We’ll save the best for last, REST APIs for VCHA are also included in the VCSA 6.7 Update 1 API Explorer.
 
-![](https://younise.github.io/assets/img/2018/10/VCHA-APIs.png?resize=1280%2C720)
+![](https://emadyounis.com/assets/img/2018/10/VCHA-APIs.png?resize=1280%2C720)
 
 ## Content Library
 
@@ -101,7 +101,7 @@ This feature has been around since vSphere 6.0 and is one of my favorites. As a 
 
 This release Content Library now supports two more new file formats. This functionality is already available to VMware Cloud on AWS customers. Now it’s making its way to on-premises vSphere customers in vSphere 6.7 Update 1. Customers can now manage their templates on the local vCenter Server Content Library. Replication of template files to other subscriber Content Libraries is not available in this release. The other new supported format is Open Virtual Appliance (OVA). When importing an OVA file format in a Content Library, its content is first extracted. This allows Content Library to validate the OVA manifest and certificate. After the validation process is complete, it creates an OVF item for deployment. Give Content Library a try in your environment and let us know your thoughts.
 
-![](https://younise.github.io/assets/img/2018/10/Content-Library.png?resize=1280%2C380)
+![](https://emadyounis.com/assets/img/2018/10/Content-Library.png?resize=1280%2C380)
 
 ## vSphere Health
 
@@ -109,17 +109,17 @@ This is a new feature with huge potential. When deploying your vCenter Server th
 
 Keep in mind this is a new service and will not have all health checks day one. The good news is this services independent of the vSphere release cycle. It features an out-of-band delivery infrastructure. If you are running vSphere 6.7 you also have the same capabilities as well. The goal here is overtime this service will become more proactive to ensure you have a healthy vSphere environment. If you haven’t enabled CEIP during your vSphere deployment, it’s easy enough to enable and gain the new benefits this service has to offer.
 
-![](https://younise.github.io/assets/img/2018/10/vSphere-Health.png?resize=1280%2C595)
+![](https://emadyounis.com/assets/img/2018/10/vSphere-Health.png?resize=1280%2C595)
 
 ## Appliance Management
 
 The appliance management interface (VAMI) continues to gain new functionality with every release. vSphere 6.7 Update 1 continues to add-on from what vSphere 6.5 started. In this release, there is a new tab called “Firewall”. Now customers can manage firewall rules on the VCSA from the VAMI. This was previously only available using the VAMI APIs.
 
-![](https://younise.github.io/assets/img/2018/10/VCSA-Firewall-.png?resize=1280%2C720)
+![](https://emadyounis.com/assets/img/2018/10/VCSA-Firewall-.png?resize=1280%2C720)
 
 Another new feature which isn’t obvious is the ability to login VAMI with a local SSO user account. This release supports local vSphere SSO users who are members of the “SytemConfiguration.Administrators group. Also, members of the “Systemonfiguration.BashShellAdministrators” can use their SSO account to log in the VCSA bash shell. This makes it easier from a security perspective to track who logged in and what they did.
 
-![](https://younise.github.io/assets/img/2018/10/VAMI-Configurations.png?resize=1280%2C695)
+![](https://emadyounis.com/assets/img/2018/10/VAMI-Configurations.png?resize=1280%2C695)
 
 ## Summary
 

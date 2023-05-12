@@ -25,7 +25,7 @@ First let me start by saying the provided templates are in a JSON format. JSON s
 
 <span style="color: #ff0000;">**Note: Screenshots – Mac on the top / Windows on the bottom.**</span>
 
-[![](https://younise.github.io/assets/img/2015/03/Templates.jpg?resize=767%2C330)](https://younise.github.io/assets/img/2015/03/Templates.jpg) [![](https://younise.github.io/assets/img/2015/03/Windows-Templates-e1426543601187.jpg?resize=767%2C534)](https://younise.github.io/assets/img/2015/03/Windows-Templates.jpg)
+[![](https://emadyounis.com/assets/img/2015/03/Templates.jpg?resize=767%2C330)](https://emadyounis.com/assets/img/2015/03/Templates.jpg) [![](https://emadyounis.com/assets/img/2015/03/Windows-Templates-e1426543601187.jpg?resize=767%2C534)](https://emadyounis.com/assets/img/2015/03/Windows-Templates.jpg)
 
 Here are the 5 available templates and their descriptions:
 
@@ -43,7 +43,7 @@ Under the vcsa-cli-installer directory there are three OS directories: Win32, Ma
 
 **Mac = <span style="color: #ff0000;">vcsa-cli-installer\\mac\\vcsa-deploy</span> Win = <span style="color: #ff0000;">vcsa-cli-installer\\win32\\vcsa-deploy</span>**
 
-[![](https://younise.github.io/assets/img/2015/03/VCSA-CMD-MAC-1.jpg?resize=1031%2C625)](https://younise.github.io/assets/img/2015/03/VCSA-CMD-MAC-1.jpg)[![](https://younise.github.io/assets/img/2015/03/VCSA-CMD-11.jpg?resize=1138%2C551)](https://younise.github.io/assets/img/2015/03/VCSA-CMD-11.jpg)
+[![](https://emadyounis.com/assets/img/2015/03/VCSA-CMD-MAC-1.jpg?resize=1031%2C625)](https://emadyounis.com/assets/img/2015/03/VCSA-CMD-MAC-1.jpg)[![](https://emadyounis.com/assets/img/2015/03/VCSA-CMD-11.jpg?resize=1138%2C551)](https://emadyounis.com/assets/img/2015/03/VCSA-CMD-11.jpg)
 
 There are more options in the command line for template parameters using <span style="color: #ff0000;">**––template –h**</span>. Here is a quick breakdown:
 
@@ -53,7 +53,7 @@ There are more options in the command line for template parameters using <span s
 - Database
 - Deployment
 
-[![](https://younise.github.io/assets/img/2015/03/VCSA-CMD-MAC-2.jpg?resize=1141%2C611)](https://younise.github.io/assets/img/2015/03/VCSA-CMD-MAC-2.jpg)[![](https://younise.github.io/assets/img/2015/03/VCSA-CMD-TEMP.jpg?resize=1024%2C471)](https://younise.github.io/assets/img/2015/03/VCSA-CMD-TEMP.jpg)
+[![](https://emadyounis.com/assets/img/2015/03/VCSA-CMD-MAC-2.jpg?resize=1141%2C611)](https://emadyounis.com/assets/img/2015/03/VCSA-CMD-MAC-2.jpg)[![](https://emadyounis.com/assets/img/2015/03/VCSA-CMD-TEMP.jpg?resize=1024%2C471)](https://emadyounis.com/assets/img/2015/03/VCSA-CMD-TEMP.jpg)
 
 <span style="text-decoration: underline;">**PowerShell Help**</span>
 
@@ -61,11 +61,11 @@ Just like the command line option. Point to the vcsa-deploy in the win32 directo
 
 **<span style="color: #ff0000;">.\\vcsa-cli-installer\\win32\\vcsa-deploy -h</span>**
 
-[![](https://younise.github.io/assets/img/2015/03/Powershell-Help.jpg?resize=1017%2C546)](https://younise.github.io/assets/img/2015/03/Powershell-Help.jpg)
+[![](https://emadyounis.com/assets/img/2015/03/Powershell-Help.jpg?resize=1017%2C546)](https://emadyounis.com/assets/img/2015/03/Powershell-Help.jpg)
 
 <span style="color: #ff0000;"> **.\\vcsa-cli-installer\\win32\\vcsa-deploy ––template –h**</span>
 
-[![](https://younise.github.io/assets/img/2015/03/Powershell-Template-Help.jpg?resize=1015%2C526)](https://younise.github.io/assets/img/2015/03/Powershell-Template-Help.jpg)
+[![](https://emadyounis.com/assets/img/2015/03/Powershell-Template-Help.jpg?resize=1015%2C526)](https://emadyounis.com/assets/img/2015/03/Powershell-Template-Help.jpg)
 
 In this example I will be using is take the embedded.example.json template and customize it. Things to keep in mind:
 
@@ -77,7 +77,7 @@ In this example I will be using is take the embedded.example.json template and c
 
 The template on the top is the original template provided on the VCSA ISO, bottom is the customized template based on the original.
 
-[![](https://younise.github.io/assets/img/2015/03/Before-Template.jpg?resize=815%2C632)](https://younise.github.io/assets/img/2015/03/Before-Template.jpg) [![](https://younise.github.io/assets/img/2015/03/After-Template.jpg?resize=805%2C847)](https://younise.github.io/assets/img/2015/03/After-Template.jpg)
+[![](https://emadyounis.com/assets/img/2015/03/Before-Template.jpg?resize=815%2C632)](https://emadyounis.com/assets/img/2015/03/Before-Template.jpg) [![](https://emadyounis.com/assets/img/2015/03/After-Template.jpg?resize=805%2C847)](https://emadyounis.com/assets/img/2015/03/After-Template.jpg)
 
 Now that the template has been modified, it’s time to run it using either command line or PowerShell. In this example I will be using the windows command line.
 
@@ -88,14 +88,14 @@ Now that the template has been modified, it’s time to run it using either comm
 3. Add the path to the template you wish to run (location of your template).
 4. Press Enter and behold the magically deployment,
 
-[![](https://younise.github.io/assets/img/2015/03/Temp-Deploy.jpg?resize=1024%2C296)](https://younise.github.io/assets/img/2015/03/Temp-Deploy.jpg)
+[![](https://emadyounis.com/assets/img/2015/03/Temp-Deploy.jpg?resize=1024%2C296)](https://emadyounis.com/assets/img/2015/03/Temp-Deploy.jpg)
 
 Once the template is deployed, it will power on and start installing services. Deploying from template took roughly 15-20 minutes to complete.
 
-[![](https://younise.github.io/assets/img/2015/03/Scripted-Deploy.jpg?resize=1024%2C761)](https://younise.github.io/assets/img/2015/03/Scripted-Deploy.jpg)
+[![](https://emadyounis.com/assets/img/2015/03/Scripted-Deploy.jpg?resize=1024%2C761)](https://emadyounis.com/assets/img/2015/03/Scripted-Deploy.jpg)
 
 Log in the Web Client using **https://VCSA FQDN or IP/vsphere-client** using the administrator credentials you supplied in the template.
 
-[![](https://younise.github.io/assets/img/2015/03/Webclient.jpg?resize=1024%2C522)](https://younise.github.io/assets/img/2015/03/Webclient.jpg)
+[![](https://emadyounis.com/assets/img/2015/03/Webclient.jpg?resize=1024%2C522)](https://emadyounis.com/assets/img/2015/03/Webclient.jpg)
 
 That’s it in a nut shell, of course there is a lot more you can do. This will definitely get you started. Scripted deployments will help those who have multiple VCSA and PSC in their environment. This is also a good way to automate and stay consistent with your deployments.

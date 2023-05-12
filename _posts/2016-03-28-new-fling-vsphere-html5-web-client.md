@@ -14,7 +14,7 @@ tags:
     - 'Web Client'
 ---
 
-![](https://younise.github.io/assets/img/2016/03/HTML5-Fling-icon.png?resize=166%2C166)VMware first introduced the vSphere Web Client with the release of vSphere 5.0. The vSphere Web Client would be the future management tool replacing the vSphere client aka “Legacy, Thick or C# Client”. This would be become more evident over time with each release of vSphere. New features could only be managed through the vSphere Web Client. While the concept of a browser based client is a step in the right direction, the dependency of flash was not. Keep in mind the decision to use flash was made when it was the standard for web applications, times and standards have changed. With that change it has taken some time to work on replatforming the vSphere Web Client. This always leads to the question, when will we see a HTML5 version of the Web Client? I’m happy to announce the wait is over!
+![](https://emadyounis.com/assets/img/2016/03/HTML5-Fling-icon.png?resize=166%2C166)VMware first introduced the vSphere Web Client with the release of vSphere 5.0. The vSphere Web Client would be the future management tool replacing the vSphere client aka “Legacy, Thick or C# Client”. This would be become more evident over time with each release of vSphere. New features could only be managed through the vSphere Web Client. While the concept of a browser based client is a step in the right direction, the dependency of flash was not. Keep in mind the decision to use flash was made when it was the standard for web applications, times and standards have changed. With that change it has taken some time to work on replatforming the vSphere Web Client. This always leads to the question, when will we see a HTML5 version of the Web Client? I’m happy to announce the wait is over!
 
 The first step towards making a HTML5 Web Client a reality is the <span style="color: #0000ff;">**[vSphere HTML5 Web Client Fling](https://labs.vmware.com/flings/vsphere-html5-web-client)**</span>. This release of the Fling will focus primary on VM management, with more updates coming. Here is a list of the features and operations available in this first release:
 
@@ -33,7 +33,7 @@ The first step towards making a HTML5 Web Client a reality is the <span style="c
 
 The vSphere HTML5 Web Client Fling is a standalone appliance that can be deployed in your existing or new vSphere 6.0 environments. It supports both the vCenter Server Appliance or vCenter for Windows. The Fling does not make any changes to your existing vCenter or Platform Service Controller components. Nor does it affect any operations, such as the use of the current vSphere Web Client, as it is meant to run side by side.
 
-[![](https://younise.github.io/assets/img/2016/03/HTML5-Client.png?resize=1365%2C837)](https://younise.github.io/assets/img/2016/03/HTML5-Client.png)
+[![](https://emadyounis.com/assets/img/2016/03/HTML5-Client.png?resize=1365%2C837)](https://emadyounis.com/assets/img/2016/03/HTML5-Client.png)
 
 <span style="color: #ff0000;">**Update 3/30/16**</span> – how to install and configure the vSphere HTML5 Web Client Fling for the vCenter Server Appliance and vCenter for Windows can be found in a blog post I wrote on the [VMware vSphere blog](http://blogs.vmware.com/vsphere/2016/03/vsphere-html5-web-client-fling-getting-started.html).
 

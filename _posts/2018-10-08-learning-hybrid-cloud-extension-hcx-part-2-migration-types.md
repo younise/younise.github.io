@@ -33,7 +33,7 @@ HCX supports four different migration types:
 
 Cold migration and vMotion should be familiar to those using the built-in vSphere mobility options. Bulk Migration and Cloud Motion with vSphere Replication are new options and only available with HCX. Let’s take a look at how each option works and what is the impact to the workloads.
 
-![](https://younise.github.io/assets/img/2018/10/Migration-Types-of-HCX.png?resize=1149%2C643)
+![](https://emadyounis.com/assets/img/2018/10/Migration-Types-of-HCX.png?resize=1149%2C643)
 
 ## Cloud Motion with vSphere Replication
 
@@ -49,9 +49,9 @@ When using the scheduling option, there are a few things to be aware of. First, 
 - Currently no support for on-premises to on-premises migrations
 - Concurrent migrations = 100 (initial data sync using vSphere Replication)
 
-![](https://younise.github.io/assets/img/2018/10/Cloud-Motion.png?resize=1920%2C1080)
+![](https://emadyounis.com/assets/img/2018/10/Cloud-Motion.png?resize=1920%2C1080)
 
-![](https://younise.github.io/assets/img/2018/10/VMC-Cloud-Motion.png?resize=1920%2C1080)
+![](https://emadyounis.com/assets/img/2018/10/VMC-Cloud-Motion.png?resize=1920%2C1080)
 
 ## Bulk Migration
 
@@ -67,7 +67,7 @@ Unlike cold migration, the downtime incurred after the bulk migration cut over i
 - Concurrent migrations = 100
 - Bi-directional migration (reverse HCX option)
 
-## ![](https://younise.github.io/assets/img/2018/10/Bulk-Migration.png?resize=1280%2C720)
+## ![](https://emadyounis.com/assets/img/2018/10/Bulk-Migration.png?resize=1280%2C720)
 
 ## vMotion “Live Migration”
 
@@ -89,7 +89,7 @@ HCX has a built-in option to retain the workloads MAC address. If this option is
 - Cross-version migration from vSphere 5.5 to the current release of 6.7 Update 1
 - Bi-directional migration (reverse HCX option)
 
-![](https://younise.github.io/assets/img/2018/10/HCX-vMotion.png?resize=1137%2C630)
+![](https://emadyounis.com/assets/img/2018/10/HCX-vMotion.png?resize=1137%2C630)
 
 ## Cold Migration
 
@@ -109,7 +109,7 @@ Usually, cold migration traffic takes place over the host management network. Th
 - Cross-version migration from vSphere 5.5 to the current release of 6.7 Update 1
 - Bi-directional migration (reverse HCX option)
 
-![](https://younise.github.io/assets/img/2018/10/HCX-Clold-Migration.png?resize=875%2C325)
+![](https://emadyounis.com/assets/img/2018/10/HCX-Clold-Migration.png?resize=875%2C325)
 
 ## Summary
 

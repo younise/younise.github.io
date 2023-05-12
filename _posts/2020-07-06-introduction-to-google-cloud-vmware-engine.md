@@ -20,7 +20,7 @@ Last month [Google announced](https://cloud.google.com/blog/topics/hybrid-cloud/
 
 As part of the GCVE service availability, customers have several pricing options: on-demand (per-hour), 1yr commitment, and 3yr commitment, which includes the cost of infrastructure, licensing, and support. Billing is handled through Google Cloud; for more details, please see the [following](https://cloud.google.com/vmware-engine#section-13). The GCVE service allows customers to focus on workloads while Google manages all other aspects of the service, including the lifecycle of the vSphere environment.
 
-![](https://younise.github.io/assets/img/2020/07/GCVE-Welcome.jpg?resize=1024%2C457)
+![](https://emadyounis.com/assets/img/2020/07/GCVE-Welcome.jpg?resize=1024%2C457)
 
 ## <span style="color: #000000;">GCVE Service</span>
 
@@ -29,7 +29,7 @@ As part of the GCVE service availability, customers have several pricing options
 
 To get started with GCVE first requires enabling the VMware Engine API in the Google Cloud console. This will need to be done on a per-project basis. Next, you’ll need to request a quota which is located under IAM &amp; Admin. A quota is a way to verify, protect against unexpected usage, and prevent misuse. Each project in Google Cloud could have a different quota. Once your quota request has been accepted, we can start [getting ready](https://cloud.google.com/vmware-engine/docs/quickstart-prerequisites) to deploy a GCVE private cloud.
 
-![](https://younise.github.io/assets/img/2020/07/GCVE-Enable-API.jpg?resize=1024%2C200)
+![](https://emadyounis.com/assets/img/2020/07/GCVE-Enable-API.jpg?resize=1024%2C200)
 
 The GCVE service configuration will consist of a minimum of 3 nodes and can scale up to 16 nodes per cluster (roughly 15 mins per node add) or 64 nodes in a single private cloud. Each GCVE node has the following specifications:
 
@@ -44,16 +44,16 @@ GA included [software specifications](https://cloud.google.com/vmware-engine/doc
 
 \[table id=14 /\]
 
-![](https://younise.github.io/assets/img/2020/07/GCVE-Quota-1.jpg?resize=936%2C484)
+![](https://emadyounis.com/assets/img/2020/07/GCVE-Quota-1.jpg?resize=936%2C484)
 
-![](https://younise.github.io/assets/img/2020/07/GCVE-Quota-2.jpg?resize=936%2C256)  
+![](https://emadyounis.com/assets/img/2020/07/GCVE-Quota-2.jpg?resize=936%2C256)  
 Part of the [<span data-preserver-spaces="true">service level agreement</span>](https://cloud.google.com/vmware-engine/sla)<span data-preserver-spaces="true"> (SLA) ensures customers have the needed reliability. GCVE is providing 99.99% of network uptime (less than an hour per year) for its service and has network redundancy across rack configuration. Connectivity from on-premises to GCVE (or between private clouds within GCVE) can be established using a </span>[<span data-preserver-spaces="true">Google Cloud VPN</span>](https://cloud.google.com/network-connectivity/docs/vpn)<span data-preserver-spaces="true">, the quickest method (self-service) to getting started. There is also the option to use Google’s</span>[<span data-preserver-spaces="true"> Cloud Interconnect</span>](https://cloud.google.com/network-connectivity/docs/how-to/how-to-choose#cloud-interconnect)<span data-preserver-spaces="true"> (available from Google or </span>[<span data-preserver-spaces="true">Service Providers</span>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/service-providers)<span data-preserver-spaces="true">), a dedicated, highly available, low latency direct connection. As part of the configuration process, customers will need to create Virtual Private Cloud (VPC) within the Google Cloud that allows them to control how workloads connect within a region or globally, create policies within projects, and expand IP spaces without downtime. After the VPC is created, workloads can communicate internally within a project, keeping traffic local and providing extensibility to Google Cloud Services.</span>
 
 A CIDR block is required to deploy all the vSphere management components within GCVE, but workload networks will be provisioned from NSX-T (NSX segments). There will be DNS servers deployed within a private cloud and are only used for management. Within the network section of the GCVE console, customers can allocate public IP addresses to workloads, which are protected by Google Cloud Edge. The VPN Gateway section provides a point to site VPN that gives access to the management components like vCenter Server within GCVE.
 
 <span data-preserver-spaces="true">There are a couple of things I want to highlight within the GCVE service. First, when it comes to deploying a private cloud, GCVE has fast provisioning, where it takes approximately 30 minutes to deploy a private cloud with all components running (the clock starts when you click on create). On the back end, the GCVE service has built-in intelligence and optimization magic sauce allowing it to pre-provision capacity on unused nodes before they are requested. These nodes are then re-purposed based on the customer’s specifications and capacity. This ensures deployments are the same as if they were installed from scratch.</span>
 
-![](https://younise.github.io/assets/img/2020/07/GCVE-Fast-Mode.jpg?resize=936%2C662)
+![](https://emadyounis.com/assets/img/2020/07/GCVE-Fast-Mode.jpg?resize=936%2C662)
 
 <span data-preserver-spaces="true">Second, is how Role-Based Access Control (RBAC) works in GCVE. It starts with the Google Cloud console, to gain access to GCVE you either have to be an owner or editor of a project in the Google Cloud console or granted the following roles within a project’s IAM roles and permissions:</span>
 
@@ -64,11 +64,11 @@ Once access has been granted, the GCVE portal has three RBAC options: CloudOwner
 
 When first logging into vSphere Client, you will be prompted to [change](https://cloud.google.com/vmware-engine/docs/vmware-platform/howto-access-vsphere-client) the default CloudOwner@gve.local account password, which must be changed every 365 days afterward. There are also some pre-created roles that can be used, or you can create your own, but no role can be granted privileges higher than CloudOwner. You can find a list of the GCVE vCenter Server roles and privileges [here](https://cloud.google.com/vmware-engine/docs/concepts-permission-model). GCVE also supports adding your identity solution, which allows you to use your on-premises groups in vCenter Server.
 
-![](https://younise.github.io/assets/img/2020/07/GCVE-Elevated-Privileges-Updated.jpg?resize=930%2C122)
+![](https://emadyounis.com/assets/img/2020/07/GCVE-Elevated-Privileges-Updated.jpg?resize=930%2C122)
 
 All service and access configurations are done from the GCVE console; this includes launching the vSphere Client, network configuration/management, and Private Cloud management (deployment, configuration, and capacity). The GCVE console allows the management of different private clouds from a centralized location. It also provides an activity view that displays alarms, events, tasks, and audits, which tracks all the changes made across private clouds. Customers also have the option to download report information from various sections of the GCVE console in CSV format.
 
-![](https://younise.github.io/assets/img/2020/07/GCVE-Console.jpg?resize=927%2C560)
+![](https://emadyounis.com/assets/img/2020/07/GCVE-Console.jpg?resize=927%2C560)
 
 ## Workload Mobility
 
@@ -82,7 +82,7 @@ Additional functionality and migration types are also included with the HCX ente
 
 These are a few examples of what’s included with VMware HCX enterprise licensing, contact your VMware/Google representative for more details. This also simplifies uses cases such as data center evacuation, disaster recovery, and hybrid connectivity.
 
-![](https://younise.github.io/assets/img/2020/07/GCVE-HCX-Deployment.jpg?resize=937%2C335)
+![](https://emadyounis.com/assets/img/2020/07/GCVE-HCX-Deployment.jpg?resize=937%2C335)
 
 ## Resources
 

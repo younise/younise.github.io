@@ -22,11 +22,11 @@ I recently received my vExpert NFR license from [Opvizor](http://www.opvizor.com
 
 To access reports from the dashboard, on the right hand side select the notebook like icon.
 
-[![](https://younise.github.io/assets/img/2015/02/2015-02-17_18-16-59.jpg?resize=630%2C298)](https://younise.github.io/assets/img/2015/02/2015-02-17_18-16-59.jpg)
+[![](https://emadyounis.com/assets/img/2015/02/2015-02-17_18-16-59.jpg?resize=630%2C298)](https://emadyounis.com/assets/img/2015/02/2015-02-17_18-16-59.jpg)
 
 One thing to notice is there no shortage of reports. To be exact there’re 17 default reports available ranging from Network to Issue Urgency.
 
-[![](https://younise.github.io/assets/img/2015/02/Reporting-2.jpg?resize=749%2C551)](https://younise.github.io/assets/img/2015/02/Reporting-2.jpg)
+[![](https://emadyounis.com/assets/img/2015/02/Reporting-2.jpg?resize=749%2C551)](https://emadyounis.com/assets/img/2015/02/Reporting-2.jpg)
 
 To view a report, select one and click generate report. Once there’s a green check mark under state, select the report type of HTML, PDF, or CSV.
 
@@ -41,19 +41,19 @@ Some of these reports would require scripting or even another product to gather 
 
 **<span style="color: #ff0000;">Note</span>:** The report also color coded for higher priority issues. For example an item highlighted in yellow is considered a higher priority.
 
-[![](https://younise.github.io/assets/img/2015/02/Security-Report.jpg?resize=1024%2C657)](https://younise.github.io/assets/img/2015/02/Security-Report.jpg)
+[![](https://emadyounis.com/assets/img/2015/02/Security-Report.jpg?resize=1024%2C657)](https://emadyounis.com/assets/img/2015/02/Security-Report.jpg)
 
 **Inventory Report:**
 
 A very detailed report of of your vSphere environment ranging from Host information down to attached VM devices.
 
-[![](https://younise.github.io/assets/img/2015/02/New-Inventory-1.jpg?resize=1024%2C689)](https://younise.github.io/assets/img/2015/02/New-Inventory-1.jpg) [![](https://younise.github.io/assets/img/2015/02/New-Inventory-2.jpg?resize=1024%2C707)](https://younise.github.io/assets/img/2015/02/New-Inventory-2.jpg)
+[![](https://emadyounis.com/assets/img/2015/02/New-Inventory-1.jpg?resize=1024%2C689)](https://emadyounis.com/assets/img/2015/02/New-Inventory-1.jpg) [![](https://emadyounis.com/assets/img/2015/02/New-Inventory-2.jpg?resize=1024%2C707)](https://emadyounis.com/assets/img/2015/02/New-Inventory-2.jpg)
 
 <span style="text-decoration: underline;">**Report Settings**</span>
 
 There is an option to automate the delivery of the reports, since we all know that management wants them first thing Monday morning. Selecting the cog icon in the upper right hand of the reports screen, opens the reports settings window. As you can see the report settings screen is simple and straight forward.
 
-[![](https://younise.github.io/assets/img/2015/02/Reporting-5.jpg?resize=750%2C550)](https://younise.github.io/assets/img/2015/02/Reporting-5.jpg)
+[![](https://emadyounis.com/assets/img/2015/02/Reporting-5.jpg?resize=750%2C550)](https://emadyounis.com/assets/img/2015/02/Reporting-5.jpg)
 
 <span style="text-decoration: underline;">**Summary**</span>
 

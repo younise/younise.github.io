@@ -18,7 +18,7 @@ tags:
     - 'Virtualization Field Day'
 ---
 
-![VFD-Logo-400x398](https://younise.github.io/assets/img/2014/12/VFD-Logo-400x398.png?resize=200%2C199)
+![VFD-Logo-400x398](https://emadyounis.com/assets/img/2014/12/VFD-Logo-400x398.png?resize=200%2C199)
 
 The agenda is set, presenting sponsors are in place, and delegates have been announced. The stage is now set for January 14-16 [Tech Field Day – Virtualization Field Day 4](http://techfieldday.com/event/vfd4/). I’m honored and pleased to announce that I’ve been invited to attend the event, which will take place in Austin, Texas. The Tech Field Day events allow IT vendors an opportunity to present on products and independent thought leaders to discuss and share opinions. Who makes up these independent thought leaders you ask? The selected delegates come from various independent backgrounds such as authors, bloggers, speakers and podcasters. The key word here is independent; in order for you to participate as a delegate you can’t currently work for a vendor. For more information about the delegates and selection process check out the following [link](http://techfieldday.com/delegates/become-field-day-delegate/).
 
@@ -30,7 +30,7 @@ As the title suggests, there are 12 delegates, some are first timers such as mys
 [Amit Panchal](https://twitter.com/AmitPanchal76) , [Amy Manley](https://twitter.com/WyrdGirl), [Christopher Kusek](https://twitter.com/cxi), [James Green](https://twitter.com/JDGreen), [Jeff Wilson](https://twitter.com/Agnostic_Node1), [Julian Wood](https://twitter.com/Julian_Wood), [Justin Warren](https://twitter.com/JPWarren), [Larry Smith](https://twitter.com/MrLESmithJr), [Marco Broeken](https://twitter.com/MBroeken), [Matt Simmons](https://twitter.com/StandaloneSA) and [Mike Preston](https://twitter.com/MWPreston)
 
 **<span style="text-decoration: underline;">Participation</span>**  
-![participation-home](https://younise.github.io/assets/img/2014/12/participation-home.jpg?resize=300%2C225)
+![participation-home](https://emadyounis.com/assets/img/2014/12/participation-home.jpg?resize=300%2C225)
 
 The delegates and sponsors aren’t the only ones that get to participate, the audience does as well! You see the event live streamed for your viewing pleasure. Don’t panic if you can’t catch the live stream, the recordings will also be available on YouTube. Another way to join in on the discussion is through Twitter by using the #VFD4 hashtag, and by following the delegates and the [@TechFieldDay](https://twitter.com/TechFieldDay) account. Stay tuned for more information.
 

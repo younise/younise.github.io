@@ -19,7 +19,7 @@ VMware Software Manager – Download Service 1.0 release coincides with the laun
 - VMware vSphere w/ Operations Management 6.0 and 5.5
 - VMware vSphere 6.0, 5.5, and 5.1
 
-[![Intro](https://younise.github.io/assets/img/2015/03/Intro.jpg?resize=634%2C575)](https://younise.github.io/assets/img/2015/03/Intro.jpg)
+[![Intro](https://emadyounis.com/assets/img/2015/03/Intro.jpg?resize=634%2C575)](https://emadyounis.com/assets/img/2015/03/Intro.jpg)
 
 There is a detection mechanism that is aware when a new suite, product, and version are available. Another benefit is an integrity check that validates all downloads. The Software Manager – Download Service has the following requirements:
 
@@ -41,41 +41,41 @@ The installation and setup is simple and requires minimal time. The MSI is close
 <span style="text-decoration: underline;">**Installation**</span>
 
 1. Click Next on the VMware Software Manager – Download Service Setup.  
-    [![Install-1](https://younise.github.io/assets/img/2015/03/Install-1.jpg?resize=501%2C394)](https://younise.github.io/assets/img/2015/03/Install-1.jpg)
+    [![Install-1](https://emadyounis.com/assets/img/2015/03/Install-1.jpg?resize=501%2C394)](https://emadyounis.com/assets/img/2015/03/Install-1.jpg)
 2. Accept the EULA and click Next.  
-    [![Install-2](https://younise.github.io/assets/img/2015/03/Install-2.jpg?resize=508%2C403)](https://younise.github.io/assets/img/2015/03/Install-2.jpg)
+    [![Install-2](https://emadyounis.com/assets/img/2015/03/Install-2.jpg?resize=508%2C403)](https://emadyounis.com/assets/img/2015/03/Install-2.jpg)
 3. Select the install and depot locations. Click Next.  
     <span style="color: #ff0000;">**Note**</span>: Install depot on separate disk to provide flexibility for disk expansion and potential central repository.  
-    [![Install-3](https://younise.github.io/assets/img/2015/03/Install-3.jpg?resize=506%2C407)](https://younise.github.io/assets/img/2015/03/Install-3.jpg)
+    [![Install-3](https://emadyounis.com/assets/img/2015/03/Install-3.jpg?resize=506%2C407)](https://emadyounis.com/assets/img/2015/03/Install-3.jpg)
 4. Click Install.  
-    [![Install-4](https://younise.github.io/assets/img/2015/03/Install-4.jpg?resize=505%2C404)](https://younise.github.io/assets/img/2015/03/Install-4.jpg)
+    [![Install-4](https://emadyounis.com/assets/img/2015/03/Install-4.jpg?resize=505%2C404)](https://emadyounis.com/assets/img/2015/03/Install-4.jpg)
 5. It’s off to the races, install process is fairly quick.  
-    [![Install-5](https://younise.github.io/assets/img/2015/03/Install-5.jpg?resize=505%2C403)](https://younise.github.io/assets/img/2015/03/Install-5.jpg)  
+    [![Install-5](https://emadyounis.com/assets/img/2015/03/Install-5.jpg?resize=505%2C403)](https://emadyounis.com/assets/img/2015/03/Install-5.jpg)  
     **<span style="color: #ff0000;">Note</span>**: Depending on your Windows User Account Control Setting (UAC), you may receive a prompt to allow the MSI to install. Click Yes to proceed.  
-    [![Install-5A](https://younise.github.io/assets/img/2015/03/Install-5A.jpg?resize=463%2C257)](https://younise.github.io/assets/img/2015/03/Install-5A.jpg)
+    [![Install-5A](https://emadyounis.com/assets/img/2015/03/Install-5A.jpg?resize=463%2C257)](https://emadyounis.com/assets/img/2015/03/Install-5A.jpg)
 6. Click Finish.  
     <span style="color: #ff0000;">**Note**</span>: Check box for open download service web application is set by default.  
-    [![Install-6](https://younise.github.io/assets/img/2015/03/Install-6.jpg?resize=508%2C405)](https://younise.github.io/assets/img/2015/03/Install-6.jpg)
+    [![Install-6](https://emadyounis.com/assets/img/2015/03/Install-6.jpg?resize=508%2C405)](https://emadyounis.com/assets/img/2015/03/Install-6.jpg)
 
 <span style="text-decoration: underline;">**Interface**</span>
 
 1. Log in the Software Manager – Download Service using your My VMware account. Click Connect or press Enter.  
-    [![interface-1](https://younise.github.io/assets/img/2015/03/interface-1.jpg?resize=785%2C426)](https://younise.github.io/assets/img/2015/03/interface-1.jpg)
+    [![interface-1](https://emadyounis.com/assets/img/2015/03/interface-1.jpg?resize=785%2C426)](https://emadyounis.com/assets/img/2015/03/interface-1.jpg)
 2. The first login requires initialization, which takes a minute.  
-    [![Interface-2](https://younise.github.io/assets/img/2015/03/Interface-2.jpg?resize=1023%2C711)](https://younise.github.io/assets/img/2015/03/Interface-2.jpg)
+    [![Interface-2](https://emadyounis.com/assets/img/2015/03/Interface-2.jpg?resize=1023%2C711)](https://emadyounis.com/assets/img/2015/03/Interface-2.jpg)
 3. Select category, suite, version, and edition under software. Download will display what is being and has been downloaded, consider it your current status and history.  
     <span style="color: #ff0000;">**Note**</span>: To log out click the Disconnect button in the upper right hand corner.  
-    [![Interface-3](https://younise.github.io/assets/img/2015/03/Interface-3.jpg?resize=1025%2C709)](https://younise.github.io/assets/img/2015/03/Interface-3.jpg)
+    [![Interface-3](https://emadyounis.com/assets/img/2015/03/Interface-3.jpg?resize=1025%2C709)](https://emadyounis.com/assets/img/2015/03/Interface-3.jpg)
 4. Each suite or product displays the required size on disk.  
-    [![Interface-4](https://younise.github.io/assets/img/2015/03/Interface-4.jpg?resize=724%2C649)](https://younise.github.io/assets/img/2015/03/Interface-4.jpg)
+    [![Interface-4](https://emadyounis.com/assets/img/2015/03/Interface-4.jpg?resize=724%2C649)](https://emadyounis.com/assets/img/2015/03/Interface-4.jpg)
 5. Each suite can be expanded to display the related products and a download button to for the entire suite. If you would prefer to download an individual product expand the suite and download that product.  
-    [![Interface-6](https://younise.github.io/assets/img/2015/03/Interface-6.jpg?resize=1021%2C468)](https://younise.github.io/assets/img/2015/03/Interface-6.jpg)
+    [![Interface-6](https://emadyounis.com/assets/img/2015/03/Interface-6.jpg?resize=1021%2C468)](https://emadyounis.com/assets/img/2015/03/Interface-6.jpg)
 6. The Software Manager – Download Service icon in the windows taskbar has several settings 
     - Show the download location
     - Set the download location
     - Enable debugging information
 
-[![interface-5](https://younise.github.io/assets/img/2015/03/interface-5.jpg?resize=655%2C137)](https://younise.github.io/assets/img/2015/03/interface-5.jpg)
+[![interface-5](https://emadyounis.com/assets/img/2015/03/interface-5.jpg?resize=655%2C137)](https://emadyounis.com/assets/img/2015/03/interface-5.jpg)
 
 <span style="text-decoration: underline;">**Summary**</span>
 

@@ -18,7 +18,7 @@ Home labs come with many benefits. From learning new technologies, studying for 
 - First is the up-front cost of purchasing the basic hardware, new or used. Depending on the your hardware requirements up-front costs can be high.
 - Second is the added cost of power. Hamsters don’t power your lab!
 
-![Home Lab-1](https://younise.github.io/assets/img/2015/03/Home-Lab-1.jpg?resize=242%2C193)
+![Home Lab-1](https://emadyounis.com/assets/img/2015/03/Home-Lab-1.jpg?resize=242%2C193)
 
 - Third is the added cost of cooling your lab, unless you want to boil yourself with all of that powered hardware running at capacity. This has many factors depending on location within your home or co-location. However, I break this out at its own point as I’ve experienced labs set up by people who didn’t know they needed to have a cooling element. Don’t be those people.
 - Fourth is software &amp; licensing costs.
@@ -28,14 +28,14 @@ After these costs factors above, over time you need to maintain your lab environ
 There are other costs associated with a home lab but you get the picture. Are there alternatives to learning without having a home lab? Of course there are and with these costs in mind I decided to write about some of the options you have for learning. Some of these options are free, while others are not.
 
 <span style="text-decoration: underline;">**Learning Styles**</span>  
-[![Home Lab-2](https://younise.github.io/assets/img/2015/03/Home-Lab-2.jpg?resize=244%2C214)](https://younise.github.io/assets/img/2015/03/Home-Lab-2.jpg)
+[![Home Lab-2](https://emadyounis.com/assets/img/2015/03/Home-Lab-2.jpg?resize=244%2C214)](https://emadyounis.com/assets/img/2015/03/Home-Lab-2.jpg)
 
 Everyone learns at their own pace and in their own unique way. There’s really no standard approach, it’s what works best for you. There are those who are visual, auditory, kinesthetic, or a combination of these learning types. Here is a breakdown of these learning types.
 
 - **Auditory Learners** – Learns best by listening and associates sounds. These can be lectures, podcasts, discussions, or presentations.
 - **Visual Learners** – Learns effectively by watching or writing. These can videos, diagrams, or reading.
 
-![Home Lab-3](https://younise.github.io/assets/img/2015/03/Home-Lab-3.jpg?resize=330%2C278)
+![Home Lab-3](https://emadyounis.com/assets/img/2015/03/Home-Lab-3.jpg?resize=330%2C278)
 
 - **Kinesthetic Learners** – Learns best hands-on. These can be labs, on the job scenarios, interactive demos, or simulator(s).
 
@@ -48,7 +48,7 @@ Once you have figured out what learning type works for you, next is to determine
 
 Here we go, this is what you have been waiting for.
 
-![Home Lab-4](https://younise.github.io/assets/img/2015/03/Home-Lab-4.jpg?resize=270%2C152)
+![Home Lab-4](https://emadyounis.com/assets/img/2015/03/Home-Lab-4.jpg?resize=270%2C152)
 
 **Online Hosted Labs** – In my opinion, hosted labs are a great quick way to getting started learning products(s). No setup required on your part which is a big plus. They are already too catered for a particular environment or product. Typically some sort of guide is associated with these labs. Using the guide throughout the lab helps understand the product(s) and how it works. With that said, always feel free to go exploring and to break things. These are both great ways to learn. One downside to hosted labs is that they are typically not updated quickly.
 
@@ -58,7 +58,7 @@ Here we go, this is what you have been waiting for.
 
 **Mentor(s)** – If you are aspiring for certain career goals or wanting to excel at various technologies, a mentor(s) is something to consider. Having someone in your corner to provide guidance as it relates to experience and knowledge. Mentors are also a good sounding board, allowing you to discuss and bounce ideas while learning. There are also benefits to being a mentor. Mentors are considered leaders, which helps affirm of your competence, and is a good way to give back to the community.
 
-**[![Home Lab-6](https://younise.github.io/assets/img/2015/03/Home-Lab-6.jpg?resize=226%2C70)](https://younise.github.io/assets/img/2015/03/Home-Lab-6.jpg)Social Media / Blogs** – There is no limitation on the number of resources available and those who produce it. Blogs are an excellent resource since they usually come from those working in the field and their experiences. RSS feeds are good way to keep up with your favorite blogger as well. When it comes to social media, tools like [Twitter](https://twitter.com/login) and [Google +](https://plus.google.com/) are a good place to start. Yes, I call them tools, especially if they are used correctly. Social media is a way to interact by asking and answering questions, but also a way to interact and get to know others. Keep in mind that anything you do or say is visible so be mindful and respectful of others.
+**[![Home Lab-6](https://emadyounis.com/assets/img/2015/03/Home-Lab-6.jpg?resize=226%2C70)](https://emadyounis.com/assets/img/2015/03/Home-Lab-6.jpg)Social Media / Blogs** – There is no limitation on the number of resources available and those who produce it. Blogs are an excellent resource since they usually come from those working in the field and their experiences. RSS feeds are good way to keep up with your favorite blogger as well. When it comes to social media, tools like [Twitter](https://twitter.com/login) and [Google +](https://plus.google.com/) are a good place to start. Yes, I call them tools, especially if they are used correctly. Social media is a way to interact by asking and answering questions, but also a way to interact and get to know others. Keep in mind that anything you do or say is visible so be mindful and respectful of others.
 
 **Vendor Sites** – Vendor sites usually have documentation, videos, and other materials for their products on their sites. This is a good way to research and learn about the company and products.
 
@@ -74,7 +74,7 @@ Here we go, this is what you have been waiting for.
 
 <span style="text-decoration: underline;">**Alternative Lab Examples** </span>
 
-[![Home Lab-5](https://younise.github.io/assets/img/2015/03/Home-Lab-5.jpg?resize=195%2C59)](https://younise.github.io/assets/img/2015/03/Home-Lab-5.jpg)
+[![Home Lab-5](https://emadyounis.com/assets/img/2015/03/Home-Lab-5.jpg?resize=195%2C59)](https://emadyounis.com/assets/img/2015/03/Home-Lab-5.jpg)
 
 A small summary of available free and paid for resources to use for your learning pleasure.
 

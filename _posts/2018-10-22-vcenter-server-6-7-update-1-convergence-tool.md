@@ -49,8 +49,8 @@ There are a few prerequisites and considerations before starting the convergence
 ##  Convergence Steps
 
 1. Backup all VCSAs and at least one PSC (multi-master) within your vSphere environment.
-2. Mount the VCSA 6.7 Update 1 ISO on a machine with routable network access to the VCSA and PSC. The VCSA ISO supports macOS, Linux, and Windows.![](https://younise.github.io/assets/img/2018/10/Converge-VCSA-ISO.png?resize=933%2C403)
-3. Expand the vcsa-converge-cli directory and go to templates. Open the converge directory and copy the converge.json file to your local machine.![](https://younise.github.io/assets/img/2018/10/Converge-VCSA-Directory.png?resize=908%2C616)
+2. Mount the VCSA 6.7 Update 1 ISO on a machine with routable network access to the VCSA and PSC. The VCSA ISO supports macOS, Linux, and Windows.![](https://emadyounis.com/assets/img/2018/10/Converge-VCSA-ISO.png?resize=933%2C403)
+3. Expand the vcsa-converge-cli directory and go to templates. Open the converge directory and copy the converge.json file to your local machine.![](https://emadyounis.com/assets/img/2018/10/Converge-VCSA-Directory.png?resize=908%2C616)
 4. Open the local copy of the coverge.json file with your favorite editor. Fill out the JSON template with the required information. There are two sections to pay close attention to. The first is the “ad\_domain\_info” section. If your PSC is a member of an active directory domain, this section needs filled out. Otherwise, this entire section is not needed. The second section is the “replication” section of the JSON template. If there is only a single PSC with no replication partners, then this section is not needed. Use the [vdcrepadmin command](https://kb.vmware.com/s/article/2127057) to check the replication agreements if you are unsure. **<span style="color: #ff0000;">Note:</span>** Use ./vcsa-util converge – –template–help for additional help filling out the converge JSON template.
     
     ```
@@ -105,11 +105,11 @@ There are a few prerequisites and considerations before starting the convergence
 5. After completing the converge JSON template, make sure you save it.
 6. Open a terminal window to the vcsa-util application path. Depending on the local operating system in use will determine the directory. In this example, I’m using macOS and using the vcsa-util under the mac directory.
 7. Run ./vcsa-util converge – –help to get a list of the supported parameters.  
-    ![](https://younise.github.io/assets/img/2018/10/Converge-VCSA-Util.png?resize=1280%2C323)
+    ![](https://emadyounis.com/assets/img/2018/10/Converge-VCSA-Util.png?resize=1280%2C323)
 8. To start the convergence process, use the correct parameters followed by the path of the converge JSON template you saved earlier. ```
     <pre class="wrap:true lang:default decode:true">./vcsa-util converge --no-ssl-certificate-verification --backup-taken --verbose /Users/eyounis/Documents/converge.json
     ```
-9. Once the convergence process begins, your VCSA will not be available until the process is complete.![](https://younise.github.io/assets/img/2018/10/Converge-Process-Started.png?resize=1234%2C618)
+9. Once the convergence process begins, your VCSA will not be available until the process is complete.![](https://emadyounis.com/assets/img/2018/10/Converge-Process-Started.png?resize=1234%2C618)
 10. After the convergence process has completed, verify the VCSA is now running with an embedded PSC. There are two ways to verify. The first is using the VMware Appliance Management on port 5480. Go to the Summary tab and verify the type is “vCenter Server with an embedded Platform Services Controller”. A second option is using the vSphere Client (HTML5). Look under the Administration menu for System Configuration and verify the type as above.
 11. If there are any products using the PSC for authentication they will need to be re-registered. Re-register them with the embedded VCSA deployment before decommissioning the external PSC. Also, do not decommission an external PSC until all VCSAs registered have gone through the convergence process.
 
@@ -169,7 +169,7 @@ There are a few prerequisites and considerations before starting the convergence
     <pre class="wrap:true lang:default decode:true ">./vcsa-util decommission --no-ssl-certificate-verification --verbose /Users/eyounis/Documents/decommission_psc.json
     ```
 7. The decommissioning process will begin removing the external PSC from the vSphere SSO domain. There are validations included to ensure there are no registered VCSAs to the external PSC being decommissioned. If any are found, the decommissioning process will fail.  
-    ![](https://younise.github.io/assets/img/2018/10/Decommision-Process.png?resize=1189%2C649)
+    ![](https://emadyounis.com/assets/img/2018/10/Decommision-Process.png?resize=1189%2C649)
 
 ## Summary
 

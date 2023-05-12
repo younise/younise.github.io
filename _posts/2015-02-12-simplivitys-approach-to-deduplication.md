@@ -23,7 +23,7 @@ There are two industry standards when it comes to duplication. The first type is
 
 With Inline new blocks are only created if the data does not exist. If the data is there, new meta data will reference the existing block. Few things to keep in mind with Inline are:
 
-![Inline](https://younise.github.io/assets/img/2015/02/Inline1.jpg?resize=976%2C162)
+![Inline](https://emadyounis.com/assets/img/2015/02/Inline1.jpg?resize=976%2C162)
 
 1. A hash calculation is created in memory and stored on a storage device as data is written. This calculation has the potential of slowing down the process as data is being validated and indexed (latency).
 2. Since blocks of data are created as needed, less storage is required.
@@ -32,7 +32,7 @@ With Inline new blocks are only created if the data does not exist. If the data 
 
 Post-Process removes duplicate data after it has been written to storage. There is a potential of having duplicate data until after the process validates. Few things to keep in mind with Post-Process are:
 
-![Post-Process](https://younise.github.io/assets/img/2015/02/Post-Process1.jpg?resize=993%2C146)
+![Post-Process](https://emadyounis.com/assets/img/2015/02/Post-Process1.jpg?resize=993%2C146)
 
 1. No hash calculation needed up front on storage device, allowing the initial write process to take less time (in theory).
 2. Requires more storage since all data is written up front.
@@ -45,7 +45,7 @@ During Virtualization Field Day 4 we got to see how Simplivity handles deduplica
 
 [SimpliVity](https://www.simplivity.com/) has a solution to solve the issues that plague using Inline and Post-Process deduplication. The secret sauce comes from using the virtual controller (brains) coupled with software and the OmniStack Accelerator card (muscle). By the way this is all done on their own proprietary operating system (SVT). Few things to keep in mind with SimpliVity:
 
-![Simplivity](https://younise.github.io/assets/img/2015/02/Simplivity1.jpg?resize=1021%2C233)
+![Simplivity](https://emadyounis.com/assets/img/2015/02/Simplivity1.jpg?resize=1021%2C233)
 
 1. Less IOPS going to hard drives (typical w/ Inline).
 2. Lower CPU &amp; memory utilization.

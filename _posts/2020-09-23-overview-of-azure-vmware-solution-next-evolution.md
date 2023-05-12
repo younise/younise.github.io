@@ -20,7 +20,7 @@ tags:
 
 <span data-preserver-spaces="true">The general availability (GA) for the next evolution of Azure VMware Solution (AVS) was announced <del>yesterday</del> during the [Microsoft Ignite 2020](https://news.microsoft.com/ignite-2020-book-of-news/#158-next-generation-azure-vmware-solution-now-generally-available) virtual conference. This is a joint partnership between Microsoft and VMware, where Azure VMware Solution is a Microsoft managed service built on Azure bare metal infrastructure and cloud verified by VMware. The initial launch of the Azure VMware Solution in May of 2019 was by CloudSimple; this latest release is built and architected by Microsoft, providing an integrated experience with Azure services. Azure VMware Solution is currently available in the following 10 regions: East US, North Central US, West US, UK South, Japan East, West Europe, North Europe, Canada Central, Australia East, and Southeast Asia. More regions will be available in the future; additional details can be found by searching the </span>[<span data-preserver-spaces="true">Microsoft Products available by region page</span>](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=azure-vmware&regions=all)<span data-preserver-spaces="true">. Customers running the CloudSimple Azure VMware Solution version also have a </span>[<span data-preserver-spaces="true">migration path to this latest release</span>](https://docs.microsoft.com/en-us/azure/azure-vmware/faq)<span data-preserver-spaces="true">, leveraging VMware HCX.</span>
 
-![](https://younise.github.io/assets/img/2020/09/Azure-VMware-Solution-Releases.jpg?resize=723%2C362)
+![](https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-Releases.jpg?resize=723%2C362)
 
 Azure VMware Solution is powered by VMware Cloud Foundation: vCenter Server, vSphere, vSAN, and NSX-T. Also included is VMware HCX, the Swiss army knife of workload mobility. Customers can securely extend their networks and migrate workloads from on-premises (vSphere 6.x -7.x) to AVS or between AVS private clouds in different regions using a combination of migration options. Microsoft will handle the billing, lifecycle operations (upgrades), and troubleshooting of the service, allowing customers to focus on their workloads.
 
@@ -43,11 +43,11 @@ Azure VMware Solution is powered by VMware Cloud Foundation: vCenter Server, vSp
 
 **\[Previous private cloud creation screen\]**
 
-![](https://younise.github.io/assets/img/2020/09/Create-Private-Cloud-Final-Image.jpg?resize=1718%2C1810)
+![](https://emadyounis.com/assets/img/2020/09/Create-Private-Cloud-Final-Image.jpg?resize=1718%2C1810)
 
 **\[Updated private cloud creation screen\]**
 
-## ![](https://younise.github.io/assets/img/2020/09/Updated-AVS-Deployment.jpg?resize=1840%2C1738)Private Cloud
+## ![](https://emadyounis.com/assets/img/2020/09/Updated-AVS-Deployment.jpg?resize=1840%2C1738)Private Cloud
 
 <span style="color: #000000;">\* ExpressRoute – Is a private and secure connection from a customer’s physical datacenter providing dedicated bandwidth into Microsoft Azure.  
   
@@ -62,25 +62,25 @@ A subscription can have 1-4 private clouds, each with a maximum of 4 clusters pe
 <span style="color: #000000;"><span style="color: #000000;">Note: if you don’t have an Azure ExpressRoute, you can use a site-to-site VPN to connect to Azure VMware Solution private cloud, but you will not be able to use HCX for workload migration as this is not supported.   
 </span></span>
 
-![](https://younise.github.io/assets/img/2020/09/AVS-Server.jpg?resize=703%2C560)
+![](https://emadyounis.com/assets/img/2020/09/AVS-Server.jpg?resize=703%2C560)
 
 ## Post Deployment
 
 When your private cloud is ready, you’ll be redirected to the overview page in the resource menu. This page is handy with valuable information; you can always come back here by searching your private cloud name or simply bookmarking. The first section we’ll want to select is identity. Here is where you’ll find your login information for NSX Manager and vCenter Server. Next is clustering, where you can edit (aka increase/decrease) the number of nodes in a private cloud, with 3 being the magic number of minimum nodes. Keep in mind increasing the number of nodes is tied to your allocation associated with the subscription used.
 
-![](https://younise.github.io/assets/img/2020/09/Azure-VMware-Solution-Identity-Final-Image.jpg?resize=966%2C555)
+![](https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-Identity-Final-Image.jpg?resize=966%2C555)
 
 The NSX T-1 router is where all workload network segments need to be created before VMs are deployed or being migrated to a new segment. These segments can be created in NSX manager or directly in the Azure Portal under segments, including the ability to create DHCP servers to handle DHCP requests and DHCP relay services to relay DHCP traffic to external DHCP servers. Additional workload networking options such as port mirroring and DNS are also available.
 
-![](https://younise.github.io/assets/img/2020/09/AVS-Workload-Networking-scaled.jpg?resize=2560%2C1385)
+![](https://emadyounis.com/assets/img/2020/09/AVS-Workload-Networking-scaled.jpg?resize=2560%2C1385)
 
 I’ve mentioned VMware HCX; the good news, it’s automatically deployed as part of the private cloud provisioning. The HCX Cloud manager is where you’ll get the necessary HCX Connector bits to deploy in your on-premises environment, which can be found under the connectivity section in the Azure portal of your private cloud. The HCX Cloud manager address is provided, and you will use cloudadmin@vsphere.local credentials to login and download the HCX connector bits. Licensing your HCX connector is also part of the self-service offering, allowing you to request up to 3 advanced licenses. Additionally, there is an option to upgrade your HCX advanced license to an HCX enterprise license by opening a support request with Microsoft. HCX enterprise will provide features like mobility groups, replication assisted vMotion, mobility optimized networking, and more. These features make use cases like datacenter extension and evacuation easier to any VMware powered cloud.
 
-![](https://younise.github.io/assets/img/2020/09/Azure-VMware-Solution-HCX-Final-Image.jpg?resize=747%2C411)
+![](https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-HCX-Final-Image.jpg?resize=747%2C411)
 
 Once the HCX connector is deployed and configured on-premises, customers can access and manage directly from the vSphere client, the dedicated HCX Client, or via automation using PowerCLI or REST APIs. A site pairing can then be established with on-premises environments and an Azure VMware Solution private cloud, followed by L2 connectivity for workloads that will retain their IP addresses. Let the migration planning begin!
 
-![](https://younise.github.io/assets/img/2020/09/Azure-VMware-Solution-vCenter-Final-Image.jpg?resize=1226%2C776)
+![](https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-vCenter-Final-Image.jpg?resize=1226%2C776)
 
 <span data-preserver-spaces="true">There are additional support and licensing benefits that come with Azure VMware Solution. </span>[<span data-preserver-spaces="true">Microsoft</span>](https://support.microsoft.com/en-us/help/4456242/end-of-support-for-sql-server-2008-and-sql-server-2008-r2)<span data-preserver-spaces="true"> is providing extended support for Windows Server 2008 and SQL SQL 2008 workloads when they are migrated to Azure, including the Azure VMware Solution. There is also the </span>[<span data-preserver-spaces="true">Azure Hybrid Benefit</span>](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/)<span data-preserver-spaces="true"> which is a licensing benefit allowing customers to use their on-premises Windows Server and SQL Server licenses on Azure.</span>
 

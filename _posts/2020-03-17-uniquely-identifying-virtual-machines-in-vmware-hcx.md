@@ -30,11 +30,11 @@ Another way to uniquely identify a VM within a vCenter Server is by using its in
 
 With HCX, VMs can easily migrate using various [migration types](http://emadyounis.com/learning-hybrid-cloud-extension-hcx-part-2-migration-types/) (Cold, vMotion, Bulk, RAV) between vCenter Servers, whether on-prem vSphere (5.0-7.0) or cloud (VMware Cloud on AWS, Azure VMware Solutions, etc.). In this example, I have a source on-prem vCenter Server using HCX to migrate VMs to the destination vCenter Server in VMware Cloud on AWS (VMC). Each VM name contains the migration type that will be used when its migrated to VMC with HCX. Before starting the migration, I grabbed the MoRef ID, InstanceUUID, and Tag for each VM as well as the source vCenter Server Name and its InstanceUUID.
 
-![](https://younise.github.io/assets/img/2020/03/Source.jpg?resize=1024%2C331)  
+![](https://emadyounis.com/assets/img/2020/03/Source.jpg?resize=1024%2C331)  
 After the migrations completed successfully to the destination vCenter Server, we can see only one difference. All the VMs received a new MoRef ID, which is as expected since its managed per vCenter Server independently. The VM instanceUUID did not change, and <span style="color: #000000;">will only change if a VM with the same UUID already exists </span>on the destination vCenter Server.
 
-![](https://younise.github.io/assets/img/2020/03/Destination.jpg?resize=1024%2C310)  
+![](https://emadyounis.com/assets/img/2020/03/Destination.jpg?resize=1024%2C310)  
 I was also able to pull the destination vCenter Server UUID, VM Name, and VM MoRef ID (HCX has this labeled as Id) using the Get-HCXVM cmdlet.
 
-![](https://younise.github.io/assets/img/2020/03/GET-HCXVM.jpg?resize=1024%2C412)  
+![](https://emadyounis.com/assets/img/2020/03/GET-HCXVM.jpg?resize=1024%2C412)  
 HCX removes barriers! These are two distinct vSphere Single Sign-On (SSO) domains between on-prem and VMC, by combining VM instanceUUID with the vCenter Server unique identifier, you can identify VMs across multiple vCenter Servers. Another way to uniquely identify VMs in your environment is the use of vSphere tags. HCX will retain VM tag and category information from the source to the destination vCenter Server, see examples above. Now you can migrate successfully using HCX while understanding the impact on your VMs IDs and solutions that rely on them.

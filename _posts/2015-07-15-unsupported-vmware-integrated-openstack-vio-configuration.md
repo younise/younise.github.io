@@ -17,35 +17,35 @@ tags:
     - vSphere
 ---
 
-![](https://younise.github.io/assets/img/2015/07/VIO-Unsupported-Config1.jpg?resize=264%2C300)
+![](https://emadyounis.com/assets/img/2015/07/VIO-Unsupported-Config1.jpg?resize=264%2C300)
 
 In a perfect datacenter environment, we would all have an additional area for Dev/Test. This is not always the case and we don’t always have the resources readily available to us. Most of us get creative using what old equipment we have. Some carve out a section in their infrastructure, while others leverage the cloud. Currently I’ve been using <span style="color: #0000ff;">**[Ravello](http://www.ravellosystems.com/)**</span> as my Dev/Test area of my lab for VIO. A VIO production-ready deployment requires a significant amount of resources. These same resources may not be instantly available in some environments. The current deployment architecture of VIO requires 15 VMs with a total of 56CPUs and 192GB RAM; details can be found **<span style="color: #0000ff;">[here](http://pubs.vmware.com/integrated-openstack-1/topic/com.vmware.ICbase/PDF/integrated-openstack-101-getting-started-guide.pdf)</span>**. This doesn’t take into account if you’re using NSX. However, there are a few ways you can be conservative with VIO resources. Let me state up front: the following setup is not supported by VMware for production.
 
-![](https://younise.github.io/assets/img/2015/07/CAUTION.jpeg?resize=264%2C191)
+![](https://emadyounis.com/assets/img/2015/07/CAUTION.jpeg?resize=264%2C191)
 
 <span style="text-decoration: underline;">**Changing VIO Configuration Settings**</span>
 
 Open the VIO management-server console or use SSH. In the example below I’ll be using SSH to make configuration changes.  
-[![](https://younise.github.io/assets/img/2015/07/VIO-MGMT.jpg?resize=1513%2C663)](https://younise.github.io/assets/img/2015/07/VIO-MGMT.jpg)
+[![](https://emadyounis.com/assets/img/2015/07/VIO-MGMT.jpg?resize=1513%2C663)](https://emadyounis.com/assets/img/2015/07/VIO-MGMT.jpg)
 
 Login using the viouser account.  
-[![](https://younise.github.io/assets/img/2015/07/VIO-User.jpg?resize=669%2C157)](https://younise.github.io/assets/img/2015/07/VIO-User.jpg)
+[![](https://emadyounis.com/assets/img/2015/07/VIO-User.jpg?resize=669%2C157)](https://emadyounis.com/assets/img/2015/07/VIO-User.jpg)
 
 The file that needs to be modified is **omjs.properties,** located in **/opt/vmware/vio/etc**.  
-[![](https://younise.github.io/assets/img/2015/07/omjs.properties-location.jpg?resize=826%2C179)](https://younise.github.io/assets/img/2015/07/omjs.properties-location.jpg)
+[![](https://emadyounis.com/assets/img/2015/07/omjs.properties-location.jpg?resize=826%2C179)](https://emadyounis.com/assets/img/2015/07/omjs.properties-location.jpg)
 
 <span style="color: #ff0000;">**Important:**</span> Create a backup of the **omjs.properties** file prior to making any changes.  
 **“cp omjs.properties bak-omjs.properties”**  
-[![](https://younise.github.io/assets/img/2015/07/Backup-of-OMJS-File.jpg?resize=672%2C423)](https://younise.github.io/assets/img/2015/07/Backup-of-OMJS-File.jpg)
+[![](https://emadyounis.com/assets/img/2015/07/Backup-of-OMJS-File.jpg?resize=672%2C423)](https://emadyounis.com/assets/img/2015/07/Backup-of-OMJS-File.jpg)
 
 Edit **omjs.properties,** in this example I’m using the VI editor.  
-[![](https://younise.github.io/assets/img/2015/07/VI-omjs.properties.jpg?resize=825%2C86)](https://younise.github.io/assets/img/2015/07/VI-omjs.properties.jpg)
+[![](https://emadyounis.com/assets/img/2015/07/VI-omjs.properties.jpg?resize=825%2C86)](https://emadyounis.com/assets/img/2015/07/VI-omjs.properties.jpg)
 
 Here is the initial **omjs.properties**.  
-[![](https://younise.github.io/assets/img/2015/07/OMJS-VI.jpg?resize=708%2C1024)](https://younise.github.io/assets/img/2015/07/OMJS-VI.jpg)
+[![](https://emadyounis.com/assets/img/2015/07/OMJS-VI.jpg?resize=708%2C1024)](https://emadyounis.com/assets/img/2015/07/OMJS-VI.jpg)
 
 The changes made were to the CPU, Memory, and vSphere settings section.  
-[![](https://younise.github.io/assets/img/2015/07/Changes-OMJS-File.jpg?resize=825%2C544)](https://younise.github.io/assets/img/2015/07/Changes-OMJS-File.jpg)  
+[![](https://emadyounis.com/assets/img/2015/07/Changes-OMJS-File.jpg?resize=825%2C544)](https://emadyounis.com/assets/img/2015/07/Changes-OMJS-File.jpg)  
 <span style="color: #ff0000;">**Note:**</span> When doing the math only the first 8 entries count for CPU and Memory. The **oms.vmsize.cpu.smoke** and **oms.vmsize.memory.smoke** are currently not used. They could be place holders for future use.
 
 Save the changes and restart the management-server.

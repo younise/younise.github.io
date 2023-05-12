@@ -53,7 +53,7 @@ While you may be thinking there are currently some limitations to HLM, remember 
 
 ## VMC Console
 
-1. Before HLM can be configured, there are a few prerequisites which need to be in place prior to attempting configuration. A VPN connection must be established between the VMC management gateway and the on-premises environment.[![](https://younise.github.io/assets/img/2017/10/VMC-VPN-Configuration-2.png?resize=1280%2C622)](https://younise.github.io/assets/img/2017/10/VMC-VPN-Configuration-2.png)
+1. Before HLM can be configured, there are a few prerequisites which need to be in place prior to attempting configuration. A VPN connection must be established between the VMC management gateway and the on-premises environment.[![](https://emadyounis.com/assets/img/2017/10/VMC-VPN-Configuration-2.png?resize=1280%2C622)](https://emadyounis.com/assets/img/2017/10/VMC-VPN-Configuration-2.png)
 
 2\. By default, the firewall in the VMC console is set to deny all. The assumption here is your on-premises vSphere environment already has the necessary firewall ports opened. Here are the required firewall ports for HLM to properly work:
 
@@ -61,7 +61,7 @@ While you may be thinking there are currently some limitations to HLM, remember 
 
 3\. Enter the on-premises DNS server(s) in the VMC management gateway to resolve the on-premises identity source and Platform Services Controller which will be used when configuring HLM.
 
-[![](https://younise.github.io/assets/img/2017/10/DNS.png?resize=1296%2C255)](https://younise.github.io/assets/img/2017/10/DNS.png)
+[![](https://emadyounis.com/assets/img/2017/10/DNS.png?resize=1296%2C255)](https://emadyounis.com/assets/img/2017/10/DNS.png)
 
 <span style="color: #ff0000;">**Note:**</span> make sure you can resolve the VMC vCenter Server in your on-premises environment.
 
@@ -69,30 +69,30 @@ While you may be thinking there are currently some limitations to HLM, remember 
 
 Now that all the prerequisites have been met, the actual HLM configuration consists of three steps.The HLM configuration takes place within the VMC vSphere Client (HTML5) which, by the way, is the only web client available. Login to the VMC vSphere Client using the <span style="color: #0000ff;">**cloudadmin@vmc.local**</span> credentials, which is the default equivalent to administrator@vsphere.local account in your on-premises vSphere environment.
 
-[![](https://younise.github.io/assets/img/2017/10/VMC-vSphere-Client-1.png?resize=1151%2C698)](https://younise.github.io/assets/img/2017/10/VMC-vSphere-Client-1.png)
+[![](https://emadyounis.com/assets/img/2017/10/VMC-vSphere-Client-1.png?resize=1151%2C698)](https://emadyounis.com/assets/img/2017/10/VMC-vSphere-Client-1.png)
 
 After logging in to the VMC vSphere Client, navigate to the ***“Menu”*** option at the top of the screen and select ***“Administration”***.
 
-[![](https://younise.github.io/assets/img/2017/10/Administration-Menu.png?resize=1152%2C720)](https://younise.github.io/assets/img/2017/10/Administration-Menu.png)
+[![](https://emadyounis.com/assets/img/2017/10/Administration-Menu.png?resize=1152%2C720)](https://emadyounis.com/assets/img/2017/10/Administration-Menu.png)
 
 From the right-hand Administration pane go to the ***“Hybrid Cloud”*** section and select ***“Linked Domains”***.
 
-[![](https://younise.github.io/assets/img/2017/10/HLM-Configuration.png?resize=1155%2C720)](https://younise.github.io/assets/img/2017/10/HLM-Configuration.png)
+[![](https://emadyounis.com/assets/img/2017/10/HLM-Configuration.png?resize=1155%2C720)](https://emadyounis.com/assets/img/2017/10/HLM-Configuration.png)
 
 ### **Step 1 – Add Identity Source**
 
 Click on step one ***“Add Identity Source”*** and fill out the necessary information about your on-premises identity source. In this example, Active Directory over LDAP is used.
 
-[![](https://younise.github.io/assets/img/2017/10/Add-Identity-Source-1.png?resize=1152%2C720)](https://younise.github.io/assets/img/2017/10/Add-Identity-Source-1.png)
+[![](https://emadyounis.com/assets/img/2017/10/Add-Identity-Source-1.png?resize=1152%2C720)](https://emadyounis.com/assets/img/2017/10/Add-Identity-Source-1.png)
 
 The Distinguished Name (DN) for both users and groups can be found in Active Directory by selecting the “Users” or “Groups” OU –&gt; right click and go to properties –&gt; select the “Attributes Editor tab” –&gt; find the distinguished name.  
 <span style="color: #ff0000;">**Note:**</span> make sure the correct format is used for the distinguished name for both users and groups.
 
-[![](https://younise.github.io/assets/img/2017/10/Distinguished-Name.png?resize=1158%2C720)](https://younise.github.io/assets/img/2017/10/Distinguished-Name.png)
+[![](https://emadyounis.com/assets/img/2017/10/Distinguished-Name.png?resize=1158%2C720)](https://emadyounis.com/assets/img/2017/10/Distinguished-Name.png)
 
 There is also the option to add multiple identity source servers for redundancy if you choose. Only one server is required during configuration, but a secondary identity source server can be added after HLM has been configured. To view what Identity sources have been added or to add an additional identity server go to the ***Administration*** menu –&gt; select the ***Configuration*** option –&gt; go to the ***Identity Source*** tab. Options are also available to edit and remove and existing identity source as well.
 
-[![](https://younise.github.io/assets/img/2017/10/Add-Identity.png?resize=1296%2C522)](https://younise.github.io/assets/img/2017/10/Add-Identity.png)
+[![](https://emadyounis.com/assets/img/2017/10/Add-Identity.png?resize=1296%2C522)](https://emadyounis.com/assets/img/2017/10/Add-Identity.png)
 
 After the identity source has been added successfully a green check will appear on the completed step, allowing you to proceed to step 2.
 
@@ -100,44 +100,44 @@ After the identity source has been added successfully a green check will appear 
 
 Now that an identity source has been added, the next step is adding the group that will have permission to manage the cloud SDDC. This group can be an existing one or a newly created group of members that are separate from your on-premises vSphere administrators group.
 
-[![](https://younise.github.io/assets/img/2017/10/Identity-Final.png?resize=1151%2C720)](https://younise.github.io/assets/img/2017/10/Identity-Final.png)
+[![](https://emadyounis.com/assets/img/2017/10/Identity-Final.png?resize=1151%2C720)](https://emadyounis.com/assets/img/2017/10/Identity-Final.png)
 
 Select the newly added identity source (previous step) from the dropdown menu.
 
-[![](https://younise.github.io/assets/img/2017/10/Cloud-Admin.png?resize=1151%2C682)](https://younise.github.io/assets/img/2017/10/Cloud-Admin.png)
+[![](https://emadyounis.com/assets/img/2017/10/Cloud-Admin.png?resize=1151%2C682)](https://emadyounis.com/assets/img/2017/10/Cloud-Admin.png)
 
 Type or search for the cloud administrators group. Members of this group will be able to login the VMC vSphere Client using their on-premises active directory accounts and manage both environments in a single view. Multiple groups can be added by repeating this process.
 
-[![](https://younise.github.io/assets/img/2017/10/Cloud-Admin-2.png?resize=1151%2C682)](https://younise.github.io/assets/img/2017/10/Cloud-Admin-2.png)
+[![](https://emadyounis.com/assets/img/2017/10/Cloud-Admin-2.png?resize=1151%2C682)](https://emadyounis.com/assets/img/2017/10/Cloud-Admin-2.png)
 
 The Cloud Administrator’s group has been successfully added and one more step to go!
 
-[![](https://younise.github.io/assets/img/2017/10/Cloud-Admin-3.png?resize=1152%2C720)](https://younise.github.io/assets/img/2017/10/Cloud-Admin-3.png)
+[![](https://emadyounis.com/assets/img/2017/10/Cloud-Admin-3.png?resize=1152%2C720)](https://emadyounis.com/assets/img/2017/10/Cloud-Admin-3.png)
 
 ### **Step 3 – Link to On-Prem Domain**
 
 The third and final step is adding information from your on-premises vSphere SSO domain (embedded deployment).
 
-[![](https://younise.github.io/assets/img/2017/10/SSO-1.png?resize=1152%2C720)](https://younise.github.io/assets/img/2017/10/SSO-1.png)  
+[![](https://emadyounis.com/assets/img/2017/10/SSO-1.png?resize=1152%2C720)](https://emadyounis.com/assets/img/2017/10/SSO-1.png)  
 Enter the necessary information which includes PSC FQDN, SSO Domain Name, SSO User, and Password. The HTTPS port is filled in by default using 443.
 
 <span style="color: #ff0000;">**Note:**</span> If you deployed your on-premises VCSA using FQDN or IP Address which is registered with its lookup service, use the same information when filling out this wizard for the VMC PSC name.
 
-[![](https://younise.github.io/assets/img/2017/10/SSO-2.png?resize=1151%2C720)](https://younise.github.io/assets/img/2017/10/SSO-2.png)
+[![](https://emadyounis.com/assets/img/2017/10/SSO-2.png?resize=1151%2C720)](https://emadyounis.com/assets/img/2017/10/SSO-2.png)
 
 Once the on-premises and VMC SSO domains establish a trust, HLM is now configured and you will need to login with your on-premises credentials. Once you click OK, you will automatically be logged out of the VMC vSphere Client.
 
-[![](https://younise.github.io/assets/img/2017/10/SSO-3.png?resize=1153%2C720)](https://younise.github.io/assets/img/2017/10/SSO-3.png)
+[![](https://emadyounis.com/assets/img/2017/10/SSO-3.png?resize=1153%2C720)](https://emadyounis.com/assets/img/2017/10/SSO-3.png)
 
 There is a user account and a couple of solution users accounts created by default on the on-premises vCenter Server when HLM is configured. These accounts today can only be viewed in the flash version of the vSphere Web Client and they should not be manipulated in any way as they will affect the communication between your on-premises vCenter Server and your VMC vCenter Server.
 
 **synceservice** – Local User for HybridVC Service
 
-[![](https://younise.github.io/assets/img/2017/10/SyncServ.png?resize=962%2C248)](https://younise.github.io/assets/img/2017/10/SyncServ.png)
+[![](https://emadyounis.com/assets/img/2017/10/SyncServ.png?resize=962%2C248)](https://emadyounis.com/assets/img/2017/10/SyncServ.png)
 
 **hvc &amp; vsphere-webclient** – these solution users match the same accounts in VMC. In the screens below the top screenshot shows the VMC vSphere Client and the bottom screen shows the on-premises vSphere Web Client.
 
-[![](https://younise.github.io/assets/img/2017/10/user-accounts.png?resize=872%2C790)](https://younise.github.io/assets/img/2017/10/user-accounts.png)
+[![](https://emadyounis.com/assets/img/2017/10/user-accounts.png?resize=872%2C790)](https://emadyounis.com/assets/img/2017/10/user-accounts.png)
 
 ## HLM Management
 
@@ -145,15 +145,15 @@ Once HLM is configured log back in the VMC vSphere Client using your on-premises
 
 <span style="color: #ff0000;">**Note:**</span> User Principal Name should be used UserName@Domain.com
 
-[![](https://younise.github.io/assets/img/2017/10/HLM-1.png?resize=1154%2C701)](https://younise.github.io/assets/img/2017/10/HLM-1.png)
+[![](https://emadyounis.com/assets/img/2017/10/HLM-1.png?resize=1154%2C701)](https://emadyounis.com/assets/img/2017/10/HLM-1.png)
 
 After logging in with your on-premises account your greeted with screen showing vSphere domains have been linked. Also on this screen is the option to also unlink at any time.
 
-[![](https://younise.github.io/assets/img/2017/10/HLM-2.png?resize=1151%2C497)](https://younise.github.io/assets/img/2017/10/HLM-2.png)
+[![](https://emadyounis.com/assets/img/2017/10/HLM-2.png?resize=1151%2C497)](https://emadyounis.com/assets/img/2017/10/HLM-2.png)
 
 From the hosts and clusters view you can see and manage both your vSphere on-premises and cloud SDDC environments in a single view while retaining separate permissions.
 
-[![](https://younise.github.io/assets/img/2017/10/HLM-3.png?resize=1152%2C720)](https://younise.github.io/assets/img/2017/10/HLM-3.png)
+[![](https://emadyounis.com/assets/img/2017/10/HLM-3.png?resize=1152%2C720)](https://emadyounis.com/assets/img/2017/10/HLM-3.png)
 
 Once all the initial network and firewall requirements have been met, HLM is really only three easy steps. Today HLM can only be established by logging in the VMC vCenter Server with your on-premises credentials, but as I mentioned earlier VMC is a managed service and new functionality will be added at a rapid pace. We can now move workloads via cold migration between our on-premises and cloud SDDC by simply right clicking on a single VM or multiple and selecting migrate. The same wizard that you use today on-premises is present which is another benefit of VMC on AWS. Now your current on-premises vSphere skills translate to the cloud and you can just focus on the important piece – workload management – while VMware takes care of the rest.
 

@@ -15,7 +15,7 @@ tags:
     - vSphere
 ---
 
-![VIO-1](https://younise.github.io/assets/img/2015/05/VIO-1.jpeg?resize=300%2C76)Your boss has requested that you look at OpenStack and what it would take to install it into your environment. One of the requirements is to leverage your current VMware infrastructure. Of course your plate is already full, and now you need to learn a new platform. Here are a few things that should ease your mind when considering OpenStack. First, OpenStack is a framework that can use your current hardware and software infrastructure. Second, OpenStack services allow integration at the software layer with vendors like VMware. Finally, OpenStack uses drivers to translate requests to calls on the software infrastructure. Why is this important? Let’s take a look at VMware Integrated OpenStack (VIO) to answer these questions.
+![VIO-1](https://emadyounis.com/assets/img/2015/05/VIO-1.jpeg?resize=300%2C76)Your boss has requested that you look at OpenStack and what it would take to install it into your environment. One of the requirements is to leverage your current VMware infrastructure. Of course your plate is already full, and now you need to learn a new platform. Here are a few things that should ease your mind when considering OpenStack. First, OpenStack is a framework that can use your current hardware and software infrastructure. Second, OpenStack services allow integration at the software layer with vendors like VMware. Finally, OpenStack uses drivers to translate requests to calls on the software infrastructure. Why is this important? Let’s take a look at VMware Integrated OpenStack (VIO) to answer these questions.
 
 <span style="text-decoration: underline;">**VMware Integrated OpenStack (VIO)**</span>
 
@@ -28,7 +28,7 @@ At this point you probably have some questions similar to the following:
 
 First lets focus on VMware Integrated OpenStack (VIO) and what it is. Simply put VIO allows the use of OpenStack framework on your current VMware vSphere infrastructure. OpenStack services have VMware specific drivers and plugins built to translate requests to calls.
 
-![VIO OpenStack Services](https://younise.github.io/assets/img/2015/05/VIO-OpenStack-Services.jpg?resize=644%2C387)
+![VIO OpenStack Services](https://emadyounis.com/assets/img/2015/05/VIO-OpenStack-Services.jpg?resize=644%2C387)
 
 Deploying VIO consists of a virtual appliance (vApp) to your vCenter. The vApp deploys two VMs: management-server (OMS) and openstack-template. The management VM deploys, configures, and manages VIO. The OpenStack template VM has the base images for the VIO VMs. A plugin is available in vCenter that will allow the deployment of a highly available OpenStack production environment. This environment will consist of 15 VMs:
 

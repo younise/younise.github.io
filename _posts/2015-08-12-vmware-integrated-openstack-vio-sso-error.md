@@ -17,9 +17,9 @@ tags:
     - vSphere
 ---
 
-![](https://younise.github.io/assets/img/2015/08/SSO-with-VIO-Graphic.png?resize=309%2C217)Like other VMware products, VIO leverages Single Sign On (SSO). Luckily, the SSO configuration with VIO is fairly simple. When used with vSphere 5.5 it requires IP or FQDN of your vSphere SSO along with port 7444. With vSphere 6.0 you don’t have to use a port, it’s that easy. I ran into this error while installing VIO. Here is the process I went through.
+![](https://emadyounis.com/assets/img/2015/08/SSO-with-VIO-Graphic.png?resize=309%2C217)Like other VMware products, VIO leverages Single Sign On (SSO). Luckily, the SSO configuration with VIO is fairly simple. When used with vSphere 5.5 it requires IP or FQDN of your vSphere SSO along with port 7444. With vSphere 6.0 you don’t have to use a port, it’s that easy. I ran into this error while installing VIO. Here is the process I went through.
 
-[![](https://younise.github.io/assets/img/2015/07/VIO-SSO-Error.jpg?resize=322%2C140)](https://younise.github.io/assets/img/2015/07/VIO-SSO-Error.jpg)
+[![](https://emadyounis.com/assets/img/2015/07/VIO-SSO-Error.jpg?resize=322%2C140)](https://emadyounis.com/assets/img/2015/07/VIO-SSO-Error.jpg)
 
 <span style="text-decoration: underline;">**Troubleshooting**</span>
 
@@ -40,14 +40,14 @@ After going through these troubleshooting steps and not finding anything, I deci
     <span style="color: #ff0000;">**Note:**</span> The Manage Object Browser (MOB), provides visibility to both ESXi and vCenter’s object runtime information via web browser.
 3. Accept the untrusted cert, if not using self signed cert.
 4. If prompted to login, use the administrator account same as the vSphere web client, for example administrator@vsphere.local.  
-    [![](https://younise.github.io/assets/img/2015/08/Mob-Login-VIO.jpg?resize=363%2C287)](https://younise.github.io/assets/img/2015/08/Mob-Login-VIO.jpg)
+    [![](https://emadyounis.com/assets/img/2015/08/Mob-Login-VIO.jpg?resize=363%2C287)](https://emadyounis.com/assets/img/2015/08/Mob-Login-VIO.jpg)
 5. Under the methods section click on Unregister Extension. A pop-up window will open for Unregister Extension.  
-    [![](https://younise.github.io/assets/img/2015/08/VIO-Unrgister-Extenion.jpg?resize=1264%2C584)](https://younise.github.io/assets/img/2015/08/VIO-Unrgister-Extenion.jpg)
+    [![](https://emadyounis.com/assets/img/2015/08/VIO-Unrgister-Extenion.jpg?resize=1264%2C584)](https://emadyounis.com/assets/img/2015/08/VIO-Unrgister-Extenion.jpg)
 6. Under the properties section expand out the values by clicking on more.  
     **Before Expanding**  
-    [![](https://younise.github.io/assets/img/2015/08/VIO-Properties-More.jpg?resize=1264%2C276)](https://younise.github.io/assets/img/2015/08/VIO-Properties-More.jpg)  
+    [![](https://emadyounis.com/assets/img/2015/08/VIO-Properties-More.jpg?resize=1264%2C276)](https://emadyounis.com/assets/img/2015/08/VIO-Properties-More.jpg)  
     **After Expanding**  
-    [![](https://younise.github.io/assets/img/2015/08/VIO-Properties-More-Expanded.jpg?resize=1241%2C558)](https://younise.github.io/assets/img/2015/08/VIO-Properties-More-Expanded.jpg)
+    [![](https://emadyounis.com/assets/img/2015/08/VIO-Properties-More-Expanded.jpg?resize=1241%2C558)](https://emadyounis.com/assets/img/2015/08/VIO-Properties-More-Expanded.jpg)
 7. Unregister OpenStack extensions which include the following:  
     **com.vmware.openstack.vcext.instance-#**  
     **org.openstack.compute**  
@@ -55,9 +55,9 @@ After going through these troubleshooting steps and not finding anything, I deci
     **org.os.vmw.plugin**  
     <span style="color: #ff0000;">**Note:**</span> There could be several **vcext.instances** depending on how many times you tried to install VIO without removing the plugin.  
     **Before Unregister Extension**  
-    [![](https://younise.github.io/assets/img/2015/08/VIO-Unregister-Extension.jpg?resize=818%2C303)](https://younise.github.io/assets/img/2015/08/VIO-Unregister-Extension.jpg)  
+    [![](https://emadyounis.com/assets/img/2015/08/VIO-Unregister-Extension.jpg?resize=818%2C303)](https://emadyounis.com/assets/img/2015/08/VIO-Unregister-Extension.jpg)  
     **After Unregister Extension**  
-    [![](https://younise.github.io/assets/img/2015/08/After-VIO-Unrgister-Extension.jpg?resize=796%2C340)](https://younise.github.io/assets/img/2015/08/After-VIO-Unrgister-Extension.jpg)
+    [![](https://emadyounis.com/assets/img/2015/08/After-VIO-Unrgister-Extension.jpg?resize=796%2C340)](https://emadyounis.com/assets/img/2015/08/After-VIO-Unrgister-Extension.jpg)
 8. Once the extension is removed, refresh the MOB and the extension is removed. Rinse and repeat until all the OpenStack extensions have been removed from the MOB.
 9. Logout and back in the vSphere web client and the VIO plugin should no longer be available.
 

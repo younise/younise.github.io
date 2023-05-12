@@ -19,7 +19,7 @@ With the release of [vSphere 6.7](http://emadyounis.com/vcenter/vcenter-server-6
 
 To simplify the distributed model, VMware introduced the Platform Services Controller (PSC). The role of the PSC is to manage authentication, licensing, tags &amp; categories, global permissions, and custom roles. It is also the certificate authority for the vSphere SSO domain. The PSC is a vCenter Server service which manages the components mentioned above. While the PSC is an improvement over the original SSO introduced in 5.1 and 5.5 it also added complexity. So began another debate of external versus embedded deployments. The reality comes down to enhanced linked mode. At the time (6.0 – 6.5 U1) only external deployments supported enhanced linked mode and external as a standalone. Now (6.5 U2 – 6.7) supports enhanced linked mode for embedded deployments. Now we are back to a more simplified deployment model and questions about how to transition.
 
-![](https://younise.github.io/assets/img/2018/05/vCenter-Server-Deployment-Evolution.png?resize=1240%2C539)  
+![](https://emadyounis.com/assets/img/2018/05/vCenter-Server-Deployment-Evolution.png?resize=1240%2C539)  
 Figure above represents the evolution of vCenter Server deployments. VMware has recognized the complexities involved in vCenter Server deployments and is putting efforts into getting back to a simpler deployment model allowing administrators can focus more on day-2 operations.
 
 ## PSC Basics
@@ -35,15 +35,15 @@ It’s also important to understand the relationship between PSC and vCenter Ser
 
 One of the vSphere [maximums](https://configmax.vmware.com/home) you don’t see is one for sites. A site is nothing more than a logic boundary and a way to group PSCs. You can have as many sites as you want as long as it does not exceed the number of supported PSCs in a vSphere SSO domain. Starting with vSphere 6.7 sites are not required for new deployments. During upgrades and migrations, sites will remain. Adding a new PSC to an upgraded or migrated environment will prompt for site information. External deployments can repoint vCenter Servers to any PSC in a vSphere SSO domain. Also now in vSphere 6.7 across different vSphere SSO domains. Currently, embedded deployments cannot repoint across different vSphere SSO domains. Sites are one less boundary to worry about going forward. The recommendation is to keep the default for new deployments from the GUI or CLI.
 
-![vCenter Server embedded linked mode deployment](https://younise.github.io/assets/img/2018/05/Embedded-SSO.png?resize=1756%2C435)  
+![vCenter Server embedded linked mode deployment](https://emadyounis.com/assets/img/2018/05/Embedded-SSO.png?resize=1756%2C435)  
 **Example 1**: vSphere 6.7 embedded deployment with enhanced linked mode in a vSphere SSO domain. The PSC is running as a vCenter Server service in this example and everything within the vSphere SSO domain is considered a single default site.
 
-![vCenter Server external linked mode deployment](https://younise.github.io/assets/img/2018/05/External-SSO.png?resize=1452%2C764)  
+![vCenter Server external linked mode deployment](https://emadyounis.com/assets/img/2018/05/External-SSO.png?resize=1452%2C764)  
 **Example 2:** vSphere 6.7 external deployment with enhanced linked mode in a vSphere SSO domain. Everything within the vSphere SSO domain is considered a single default site.
 
 The key thing to remember is the PSC is multi-master. Meaning there is no difference between the first one or the last one in the vSphere SSO domain. The PSCs replicate to each other every 30 seconds; this means if a PSC is unavailable the same data is available on its replication partners. To mitigate data loss, create a replication agreement between the bookends. This is referring to the first and last PSC in a vSphere SSO domain, creating a ring. The ring is creating a second data path in case you lose a data path. I’ve have seen several blog posts refer to the creating the ring as a requirement which is not true. The ring is a recommendation but not a requirement. Outside of the ring, creating more PSC replication agreements can cause unnecessary overhead. Keep it simple!
 
-![](https://younise.github.io/assets/img/2018/05/Ring.png?resize=1447%2C895)
+![](https://emadyounis.com/assets/img/2018/05/Ring.png?resize=1447%2C895)
 
 **Example 3:** An additional replication agreement created using vdcrepadmin from the last PSC to the first PSC (bookends) in the vSphere SSO domain, providing a secondary data path.
 
