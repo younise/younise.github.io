@@ -3,6 +3,7 @@ id: 2564
 title: 'Overview of Azure VMware Solution Next Evolution'
 date: '2020-09-23T11:20:22-07:00'
 last_modified_at: '2021-03-18T12:00:00'
+pin: true
 author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=2564'
