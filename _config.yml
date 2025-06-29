@@ -51,13 +51,6 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/eyounis/
 
-# Disable the license block at the bottom of posts
-copyright:
-  license:
-    name: ""
-    link: ""
-    template: ""
-
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
