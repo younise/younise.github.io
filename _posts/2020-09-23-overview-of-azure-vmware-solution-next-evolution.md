@@ -2,6 +2,7 @@
 id: 2564
 title: 'Overview of Azure VMware Solution Next Evolution'
 date: '2020-09-23T11:20:22-07:00'
+last_modified_at: '2021-03-18T12:00:00'
 author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=2564'
@@ -16,14 +17,14 @@ tags:
     - 'VMware Cloud'
 ---
 
-<span style="color: #ff0000;">Updated 3/18/21 to include changes to the service</span>
-
 <span data-preserver-spaces="true">The general availability (GA) for the next evolution of Azure VMware Solution (AVS) was announced <del>yesterday</del> during the [Microsoft Ignite 2020](https://news.microsoft.com/ignite-2020-book-of-news/#158-next-generation-azure-vmware-solution-now-generally-available) virtual conference. This is a joint partnership between Microsoft and VMware, where Azure VMware Solution is a Microsoft managed service built on Azure bare metal infrastructure and cloud verified by VMware. The initial launch of the Azure VMware Solution in May of 2019 was by CloudSimple; this latest release is built and architected by Microsoft, providing an integrated experience with Azure services. Azure VMware Solution is currently available in the following 10 regions: East US, North Central US, West US, UK South, Japan East, West Europe, North Europe, Canada Central, Australia East, and Southeast Asia. More regions will be available in the future; additional details can be found by searching the </span>[<span data-preserver-spaces="true">Microsoft Products available by region page</span>](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=azure-vmware&regions=all)<span data-preserver-spaces="true">. Customers running the CloudSimple Azure VMware Solution version also have a </span>[<span data-preserver-spaces="true">migration path to this latest release</span>](https://docs.microsoft.com/en-us/azure/azure-vmware/faq)<span data-preserver-spaces="true">, leveraging VMware HCX.</span>
 
 ![](https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-Releases.jpg?resize=723%2C362)
 
 Azure VMware Solution is powered by VMware Cloud Foundation: vCenter Server, vSphere, vSAN, and NSX-T. Also included is VMware HCX, the Swiss army knife of workload mobility. Customers can securely extend their networks and migrate workloads from on-premises (vSphere 6.x -7.x) to AVS or between AVS private clouds in different regions using a combination of migration options. Microsoft will handle the billing, lifecycle operations (upgrades), and troubleshooting of the service, allowing customers to focus on their workloads.
 
+> Note: Updated 3/18/21 to include changes to the service.
+{: .prompt-info }
 ## Getting Started
 
 <span data-preserver-spaces="true">There are a few things you need to have in place before you can deploy an Azure VMware Solution private cloud. First, an </span>[<span data-preserver-spaces="true">Azure account</span>](https://azure.microsoft.com/en-us/free/)<span data-preserver-spaces="true">, which you can get for FREE. Next, your account must be associated with a </span>[<span data-preserver-spaces="true">subscription</span>](https://docs.microsoft.com/en-us/azure/azure-vmware/enable-azure-vmware-solution#eligibility-criteria)<span data-preserver-spaces="true"> that is either part of a Microsoft enterprise agreement or a Cloud Solution Provider (CSP). Finally, is requesting host quota for your subscription. Once quota is applied to a subscription, search for “Azure VMware Solution” in the Azure portal’s search box. Alright, you don’t need to type out the entire thing; it will appear within the first couple of characters in VMware. An option to deploy your first private cloud in your subscription will be displayed on the next screen. As part of the private cloud creation, there is some basic information needed:</span>
@@ -39,7 +40,9 @@ Azure VMware Solution is powered by VMware Cloud Foundation: vCenter Server, vSp
 - **<span data-preserver-spaces="true">Address Block </span>**– <span data-preserver-spaces="true">CIDR block used when deploying management components, requires a /22</span>
 - **<span data-preserver-spaces="true">Virtual Network </span>**<span data-preserver-spaces="true">– A representation of cloud networking and provides abstraction and logical isolation. An Azure environment can contain multiple VNets.</span>
 
-<span style="color: #000000;">Note:<span style="color: #000000;"> Providing vCenter Server and NSX-T credentials during a private cloud deployment is no longer required, they are now auto generated. If they need to be rotated you will currently need to open a support request.</span></span>
+
+{: .prompt-info }
+> Note: Providing vCenter Server and NSX-T credentials during a private cloud deployment is no longer required, they are now auto generated. If they need to be rotated you will currently need to open a support request.
 
 **\[Previous private cloud creation screen\]**
 
@@ -49,18 +52,18 @@ Azure VMware Solution is powered by VMware Cloud Foundation: vCenter Server, vSp
 
 ## ![](https://emadyounis.com/assets/img/2020/09/Updated-AVS-Deployment.jpg?resize=1840%2C1738)Private Cloud
 
-<span style="color: #000000;">\* ExpressRoute – Is a private and secure connection from a customer’s physical datacenter providing dedicated bandwidth into Microsoft Azure.  
-  
-\* Global Reach – Connects ExpressRoute bi-directionally from a customer’s environment to Azure VMware Solution.</span>
+- **<span data-preserver-spaces="true">ExpressRoute </span>**<span data-preserver-spaces="true">– Is a private and secure connection from a customer’s physical datacenter providing dedicated bandwidth into Microsoft Azure. </span>
 
+- **<span data-preserver-spaces="true">Global Reach </span>**<span data-preserver-spaces="true">– Connects ExpressRoute bi-directionally from a customer’s environment to Azure VMware Solution. </span>
+  
 A subscription can have 1-4 private clouds, each with a maximum of 4 clusters per cloud. An initial private cloud deployment starts with a 3-node minimum with the opportunity to add additional nodes during or scale-up later to a maximum of 16 nodes per cluster in the Azure portal. The hardware specification dropdown lists AVS36 as the current selectable node type. Below is a visual representation of the hardware specs for the AVS36, but it does not represent the actual server 🙂 An Azure Virtual Network (VNet) can be created during the initial private cloud deployment or afterward. If an existing VNet exists, it can also be used. A VNet is created to support an ExpressRoute from Azure VMware Solution to connect to other Azure services and allow connectivity back to an on-premises environment via Azure Global Reach. Once ready, click review and create. After you verify everything entered is correct, click the magical create button and wait for roughly 2+hrs for the process to complete. The process is mostly self-service from the Azure portal allowing you to get from zero to a private cloud which includes:
 
 - <span data-preserver-spaces="true">Provisioning of hardware and backbone networking</span>
 - <span data-preserver-spaces="true">Installation and configuration of ESXi, vCenter Server, vSAN, NSX-T, and HCX</span>
 - <span data-preserver-spaces="true">Creation of initial cluster including vSAN datastore encryption</span>
 
-<span style="color: #000000;"><span style="color: #000000;">Note: if you don’t have an Azure ExpressRoute, you can use a site-to-site VPN to connect to Azure VMware Solution private cloud, but you will not be able to use HCX for workload migration as this is not supported.   
-</span></span>
+{: .prompt-info }
+>Note: if you don’t have an Azure ExpressRoute, you can use a site-to-site VPN to connect to Azure VMware Solution private cloud, but you will not be able to use HCX for workload migration as this is not supported.   
 
 ![](https://emadyounis.com/assets/img/2020/09/AVS-Server.jpg?resize=703%2C560)
 
