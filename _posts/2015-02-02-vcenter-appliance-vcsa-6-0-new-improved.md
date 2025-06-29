@@ -2,7 +2,7 @@
 id: 279
 title: 'vCenter Appliance (vCSA) 6.0 &#8211; New &#038; Improved'
 date: '2015-02-02T15:14:31-08:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=279'
 permalink: /vcenter-appliance-vcsa-6-0-new-improved/

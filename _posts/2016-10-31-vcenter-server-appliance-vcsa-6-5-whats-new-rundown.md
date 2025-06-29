@@ -2,7 +2,7 @@
 id: 829
 title: 'vCenter Server Appliance (VCSA) 6.5 What&#8217;s New Rundown'
 date: '2016-10-31T07:05:53-07:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=829'
 permalink: /vcenter-server-appliance-vcsa-6-5-whats-new-rundown/

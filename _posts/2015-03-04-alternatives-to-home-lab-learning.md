@@ -2,7 +2,7 @@
 id: 414
 title: 'Alternatives to Home Lab Learning'
 date: '2015-03-04T09:30:16-08:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=414'
 permalink: /alternatives-to-home-lab-learning/

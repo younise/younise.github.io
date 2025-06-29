@@ -2,7 +2,7 @@
 id: 603
 title: 'VMware Integrated OpenStack (VIO) SSO Error'
 date: '2015-08-12T08:56:50-07:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=603'
 permalink: /vmware-integrated-openstack-vio-sso-error/

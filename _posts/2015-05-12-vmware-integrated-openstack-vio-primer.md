@@ -2,7 +2,7 @@
 id: 503
 title: 'VMware Integrated OpenStack (VIO) Primer'
 date: '2015-05-12T10:10:28-07:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=503'
 permalink: /vmware-integrated-openstack-vio-primer/

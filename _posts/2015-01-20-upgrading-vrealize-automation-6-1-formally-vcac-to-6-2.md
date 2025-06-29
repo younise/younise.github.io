@@ -2,7 +2,7 @@
 id: 301
 title: 'Upgrading vRealize Automation 6.1 (formally vCAC) to 6.2'
 date: '2015-01-20T10:03:12-08:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=301'
 permalink: /upgrading-vrealize-automation-6-1-formally-vcac-to-6-2/

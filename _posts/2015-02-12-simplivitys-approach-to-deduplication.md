@@ -2,7 +2,7 @@
 id: 305
 title: 'SimpliVity&#8217;s Approach to Deduplication'
 date: '2015-02-12T10:03:56-08:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=305'
 permalink: /simplivitys-approach-to-deduplication/

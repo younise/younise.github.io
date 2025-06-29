@@ -2,7 +2,7 @@
 id: 253
 title: 'Windows Repository for Offline Appliance Updates'
 date: '2015-01-12T11:05:24-08:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=253'
 permalink: /windows-repository-for-appliance-updates/

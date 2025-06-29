@@ -2,7 +2,7 @@
 id: 482
 title: 'VM Time Travel with Tintri&#8217;s SyncVM'
 date: '2015-04-21T09:05:25-07:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=482'
 permalink: /vm-time-travel-with-tintris-syncvm/

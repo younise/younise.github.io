@@ -2,7 +2,7 @@
 id: 787
 title: 'New Fling: vSphere HTML5 Web Client'
 date: '2016-03-28T10:41:02-07:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=787'
 permalink: /new-fling-vsphere-html5-web-client/

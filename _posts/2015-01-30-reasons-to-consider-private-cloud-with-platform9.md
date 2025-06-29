@@ -2,7 +2,7 @@
 id: 336
 title: 'Reasons to Consider Private Cloud with Platform9'
 date: '2015-01-30T11:30:21-08:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=336'
 permalink: /reasons-to-consider-private-cloud-with-platform9/

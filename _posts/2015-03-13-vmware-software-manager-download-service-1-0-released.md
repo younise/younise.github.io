@@ -2,7 +2,7 @@
 id: 426
 title: 'VMware Software Manager &#8211; Download Service 1.0 Released'
 date: '2015-03-13T11:49:12-07:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=426'
 permalink: /vmware-software-manager-download-service-1-0-released/

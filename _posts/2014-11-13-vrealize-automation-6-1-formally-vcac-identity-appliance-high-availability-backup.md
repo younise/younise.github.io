@@ -2,7 +2,7 @@
 id: 167
 title: 'vRealize Automation 6.1 (formally vCAC) &#8211; Identity Appliance High Availability &#038; Backup'
 date: '2014-11-13T10:15:00-08:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=167'
 permalink: /vrealize-automation-6-1-formally-vcac-identity-appliance-high-availability-backup/

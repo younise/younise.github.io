@@ -2,7 +2,7 @@
 id: 366
 title: 'vCenter Appliance (VCSA) 6.0 Scripted Install'
 date: '2015-03-24T15:10:36-07:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=366'
 permalink: /vcenter-appliance-vcsa-6-0-scripted-install/

@@ -2,7 +2,7 @@
 id: 384
 title: 'Opvizor Health Analyzer Reporting Overview'
 date: '2015-02-19T12:38:28-08:00'
-author: ''eyounis''
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=384'
 permalink: /opvizor-health-analyzer-reporting-overview/
