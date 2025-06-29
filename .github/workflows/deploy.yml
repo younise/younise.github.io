@@ -1,6 +1,4 @@
-# .github/workflows/jekyll.yml
-
-name: Deploy Jekyll site to Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -21,28 +19,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-
+        uses: actions/checkout@v4
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: false   # we'll install manually
-
+          bundler-cache: false
       - name: Install Bundler
         run: gem install bundler
-
       - name: Bundle install
         run: bundle install --jobs 4 --retry 3
-
-      - name: Build site with Jekyll
+      - name: Build
         run: bundle exec jekyll build --destination ./_site
         env:
           JEKYLL_ENV: production
-
-      - name: Upload Pages artifact
+      - name: Upload
         uses: actions/upload-pages-artifact@v3
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
