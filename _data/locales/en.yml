@@ -29,12 +29,12 @@ panel:
   trending_tags: Trending Tags
   toc: Contents
 
-#copyright:
+copyright:
   # Shown at the bottom of the post
   license:
     template: ""
-    name: CC BY 4.0
-    link: https://creativecommons.org/licenses/by/4.0/
+    name: ""
+    link: ""
 
   # Displayed in the footer
   #brief: Some rights reserved.
