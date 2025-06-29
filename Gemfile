@@ -11,7 +11,8 @@ gem "webrick", "~> 1.7"
 
 # Jekyll remote theme plugin
 group :jekyll_plugins do
-  gem "jekyll-remote-theme"
+  gem "github-pages"
+  gem "jekyll-theme-chirpy"
 end
 
 # Testing
