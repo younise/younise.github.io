@@ -2,7 +2,7 @@
 id: 182
 title: 'vRealize Automation 6.1 (formally vCAC) – vRA Appliance Deployment &#038; Configuration'
 date: '2014-11-20T17:43:28-08:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=182'
 permalink: /vrealize-automation-6-1-formally-vcac-vra-appliance-deployment-configuration/

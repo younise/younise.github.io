@@ -2,7 +2,7 @@
 id: 226
 title: 'vRealize Automation 6.1 (formally vCAC) – Scripted IaaS Database'
 date: '2014-12-12T11:00:59-08:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=226'
 permalink: /vrealize-automation-6-1-formally-vcac-scripted-iaas-database/

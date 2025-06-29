@@ -2,7 +2,7 @@
 id: 509
 title: 'Ravello Lab Setup for VMware Integrated OpenStack (VIO) Part 1'
 date: '2015-06-18T07:00:59-07:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=509'
 permalink: /ravello-lab-setup-for-vmware-integrated-openstack-vio-part-1/

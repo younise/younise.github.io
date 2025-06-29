@@ -2,7 +2,7 @@
 id: 848
 title: 'vCenter Server Appliance (VCSA) 6.5 Installer Improvements'
 date: '2016-11-15T06:57:47-08:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=848'
 permalink: /vcenter-server-appliance-vcsa-6-5-installer-improvements/

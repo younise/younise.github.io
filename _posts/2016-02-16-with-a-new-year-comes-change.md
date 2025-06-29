@@ -2,7 +2,7 @@
 id: 781
 title: 'With a New Year Comes Change'
 date: '2016-02-16T06:50:05-08:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=781'
 permalink: /with-a-new-year-comes-change/

@@ -2,7 +2,7 @@
 id: 1050
 title: 'Stretched Clusters for VMware Cloud on AWS &#8211; Overview'
 date: '2018-05-14T12:30:39-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1050'
 permalink: /stretched-clusters-overview/

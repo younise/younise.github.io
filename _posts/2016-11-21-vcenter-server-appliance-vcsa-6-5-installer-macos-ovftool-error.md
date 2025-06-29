@@ -2,7 +2,7 @@
 id: 872
 title: 'vCenter Server Appliance (VCSA) 6.5 Installer macOS Ovftool Error'
 date: '2016-11-21T12:42:43-08:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=872'
 permalink: /vcenter-server-appliance-vcsa-6-5-installer-macos-ovftool-error/

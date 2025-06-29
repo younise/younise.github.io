@@ -2,7 +2,7 @@
 id: 2520
 title: 'Introduction to Google Cloud VMware Engine'
 date: '2020-07-06T11:22:26-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=2520'
 permalink: /introduction-to-google-cloud-vmware-engine/

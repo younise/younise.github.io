@@ -2,7 +2,7 @@
 id: 1153
 title: 'vCenter Server 6.7 Update 1 Convergence Tool'
 date: '2018-10-22T07:29:58-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1153'
 permalink: /vcenter-server-6-7-update-1-convergence-tool/

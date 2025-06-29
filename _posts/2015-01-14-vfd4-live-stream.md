@@ -2,7 +2,7 @@
 id: 304
 title: '#VFD4 Live Stream'
 date: '2015-01-14T09:36:29-08:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=304'
 permalink: /vfd4-live-stream/

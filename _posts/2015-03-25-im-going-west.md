@@ -2,7 +2,7 @@
 id: 462
 title: 'I&#8217;m Going West'
 date: '2015-03-25T14:14:47-07:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=462'
 permalink: /im-going-west/

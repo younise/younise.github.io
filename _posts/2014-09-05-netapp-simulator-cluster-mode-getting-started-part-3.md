@@ -2,7 +2,7 @@
 id: 81
 title: 'NetApp Simulator Cluster Mode Getting Started Part 3'
 date: '2014-09-05T12:00:38-07:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=81'
 permalink: /netapp-simulator-cluster-mode-getting-started-part-3/

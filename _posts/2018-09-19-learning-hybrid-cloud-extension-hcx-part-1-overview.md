@@ -2,7 +2,7 @@
 id: 1101
 title: 'Learning Hybrid Cloud Extension (HCX) Part 1: Overview'
 date: '2018-09-19T15:02:04-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1101'
 permalink: /learning-hybrid-cloud-extension-hcx-part-1-overview/

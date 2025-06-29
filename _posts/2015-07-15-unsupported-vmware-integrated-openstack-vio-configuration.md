@@ -2,7 +2,7 @@
 id: 547
 title: 'Unsupported VMware Integrated OpenStack (VIO) Configuration'
 date: '2015-07-15T09:00:54-07:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=547'
 permalink: /unsupported-vmware-integrated-openstack-vio-configuration/

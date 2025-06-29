@@ -2,7 +2,7 @@
 id: 2396
 title: 'The Next Chapter'
 date: '2019-12-18T10:43:05-08:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=2396'
 permalink: /the-next-chapter/

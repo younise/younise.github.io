@@ -2,7 +2,7 @@
 id: 1021
 title: 'vCenter Server 6.7 What&#8217;s New Rundown'
 date: '2018-04-17T05:02:47-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1021'
 permalink: /vcenter-server-6-7-whats-new-rundown/

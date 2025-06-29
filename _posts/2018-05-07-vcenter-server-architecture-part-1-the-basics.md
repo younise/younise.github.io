@@ -2,7 +2,7 @@
 id: 1042
 title: 'vCenter Server Architecture Part 1 &#8211; The Basics'
 date: '2018-05-07T14:07:18-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1042'
 permalink: /vcenter-server-architecture-part-1-the-basics/

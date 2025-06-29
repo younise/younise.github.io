@@ -2,7 +2,7 @@
 id: 1135
 title: 'What&#8217;s New in vCenter Server 6.7 Update 1'
 date: '2018-10-16T13:18:55-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1135'
 permalink: /whats-new-in-vcenter-server-6-7-update-1/

@@ -2,7 +2,7 @@
 id: 883
 title: 'Printing #migrate2vcsa Stickers and Apparel'
 date: '2017-01-05T09:54:36-08:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=883'
 permalink: /printing-migrate2vcsa-stickers-and-apparel/

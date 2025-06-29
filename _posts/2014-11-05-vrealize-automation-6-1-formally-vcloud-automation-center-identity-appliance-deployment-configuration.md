@@ -2,7 +2,7 @@
 id: 122
 title: 'vRealize Automation 6.1 (formally vCloud Automation Center) &#8211; Identity Appliance &#8211; Deployment / Configuration'
 date: '2014-11-05T11:16:48-08:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=122'
 permalink: /vrealize-automation-6-1-formally-vcloud-automation-center-identity-appliance-deployment-configuration/

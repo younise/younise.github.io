@@ -2,7 +2,7 @@
 id: 695
 title: 'Deploying vCenter Server Appliance (VCSA) 6.0 U1 on Ravello'
 date: '2015-12-07T07:00:01-08:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=695'
 permalink: /deploying-vcenter-server-appliance-vcsa-6-0-u1-on-ravello/

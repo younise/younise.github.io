@@ -2,7 +2,7 @@
 id: 976
 title: 'Configuring Hybrid Linked Mode (HLM) for VMware Cloud on AWS'
 date: '2017-10-26T06:30:45-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=976'
 permalink: /configuring-hybrid-linked-mode-hlm-for-vmware-cloud-on-aws/

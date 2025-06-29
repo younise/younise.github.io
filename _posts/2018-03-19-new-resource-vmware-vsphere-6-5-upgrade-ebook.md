@@ -2,7 +2,7 @@
 id: 1013
 title: 'New Resource &#8211; The VMware vSphere 6.5 Upgrade eBook'
 date: '2018-03-19T11:16:36-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1013'
 permalink: /new-resource-vmware-vsphere-6-5-upgrade-ebook/

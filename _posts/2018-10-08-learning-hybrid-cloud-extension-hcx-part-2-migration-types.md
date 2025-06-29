@@ -2,7 +2,7 @@
 id: 1119
 title: 'Learning Hybrid Cloud Extension (HCX) Part 2: Migration Types'
 date: '2018-10-08T12:50:03-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1119'
 permalink: /learning-hybrid-cloud-extension-hcx-part-2-migration-types/

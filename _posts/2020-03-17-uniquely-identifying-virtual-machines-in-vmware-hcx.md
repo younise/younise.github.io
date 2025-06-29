@@ -2,7 +2,7 @@
 id: 2457
 title: 'Uniquely Identifying Virtual Machines In VMware HCX'
 date: '2020-03-17T08:12:40-07:00'
-author: 'Emad Younis'
+author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=2457'
 permalink: /uniquely-identifying-virtual-machines-in-vmware-hcx/

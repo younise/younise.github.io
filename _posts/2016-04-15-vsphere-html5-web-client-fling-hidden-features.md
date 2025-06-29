@@ -2,7 +2,7 @@
 id: 814
 title: 'vSphere HTML5 Web Client Fling Hidden Features'
 date: '2016-04-15T15:53:12-07:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=814'
 permalink: /vsphere-html5-web-client-fling-hidden-features/

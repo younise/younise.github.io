@@ -2,7 +2,7 @@
 id: 244
 title: 'And Then There Were Twelve: VFD4 Delegates Announced'
 date: '2014-12-17T10:40:36-08:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=244'
 permalink: /and-then-there-were-twelve-vfd4-delegates-announced/

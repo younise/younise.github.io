@@ -2,7 +2,7 @@
 id: 472
 title: 'VMware VCP6-DCV Beta Availability'
 date: '2015-04-01T09:09:56-07:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=472'
 permalink: /vmware-vcp6-dcv-beta-availability/

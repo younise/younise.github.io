@@ -2,7 +2,7 @@
 id: 639
 title: 'vCenter Server Appliance (VCSA) 6.0 Update 1 Rundown'
 date: '2015-09-14T08:57:33-07:00'
-author: 'Emad Younis'
+author: ''eyounis''
 layout: post
 guid: 'http://emadyounis.com/?p=639'
 permalink: /vcenter-server-appliance-vcsa-6-0-update-1-rundown/

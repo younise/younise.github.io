@@ -1,5 +1,5 @@
 ##Template › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#setting-author-url
--------------------------------------
+#-------------------------------------
 # {author_id}:
 #   name: {full name}
 #   twitter: {twitter_of_author}
@@ -7,16 +7,6 @@
 # -------------------------------------
 
 eyounis:
-  name: Emad Younis
+  name: 'eyounis'
   twitter: emad_younis
   url: https://github.com/younise/
-
-# cotes:
-#   name: Cotes Chung
-#   twitter: cotes2020
-#   url: https://github.com/cotes2020/
-
-# sille_bille:
-#   name: Dinesh Prasanth Moluguwan Krishnamoorthy
-#   twitter: dinesh_MKD
-#   url: https://github.com/SilleBille/
