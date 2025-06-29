@@ -1,5 +1,3 @@
-# .github/workflows/jekyll.yml
-
 name: Deploy Jekyll site to Pages
 
 on:
@@ -20,32 +18,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1. Pull down your code
       - name: Checkout
         uses: actions/checkout@v3
 
-      # 2. Prepare Ruby (3.2) but skip the auto bundle install
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: false
+          bundler-cache: false   # disable auto-install
 
-      # 3. Install Bundler CLI
       - name: Install Bundler
         run: gem install bundler
 
-      # 4. Install every gem in your Gemfile (including your theme)
       - name: Bundle install
         run: bundle install --jobs 4 --retry 3
 
-      # 5. Build the site into ./_site
       - name: Build site with Jekyll
         run: bundle exec jekyll build --destination ./_site
         env:
           JEKYLL_ENV: production
 
-      # 6. Upload that directory for the deploy step
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
 
@@ -56,7 +48,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      # 7. Deploy what we just built to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
