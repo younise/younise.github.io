@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 # Core Jekyll and theme
-gem "jekyll", "~> 4.2"
+gem "jekyll", "~> 3.9"
 gem "jekyll-theme-chirpy", "~> 7.3"
 
 # Required for Ruby ≥3.0 on GitHub Actions
