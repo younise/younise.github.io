@@ -1,0 +1,65 @@
+---
+layout: page
+title: Contact
+---
+
+{% comment %}
+  Contact layout for the Contact tab
+  - Inherits the theme's page layout to keep title rendering and spacing
+  - Renders contact methods defined in `_data/contact.yml`
+  - Uses site config for usernames where applicable
+{% endcomment %}
+
+{% assign contacts = site.data.contact | default: site.data.contacts %}
+
+<article class="px-1">
+  {% if page.layout == 'contact' or page.collection == 'tabs' %}
+    {% assign heading = page.title | default: 'Contact' %}
+    <h1 class="dynamic-title">{{ heading }}</h1>
+  {% endif %}
+
+  <div class="content">
+    {% if page.intro %}
+      <p>{{ page.intro }}</p>
+    {% endif %}
+
+    <ul class="list-unstyled d-flex flex-wrap align-items-center gap-3">
+      {% for item in contacts %}
+        {% assign type = item.type | downcase %}
+
+        {% assign url = nil %}
+        {% if item.url %}
+          {% assign url = item.url %}
+        {% elsif type == 'github' and site.github.username %}
+          {% assign url = 'https://github.com/' | append: site.github.username %}
+        {% elsif type == 'twitter' and site.twitter.username %}
+          {% assign url = 'https://twitter.com/' | append: site.twitter.username %}
+        {% elsif type == 'linkedin' and site.linkedin.username %}
+          {% assign url = 'https://www.linkedin.com/in/' | append: site.linkedin.username %}
+        {% elsif type == 'email' and site.social.email %}
+          {% assign url = 'mailto:' | append: site.social.email %}
+        {% elsif type == 'rss' %}
+          {% assign url = '/feed.xml' | relative_url %}
+        {% endif %}
+
+        {% assign icon = item.icon | default: 'fas fa-link' %}
+        {% assign label = item.label | default: item.type | default: 'link' %}
+
+        {% if url %}
+        <li>
+          <a class="btn btn-outline-primary btn-sm" href="{{ url }}"
+             title="{{ label }}"
+             {% unless item.noblank %}target="_blank" rel="noopener noreferrer"{% endunless %}>
+            <i class="{{ icon }} me-1"></i>
+            <span class="align-middle">{{ label | capitalize }}</span>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    {% if page.note %}
+      <p class="text-muted mt-3">{{ page.note }}</p>
+    {% endif %}
+  </div>
+</article>

@@ -1,40 +1,49 @@
-{% comment %}
-  Get the last 5 posts from lastmod list.
-{% endcomment %}
+<!-- Smart Recently Updated: 4 posts total, prioritizing posts with last_modified_at -->
 
-{% assign MAX_SIZE = 5 %}
+{% assign MAX_SIZE = 4 %}
 
-{% assign all_list = "" | split: "" %}
+<!-- Get posts that have explicit last_modified_at in front matter (truly updated posts) -->
+{% assign updated_posts = site.posts | where_exp: "post", "post.last_modified_at" | sort: "last_modified_at" | reverse %}
 
-{% for post in site.posts %}
-  {% if post.last_modified_at %}
-    {% capture elem %}
-      {{- post.last_modified_at | date: "%Y%m%d%H%M%S" -}}::{{- forloop.index0 -}}
-    {% endcapture %}
-    {% assign all_list = all_list | push: elem %}
-  {% endif %}
+<!-- Get all posts sorted by publication date (most recent first) -->
+{% assign recent_posts = site.posts | sort: "date" | reverse %}
+
+<!-- Create final list, starting with updated posts -->
+{% assign final_posts = '' | split: '' %}
+{% assign used_urls = '' | split: '' %}
+
+<!-- Add updated posts first (up to MAX_SIZE) -->
+{% for post in updated_posts limit: MAX_SIZE %}
+  {% assign final_posts = final_posts | push: post %}
+  {% assign used_urls = used_urls | push: post.url %}
 {% endfor %}
 
-{% assign all_list = all_list | sort | reverse %}
+<!-- Fill remaining slots with recent posts by publication date -->
+{% assign remaining_slots = MAX_SIZE | minus: final_posts.size %}
+{% if remaining_slots > 0 %}
+  {% for post in recent_posts %}
+    {% unless used_urls contains post.url %}
+      {% assign final_posts = final_posts | push: post %}
+      {% assign used_urls = used_urls | push: post.url %}
+      {% assign remaining_slots = remaining_slots | minus: 1 %}
+      {% if remaining_slots <= 0 %}
+        {% break %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
 
-{% assign update_list = "" | split: "" %}
-
-{% for entry in all_list limit:MAX_SIZE %}
-  {% assign update_list = update_list | push: entry %}
-{% endfor %}
-
-{% if update_list.size > 0 %}
-
-  <div id="access-lastmod" class="post">
-    <div class="panel-heading">{{- site.data.locales[site.lang].panel.lastmod -}}</div>
-    <ul class="post-content pl-0 pb-1 ml-1 mt-2">
-      {% for item in update_list %}
-        {% assign index = item | split: "::" | last | plus: 0 %}
-        {% assign post = site.posts[index] %}
+{% if final_posts.size > 0 %}
+  <section id="access-lastmod">
+    <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.lastmod -}}</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      {% for post in final_posts %}
         {% assign url = post.url | relative_url %}
-      <li><a href="{{ url }}">{{ post.title }}</a></li>
+        <li class="text-truncate lh-lg">
+          <a href="{{ url }}">{{ post.title }}</a>
+        </li>
       {% endfor %}
     </ul>
-  </div> <!-- #access-lastmod -->
-
+  </section>
+  <!-- #access-lastmod -->
 {% endif %}

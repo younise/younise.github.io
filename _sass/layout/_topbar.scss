@@ -1,0 +1,156 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+@use '../abstracts/breakpoints' as bp;
+@use '../abstracts/placeholders';
+
+#topbar-wrapper {
+  height: v.$topbar-height;
+  background-color: var(--topbar-bg);
+
+  @include bp.lt(bp.get(lg)) {
+    @include mx.slide(top 0.2s ease);
+
+    left: 0;
+  }
+}
+
+#topbar {
+  @extend %btn-color;
+
+  #breadcrumb {
+    font-size: 1rem;
+    color: var(--text-muted-color);
+    padding-left: 0.5rem;
+
+    a {
+      color: var(--sidebar-muted-color);
+      text-decoration: none;
+      
+      &:hover {
+        color: var(--sidebar-active-color);
+        @extend %link-hover;
+      }
+    }
+
+    span {
+      &:not(:last-child) {
+        &::after {
+          content: '›';
+          padding: 0 0.3rem;
+        }
+      }
+    }
+
+    @include bp.lt(bp.get(lg)) {
+      display: block;
+      font-size: 0.9rem;
+      max-width: 70%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      
+      i.fas.fa-home {
+        font-size: 1rem;
+        color: var(--sidebar-muted-color);
+        
+        &:hover {
+          color: var(--sidebar-active-color);
+        }
+      }
+    }
+
+    @include bp.between(bp.get(lg), calc(#{bp.get(xl)} - 1px)) {
+      width: 65%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: keep-all;
+      white-space: nowrap;
+    }
+  }
+
+  @include bp.lte(bp.get(md)) {
+    @include mx.max-w-100;
+  }
+
+  @include bp.lt(bp.get(lg)) {
+    max-width: 100%;
+  }
+}
+
+#topbar-title {
+  display: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: var(--topbar-text-color);
+  text-align: center;
+  width: 70%;
+  word-break: keep-all;
+
+  @include bp.lt(bp.get(lg)) {
+    display: block;
+  }
+
+  @include bp.lg {
+    text-align: left;
+  }
+}
+
+#sidebar-trigger,
+#search-trigger {
+  display: none;
+
+  @include bp.lt(bp.get(lg)) {
+    display: block;
+    color: var(--sidebar-muted-color) !important;
+    
+    &:hover {
+      color: var(--sidebar-active-color) !important;
+    }
+  }
+}
+
+#mode-toggle {
+  display: block;
+  color: var(--sidebar-muted-color) !important;
+  
+  &:hover {
+    color: var(--sidebar-active-color) !important;
+  }
+  
+  @include bp.lt(bp.get(lg)) {
+    display: block;
+  }
+}
+
+// Make all topbar buttons consistent with sidebar colors on mobile/tablet
+@include bp.lt(bp.get(lg)) {
+  #topbar {
+    .btn {
+      color: var(--sidebar-muted-color) !important;
+      
+      &:hover {
+        color: var(--sidebar-active-color) !important;
+      }
+    }
+    
+    #sidebar-trigger,
+    #search-trigger {
+      color: var(--sidebar-muted-color) !important;
+      
+      &:hover {
+        color: var(--sidebar-active-color) !important;
+      }
+    }
+  }
+
+  // Ultra-specific rule to hide breadcrumb on post pages - MAXIMUM SPECIFICITY
+  body.post #topbar #breadcrumb {
+    display: none !important;
+  }
+}
+
+// Global backup rule for post page breadcrumb hiding
+body.post #topbar #breadcrumb {
+  display: none !important;
+}

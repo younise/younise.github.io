@@ -1,0 +1,20 @@
+current directory: /Users/emad/github repo emadyounis.com/younise.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/emad/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/emad/github repo emadyounis.com/younise.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20251011-62625-8cblzc sitelibdir\=./.gem.20251011-62625-8cblzc clean
+
+current directory: /Users/emad/github repo emadyounis.com/younise.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20251011-62625-8cblzc sitelibdir\=./.gem.20251011-62625-8cblzc
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/emad/github repo emadyounis.com/younise.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20251011-62625-8cblzc sitelibdir\=./.gem.20251011-62625-8cblzc install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20251011-62625-8cblzc
+
+current directory: /Users/emad/github repo emadyounis.com/younise.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20251011-62625-8cblzc sitelibdir\=./.gem.20251011-62625-8cblzc clean

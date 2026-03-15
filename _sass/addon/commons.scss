@@ -190,14 +190,10 @@ footer {
   background-color: var(--main-bg);
 
   div.d-flex {
-    height: $footer-height;
-    line-height: 1.2rem;
-    padding-bottom: 1rem;
+  /* Removed fixed height & extra bottom padding to allow natural content-driven sizing */
+  line-height: 1.2rem;
     border-top: 1px solid var(--main-border-color);
-
-    > div {
-      width: 350px;
-    }
+  /* Removed rigid child width to improve responsiveness */
   }
 
   a {
@@ -213,9 +209,33 @@ footer {
     }
   }
 
-  .footer-right {
-    text-align: right;
+  /* Force left alignment for all footer paragraphs (overrides earlier center alignment rules) */
+  .footer-left p,
+  .footer-right p {
+    text-align: left;
   }
+
+  /* Constrain inner footer width to align with main content */
+  .footer-shell {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $main-content-max-width;
+    /* Match main content horizontal gutters directly */
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (min-width: 576px) { /* sm */
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    @media (min-width: 992px) { /* lg */
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .footer-flex { width: 100%; }
 }
 
 /* fontawesome icons */
@@ -1409,9 +1429,37 @@ $sidebar-display: 'sidebar-display';
     width: 100%;
   }
 
-  #breadcrumb,
   #search-wrapper {
     display: none;
+  }
+
+  #breadcrumb {
+    display: block !important;
+    font-size: 0.9rem;
+    max-width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 0.5rem;
+    color: var(--text-muted-color);
+    
+    a {
+      color: var(--sidebar-muted-color);
+      text-decoration: none;
+      
+      &:hover {
+        color: var(--sidebar-active-color);
+      }
+    }
+    
+    i.fas.fa-home {
+      font-size: 1rem;
+      color: var(--sidebar-muted-color);
+      
+      &:hover {
+        color: var(--sidebar-active-color);
+      }
+    }
   }
 
   #topbar-wrapper {
@@ -1560,11 +1608,20 @@ $sidebar-display: 'sidebar-display';
   }
 
   #breadcrumb {
-    width: 65%;
+    width: 50%;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: keep-all;
     white-space: nowrap;
+    
+    i.fas.fa-home {
+      font-size: 1rem;
+      color: var(--sidebar-muted-color);
+      
+      &:hover {
+        color: var(--sidebar-active-color);
+      }
+    }
   }
 }
 
@@ -1640,7 +1697,7 @@ $sidebar-display: 'sidebar-display';
 
   #search-wrapper {
     margin-right: calc(
-      #{$main-content-max-width} * 0.25 - #{$search-max-width}
+      #{$main-content-max-width} * 0.25 - #{$search-max-width} - 0.75rem
     );
   }
 

@@ -398,6 +398,61 @@ h1 + .post-meta {
   }
 }
 
+/* Full-width layout optimizations */
+.post {
+  max-width: none;
+  
+  .post-content {
+    max-width: 100ch; /* Slightly wider reading width for better use of space */
+    
+    @media (max-width: 768px) {
+      max-width: none;
+    }
+  }
+}
+
+/* Ensure images and tables can use full width when needed */
+.post-content {
+  img.full-width,
+  table.full-width,
+  .table-wrapper.full-width {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Compact right panel for wider content layout */
+#panel-wrapper.col-xl-1 {
+  font-size: 0.85rem;
+  padding-left: 0.5rem;
+  
+  h2.panel-heading {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .access {
+    .update-list,
+    .trending-tags {
+      li {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+  
+  /* TOC styling for compact panel */
+  #toc-wrapper {
+    font-size: 0.8rem;
+    
+    .toc-link {
+      padding: 0.25rem 0;
+      line-height: 1.3;
+    }
+  }
+}
+
 /* Hide SideBar and TOC */
 @media all and (max-width: 849px) {
   .post-navigation {

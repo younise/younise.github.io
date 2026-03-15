@@ -1,0 +1,68 @@
+/* Table of Contents panel styles */
+.toc-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+
+  .panel-heading {
+    color: var(--heading-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .panel-body {
+    .section-nav {
+      padding-left: 0;
+      list-style: none;
+      margin: 0;
+      
+      .toc-entry {
+        margin-bottom: 0.75rem;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        .toc-section-link {
+          color: var(--text-color);
+          text-decoration: none;
+          transition: color 0.2s ease;
+          display: block;
+          font-size: 0.95rem;
+          font-weight: 500;
+          padding: 0.35rem 0;
+          margin-bottom: 0.25rem;
+          
+          &:hover {
+            color: var(--link-color);
+          }
+        }
+
+        .subsection-nav {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          padding-left: 1.5rem;
+          
+          .toc-subsection {
+            margin: 0;
+            padding: 0.4rem 0;
+            
+            a {
+              color: var(--text-muted-color);
+              text-decoration: none;
+              transition: color 0.2s ease;
+              font-size: 0.85rem;
+              display: block;
+              
+              &:hover {
+                color: var(--link-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

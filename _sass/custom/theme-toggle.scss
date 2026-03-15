@@ -1,0 +1,31 @@
+#mode-toggle {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: inherit;
+    background: transparent !important;
+  }
+
+  i.fas::before {
+    content: "\f186"; /* moon icon */
+  }
+
+  html[data-mode="dark"] & {
+    i.fas::before {
+      content: "\f185"; /* sun icon */
+      color: #FF8C00; /* Orange color */
+    }
+  }
+
+  html:not([data-mode="dark"]) & {
+    i.fas::before {
+      content: "\f186"; /* moon icon */
+      color: #4169E1; /* Blue color */
+    }
+  }
+}

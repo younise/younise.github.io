@@ -1,0 +1,43 @@
+@use '../abstracts/breakpoints' as bp;
+
+// Topbar button colors for mobile/tablet consistency with sidebar
+@include bp.lt(bp.get(lg)) {
+  #sidebar-trigger,
+  #search-trigger {
+    color: var(--sidebar-muted-color) !important;
+    
+    &:hover {
+      color: var(--sidebar-active-color) !important;
+    }
+  }
+  
+  #topbar .btn {
+    color: var(--sidebar-muted-color) !important;
+    
+    &:hover {
+      color: var(--sidebar-active-color) !important;
+    }
+  }
+}
+
+// Home icon consistency across all views
+.topbar-home-icon {
+  color: var(--sidebar-muted-color) !important;
+}
+
+.topbar-home-link {
+  color: var(--sidebar-muted-color) !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    color: var(--sidebar-active-color) !important;
+  }
+}
+
+.topbar-home-mobile {
+  color: var(--sidebar-muted-color) !important;
+  
+  &:hover {
+    color: var(--sidebar-active-color) !important;
+  }
+}

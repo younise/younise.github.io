@@ -1,46 +1,194 @@
 <!--
-  Jekyll Simple Search loader
-  See: <https://github.com/christian-fei/Simple-Jekyll-Search>
+  Modern Search System - CDN Compatible Version
 -->
 
-{% capture result_elem %}
-<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0">
-  <a href="{url}">{title}</a>
-  <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
-    {categories}
-    {tags}
-  </div>
-  <p>{snippet}</p>
-</div>
-{% endcapture %}
-
-{% capture not_found %}<p class="mt-5">{{ site.data.locales[site.lang].search.no_results }}</p>{% endcapture %}
-
-<script src="{{ site.data.assets[origin].search.js | relative_url }}"></script>
-
 <script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('search-results'),
-  json: '{{ '/assets/js/data/search.json' | relative_url }}',
-  searchResultTemplate: '{{ result_elem | strip_newlines }}',
-  noResultsText: '{{ not_found }}',
-  templateMiddleware: function(prop, value, template) {
-    if (prop === 'categories') {
-      if (value === '') {
-        return `${value}`;
-      } else {
-        return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+// Wait for SimpleJekyllSearch to load, then initialize our modern search
+function initializeSearchWhenReady() {
+  if (typeof SimpleJekyllSearch === 'undefined') {
+    setTimeout(initializeSearchWhenReady, 100);
+    return;
+  }
+  
+  console.log('SimpleJekyllSearch found, initializing modern search...');
+  
+  // Get all the DOM elements needed for search UI
+  const btnSbTrigger = document.getElementById('sidebar-trigger');
+  const btnSearchTrigger = document.getElementById('search-trigger');
+  const btnCancel = document.getElementById('search-cancel');
+  const content = document.querySelectorAll('#main-wrapper>.container>.row');
+  const topbarTitle = document.getElementById('topbar-title');
+  const search = document.getElementById('search');
+  const resultWrapper = document.getElementById('search-result-wrapper');
+  const results = document.getElementById('search-results');
+  const input = document.getElementById('search-input');
+  const hints = document.getElementById('search-hints');
+  const breadcrumb = document.getElementById('breadcrumb');
+
+  // CSS class names
+  const LOADED = 'd-block';
+  const UNLOADED = 'd-none';
+  const FOCUS = 'input-focus';
+  const FLEX = 'd-flex';
+  
+  // Initialize SimpleJekyllSearch
+  SimpleJekyllSearch({
+    searchInput: input,
+    resultsContainer: results,
+    json: "{{ '/assets/js/data/search.json' | relative_url }}",
+    searchResultTemplate: '<article class="px-1 py-2"><header><h3><a href="{url}">{title}</a></h3></header><p class="text-muted">{snippet}</p></article>',
+    noResultsText: '<div class="text-center"><h5>No results found</h5></div>',
+    limit: 50,
+    fuzzy: false,
+    exclude: ['date']
+  });
+
+  // Search UI Classes
+  class MobileSearchBar {
+    static on() {
+      if (btnSbTrigger) btnSbTrigger.classList.add(UNLOADED);
+      if (topbarTitle) topbarTitle.classList.add(UNLOADED);
+      if (btnSearchTrigger) btnSearchTrigger.classList.add(UNLOADED);
+      if (breadcrumb) breadcrumb.classList.add(UNLOADED);
+      if (search) search.classList.add(FLEX);
+      if (btnCancel) btnCancel.classList.add(LOADED);
+    }
+
+    static off() {
+      if (btnCancel) btnCancel.classList.remove(LOADED);
+      if (search) search.classList.remove(FLEX);
+      if (btnSbTrigger) btnSbTrigger.classList.remove(UNLOADED);
+      if (topbarTitle) topbarTitle.classList.remove(UNLOADED);
+      if (btnSearchTrigger) btnSearchTrigger.classList.remove(UNLOADED);
+      if (breadcrumb) breadcrumb.classList.remove(UNLOADED);
+    }
+  }
+
+  class ResultSwitch {
+    static resultVisible = false;
+
+    static on() {
+      if (!this.resultVisible) {
+        if (resultWrapper) resultWrapper.classList.remove(UNLOADED);
+        content.forEach((el) => {
+          el.classList.add(UNLOADED);
+        });
+        this.resultVisible = true;
       }
     }
 
-    if (prop === 'tags') {
-      if (value === '') {
-        return `${value}`;
-      } else {
-        return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+    static off() {
+      if (this.resultVisible) {
+        if (results) results.innerHTML = '';
+        if (hints && hints.classList.contains(UNLOADED)) {
+          hints.classList.remove(UNLOADED);
+        }
+        if (resultWrapper) resultWrapper.classList.add(UNLOADED);
+        content.forEach((el) => {
+          el.classList.remove(UNLOADED);
+        });
+        if (input) input.value = '';
+        this.resultVisible = false;
       }
     }
   }
+
+  function isMobileView() {
+    return btnCancel && btnCancel.classList.contains(LOADED);
+  }
+
+  // Set up event listeners if elements exist
+  if (btnSearchTrigger && btnCancel && input) {
+    btnSearchTrigger.addEventListener('click', () => {
+      console.log('🔍 Search trigger clicked');
+      MobileSearchBar.on();
+      ResultSwitch.on();
+      input.focus();
+    });
+
+    btnCancel.addEventListener('click', () => {
+      console.log('❌ Search cancel clicked');
+      MobileSearchBar.off();
+      ResultSwitch.off();
+    });
+
+    input.addEventListener('focus', () => {
+      console.log('📝 Search input focused');
+      if (search) search.classList.add(FOCUS);
+    });
+
+    input.addEventListener('focusout', () => {
+      console.log('📝 Search input lost focus');
+      if (search) search.classList.remove(FOCUS);
+    });
+
+    input.addEventListener('input', () => {
+      const query = input.value;
+      console.log('🔍 Search input changed:', query);
+      
+      if (query === '') {
+        console.log('Empty query - hiding results');
+        if (isMobileView()) {
+          if (hints) hints.classList.remove(UNLOADED);
+        } else {
+          ResultSwitch.off();
+        }
+      } else {
+        console.log('Non-empty query - showing results');
+        ResultSwitch.on();
+        if (isMobileView()) {
+          if (hints) hints.classList.add(UNLOADED);
+        }
+      }
+    });
+
+    // Add event handler for search result clicks
+    if (results) {
+      results.addEventListener('click', (e) => {
+        // Check if clicked element is a search result link
+        const link = e.target.closest('a[href]');
+        if (link) {
+          console.log('🎯 Search result clicked:', link.href);
+          // Close search overlay and restore hamburger menu
+          MobileSearchBar.off();
+          ResultSwitch.off();
+        }
+      });
+    }
+
+    // Add escape key handler to close search
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isMobileView()) {
+        console.log('⌨️ Escape key pressed - closing search');
+        MobileSearchBar.off();
+        ResultSwitch.off();
+      }
+    });
+
+    console.log('Search UI event listeners attached');
+  } else {
+    console.error('Required search elements not found:', {
+      btnSearchTrigger: !!btnSearchTrigger,
+      btnCancel: !!btnCancel,
+      input: !!input
+    });
+  }
+  
+  console.log('Modern search system ready!');
+  
+  // BACKUP: Force hide breadcrumb on post pages in mobile view
+  if (document.body.classList.contains('post')) {
+    const breadcrumb = document.getElementById('breadcrumb');
+    if (breadcrumb && window.innerWidth < 992) {
+      breadcrumb.style.display = 'none';
+      console.log('🎯 JavaScript backup: Breadcrumb hidden on post page');
+    }
+  }
+}
+
+// Start initialization when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM ready, starting search initialization...');
+  initializeSearchWhenReady();
 });
 </script>

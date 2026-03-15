@@ -1,6 +1,12 @@
 ---
 permalink: /robots.txt
+published: false
+---
+# Suppressed to avoid conflict with root robots.txt
+---
+permalink: /robots.txt
 # The robots rules
+published: false
 ---
 
 User-agent: *
