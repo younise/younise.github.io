@@ -33,6 +33,10 @@ jobs:
       - name: Bundle install
         run: bundle install --jobs 4 --retry 3
 
+      - name: Remove CNAME for dev site
+        if: vars.JEKYLL_EXTRA_CONFIG != ''
+        run: rm -f CNAME
+
       - name: Build site with Jekyll
         run: bundle exec jekyll build --config "_config.yml${{ vars.JEKYLL_EXTRA_CONFIG }}" --destination ./_site
         env:
