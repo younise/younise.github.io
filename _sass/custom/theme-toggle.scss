@@ -1,5 +1,14 @@
 @use '../abstracts/breakpoints' as bp;
 
+// Disable all transitions during theme switch so the entire page flips in one frame
+html[data-theme-switching],
+html[data-theme-switching] *,
+html[data-theme-switching] *::before,
+html[data-theme-switching] *::after {
+  transition: none !important;
+}
+
+
 #mode-toggle {
   border: none !important;
   background: transparent !important;

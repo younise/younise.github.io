@@ -82,5 +82,22 @@ layout: compress
     {% endfor %}
 
     {% include_cached search-loader.html lang=lang %}
+
+    <script>
+      (function() {
+        var btn = document.getElementById('mode-toggle');
+        if (btn) {
+          btn.addEventListener('click', function() {
+            var html = document.documentElement;
+            html.setAttribute('data-theme-switching', '');
+            requestAnimationFrame(function() {
+              requestAnimationFrame(function() {
+                html.removeAttribute('data-theme-switching');
+              });
+            });
+          }, true); // capture phase — runs before Chirpy's own listener
+        }
+      })();
+    </script>
   </body>
 </html>
