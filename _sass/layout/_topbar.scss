@@ -106,25 +106,4 @@
   }
 }
 
-// Make all topbar buttons consistent with sidebar colors on mobile/tablet
-@include bp.lt(bp.get(lg)) {
-  #topbar {
-    .btn {
-      color: var(--sidebar-muted-color) !important;
-      
-      &:hover {
-        color: var(--sidebar-active-color) !important;
-      }
-    }
-    
-    #sidebar-trigger,
-    #search-trigger {
-      color: var(--sidebar-muted-color) !important;
-      
-      &:hover {
-        color: var(--sidebar-active-color) !important;
-      }
-    }
-  }
 
-}

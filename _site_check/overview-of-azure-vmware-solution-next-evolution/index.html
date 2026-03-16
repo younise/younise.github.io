@@ -1,0 +1,6157 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- `site.alt_lang` can specify a language different from the UI -->
+<html lang="en" >
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+  ><!-- Setup Open Graph image -->
+
+  
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Overview of Azure VMware Solution Next Evolution" />
+<meta name="author" content="Emad Younis" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The general availability (GA) for the next evolution of Azure VMware Solution (AVS) was announced yesterday during the Microsoft Ignite 2020 virtual conference. This is a joint partnership between Microsoft and VMware, where Azure VMware Solution is a Microsoft managed service built on Azure bare metal infrastructure and cloud verified by VMware. The initial launch of the Azure VMware Solution in May of 2019 was by CloudSimple; this latest release is built and architected by Microsoft, providing an integrated experience with Azure services. Azure VMware Solution is currently available in the following 10 regions: East US, North Central US, West US, UK South, Japan East, West Europe, North Europe, Canada Central, Australia East, and Southeast Asia. More regions will be available in the future; additional details can be found by searching the Microsoft Products available by region page. Customers running the CloudSimple Azure VMware Solution version also have a migration path to this latest release, leveraging VMware HCX." />
+<meta property="og:description" content="The general availability (GA) for the next evolution of Azure VMware Solution (AVS) was announced yesterday during the Microsoft Ignite 2020 virtual conference. This is a joint partnership between Microsoft and VMware, where Azure VMware Solution is a Microsoft managed service built on Azure bare metal infrastructure and cloud verified by VMware. The initial launch of the Azure VMware Solution in May of 2019 was by CloudSimple; this latest release is built and architected by Microsoft, providing an integrated experience with Azure services. Azure VMware Solution is currently available in the following 10 regions: East US, North Central US, West US, UK South, Japan East, West Europe, North Europe, Canada Central, Australia East, and Southeast Asia. More regions will be available in the future; additional details can be found by searching the Microsoft Products available by region page. Customers running the CloudSimple Azure VMware Solution version also have a migration path to this latest release, leveraging VMware HCX." />
+<link rel="canonical" href="https://dev.emadyounis.com/overview-of-azure-vmware-solution-next-evolution/" />
+<meta property="og:url" content="https://dev.emadyounis.com/overview-of-azure-vmware-solution-next-evolution/" />
+<meta property="og:site_name" content="emadyounis.com" />
+<meta property="og:image" content="https://dev.emadyounis.com/assets/img/Feature-Images/Azure-VMware-Solution-Feature-Image.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-09-23T11:20:22-07:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://dev.emadyounis.com/assets/img/Feature-Images/Azure-VMware-Solution-Feature-Image.png" />
+<meta property="twitter:title" content="Overview of Azure VMware Solution Next Evolution" />
+<meta name="twitter:site" content="@emad_younis" />
+<meta name="twitter:creator" content="@emad_younis" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Emad Younis","url":"https://github.com/younise"},"dateModified":"2021-03-18T12:00:00-07:00","datePublished":"2020-09-23T11:20:22-07:00","description":"The general availability (GA) for the next evolution of Azure VMware Solution (AVS) was announced yesterday during the Microsoft Ignite 2020 virtual conference. This is a joint partnership between Microsoft and VMware, where Azure VMware Solution is a Microsoft managed service built on Azure bare metal infrastructure and cloud verified by VMware. The initial launch of the Azure VMware Solution in May of 2019 was by CloudSimple; this latest release is built and architected by Microsoft, providing an integrated experience with Azure services. Azure VMware Solution is currently available in the following 10 regions: East US, North Central US, West US, UK South, Japan East, West Europe, North Europe, Canada Central, Australia East, and Southeast Asia. More regions will be available in the future; additional details can be found by searching the Microsoft Products available by region page. Customers running the CloudSimple Azure VMware Solution version also have a migration path to this latest release, leveraging VMware HCX.","headline":"Overview of Azure VMware Solution Next Evolution","image":"https://dev.emadyounis.com/assets/img/Feature-Images/Azure-VMware-Solution-Feature-Image.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://dev.emadyounis.com/overview-of-azure-vmware-solution-next-evolution/"},"url":"https://dev.emadyounis.com/overview-of-azure-vmware-solution-next-evolution/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <title>Overview of Azure VMware Solution Next Evolution | emadyounis.com
+  </title>
+
+  <!--
+  The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
+  Generated by: https://realfavicongenerator.net/
+-->
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+
+  <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="emadyounis.com">
+<meta name="application-name" content="emadyounis.com">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+  <!-- Resource Hints -->
+  
+    
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
+      
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+      
+    
+      
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" >
+      
+    
+      
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" >
+      
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
+      
+    
+  
+
+  <!-- Bootstrap -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+  
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
+
+  <!-- Web Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.1/css/all.min.css">
+
+  <!-- 3rd-party Dependencies -->
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.css">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+  
+
+  <!-- Scripts -->
+
+  <script src="/assets/js/dist/theme.min.js"></script>
+
+  <!-- JS selector for site. -->
+
+<!-- commons -->
+
+
+
+<!-- layout specified -->
+
+
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
+
+
+
+
+
+
+
+<script defer src="/assets/js/dist/post.min.js"></script>
+
+
+
+<!-- Pageviews -->
+
+  
+
+  
+
+
+
+  
+
+  <!-- A placeholder to allow defining custom metadata -->
+
+</head>
+
+
+  <body class="post">
+    <!-- The Side Bar -->
+
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <header class="profile-wrapper d-flex flex-column justify-content-center align-items-center">
+    <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/emad.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+
+    <div class="site-title-wrap d-flex justify-content-center align-items-center w-100">
+      <a class="site-title d-block" href="/">emadyounis.com</a>
+    </div>
+    <p class="site-subtitle fst-italic mb-0"></p>
+  </header>
+  <!-- .profile-wrapper -->
+
+  <nav class="flex-column flex-grow-1 w-100 ps-0">
+    <ul class="nav">
+      <!-- home -->
+      <li class="nav-item">
+        <a href="/" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>HOME</span>
+        </a>
+      </li>
+      <!-- the real tabs -->
+      
+        <li class="nav-item">
+          <a href="/categories/" class="nav-link">
+            <i class="fa-fw fas fa-stream"></i>
+            
+
+            <span>CATEGORIES</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/tags/" class="nav-link">
+            <i class="fa-fw fas fa-tag"></i>
+            
+
+            <span>TAGS</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/archives/" class="nav-link">
+            <i class="fa-fw fas fa-archive"></i>
+            
+
+            <span>ARCHIVES</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/about/" class="nav-link">
+            <i class="fa-fw fas fa-info-circle"></i>
+            
+
+            <span>ABOUT</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+    </ul>
+  </nav>
+  
+  <div class="stay-connected-wrapper">
+    <!-- Stay Connected section -->
+    <div class="sidebar-bottom d-flex flex-column w-100 mt-auto">
+      <div class="stay-connected text-center mb-3">
+        <h6 class="text-muted mb-3" style="font-size: 14.4px; letter-spacing: 1px; font-weight: 600;">STAY CONNECTED</h6>
+        
+        <div class="social-icons d-flex justify-content-center flex-wrap align-items-center">
+          <!-- Theme Toggle -->
+          
+          <button type="button" class="mode-toggle mx-2 mb-2" aria-label="Switch Mode" id="mode-toggle" title="Toggle Theme">
+            <i class="fas fa-adjust"></i>
+          </button>
+          
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/eyounis" class="mx-2 mb-2" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          
+          <!-- Twitter -->
+          <a href="https://twitter.com/emad_younis" class="mx-2 mb-2" title="Twitter" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          
+          <!-- GitHub -->
+          <a href="https://github.com/younise" class="mx-2 mb-2" title="GitHub" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          
+          <!-- RSS -->
+          <a href="/feed.xml" class="mx-2 mb-2" title="RSS">
+            <i class="fas fa-rss"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+<!-- #sidebar -->
+
+
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div class="container d-flex flex-column px-xxl-5">
+        <!-- The Top Bar -->
+
+<header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
+  <div
+    id="topbar"
+    class="d-flex align-items-center justify-content-between px-lg-3 h-100"
+  >
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
+    <nav id="breadcrumb" aria-label="Breadcrumb">
+      
+
+      
+        
+          
+            <span>
+              <a href="/">
+                <i class="fas fa-home"></i>
+              </a>
+            </span>
+
+          
+        
+          
+            
+              <span>Overview of Azure VMware Solution Next Evolution</span>
+            
+
+          
+        
+      
+    </nav>
+    <!-- endof #breadcrumb -->
+
+    <div id="topbar-title">
+      Post
+    </div>
+
+    <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
+      <i class="fas fa-search fa-fw"></i>
+    </button>
+
+    <search id="search" class="align-items-center ms-3 ms-lg-0">
+      <i class="fas fa-search fa-fw"></i>
+      <input
+        class="form-control"
+        id="search-input"
+        type="search"
+        aria-label="search"
+        autocomplete="off"
+        placeholder="Search..."
+      >
+    </search>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">Cancel</button>
+  </div>
+</header>
+
+
+        <div class="row flex-grow-1">
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4"><!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+
+
+
+
+
+
+<article class="px-1" data-toc="true">
+  <header>
+    <h1 data-toc-skip>Overview of Azure VMware Solution Next Evolution</h1>
+    
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1600885222"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Sep 23, 2020
+</time>
+
+      </span>
+
+      <!-- lastmod date -->
+      
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1616094000"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Mar 18, 2021
+</time>
+
+        </span>
+      
+
+      
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="/assets/img/Feature-Images/Azure-VMware-Solution-Feature-Image.png" class="popup img-link preview-img shimmer"><img src="/assets/img/Feature-Images/Azure-VMware-Solution-Feature-Image.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              
+                <a href="https://github.com/younise">Emad Younis</a>
+                
+              
+            
+          </em>
+        </span>
+
+        <div>
+          <!-- pageviews -->
+          
+
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="1430 words"
+>
+  <em>7 min</em> read</span>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Overview of Azure VMware Solution Next Evolution</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Overview of Azure VMware Solution Next Evolution</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
+
+  <div class="content">
+    <p><span data-preserver-spaces="true">The general availability (GA) for the next evolution of Azure VMware Solution (AVS) was announced <del>yesterday</del> during the <a href="https://news.microsoft.com/ignite-2020-book-of-news/#158-next-generation-azure-vmware-solution-now-generally-available">Microsoft Ignite 2020</a> virtual conference. This is a joint partnership between Microsoft and VMware, where Azure VMware Solution is a Microsoft managed service built on Azure bare metal infrastructure and cloud verified by VMware. The initial launch of the Azure VMware Solution in May of 2019 was by CloudSimple; this latest release is built and architected by Microsoft, providing an integrated experience with Azure services. Azure VMware Solution is currently available in the following 10 regions: East US, North Central US, West US, UK South, Japan East, West Europe, North Europe, Canada Central, Australia East, and Southeast Asia. More regions will be available in the future; additional details can be found by searching the </span><a href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=azure-vmware&amp;regions=all"><span data-preserver-spaces="true">Microsoft Products available by region page</span></a><span data-preserver-spaces="true">. Customers running the CloudSimple Azure VMware Solution version also have a </span><a href="https://docs.microsoft.com/en-us/azure/azure-vmware/faq"><span data-preserver-spaces="true">migration path to this latest release</span></a><span data-preserver-spaces="true">, leveraging VMware HCX.</span></p>
+
+<p><a href="https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-Releases.jpg?resize=723%2C362" class="popup img-link shimmer"><img src="https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-Releases.jpg?resize=723%2C362" alt="" loading="lazy"></a></p>
+
+<p>Azure VMware Solution is powered by VMware Cloud Foundation: vCenter Server, vSphere, vSAN, and NSX-T. Also included is VMware HCX, the Swiss army knife of workload mobility. Customers can securely extend their networks and migrate workloads from on-premises (vSphere 6.x -7.x) to AVS or between AVS private clouds in different regions using a combination of migration options. Microsoft will handle the billing, lifecycle operations (upgrades), and troubleshooting of the service, allowing customers to focus on their workloads.</p>
+
+<blockquote class="prompt-info">
+  <p>Note: Updated 3/18/21 to include changes to the service.</p>
+</blockquote>
+<h2 id="getting-started"><span class="me-2">Getting Started</span><a href="#getting-started" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p><span data-preserver-spaces="true">There are a few things you need to have in place before you can deploy an Azure VMware Solution private cloud. First, an </span><a href="https://azure.microsoft.com/en-us/free/"><span data-preserver-spaces="true">Azure account</span></a><span data-preserver-spaces="true">, which you can get for FREE. Next, your account must be associated with a </span><a href="https://docs.microsoft.com/en-us/azure/azure-vmware/enable-azure-vmware-solution#eligibility-criteria"><span data-preserver-spaces="true">subscription</span></a><span data-preserver-spaces="true"> that is either part of a Microsoft enterprise agreement or a Cloud Solution Provider (CSP). Finally, is requesting host quota for your subscription. Once quota is applied to a subscription, search for “Azure VMware Solution” in the Azure portal’s search box. Alright, you don’t need to type out the entire thing; it will appear within the first couple of characters in VMware. An option to deploy your first private cloud in your subscription will be displayed on the next screen. As part of the private cloud creation, there is some basic information needed:</span></p>
+
+<ul>
+  <li><strong><span data-preserver-spaces="true">Subscription </span></strong><span data-preserver-spaces="true">– Billing framework that provides entitlement to deploy and consume Azure resources</span></li>
+  <li><strong><span data-preserver-spaces="true">Resource Group </span></strong><span data-preserver-spaces="true">– Logical way to group Azure services</span></li>
+  <li><strong><span data-preserver-spaces="true">Location – </span></strong><span data-preserver-spaces="true">Where to deploy the private cloud</span></li>
+  <li><strong><span data-preserver-spaces="true">Resource Name </span></strong><span data-preserver-spaces="true">– Name of your private cloud</span></li>
+  <li><strong><span data-preserver-spaces="true">SKU </span></strong><span data-preserver-spaces="true">– Node type used during deployment</span></li>
+  <li><span data-preserver-spaces="true"><strong>ESXi Hosts</strong> – Number of hosts to deploy, min of 3 by default with the option to increase to a max of 16 per cluster</span></li>
+  <li><del><strong><span data-preserver-spaces="true">vCenter Admin Password </span></strong><span data-preserver-spaces="true">– password used to log in vCenter with cloudadmin@vsphere.local</span></del></li>
+  <li><del><strong><span data-preserver-spaces="true">NSX-T Manager Password </span></strong><span data-preserver-spaces="true">– password used to log in NSX-T manager with admin </span></del></li>
+  <li><strong><span data-preserver-spaces="true">Address Block </span></strong>– <span data-preserver-spaces="true">CIDR block used when deploying management components, requires a /22</span></li>
+  <li><strong><span data-preserver-spaces="true">Virtual Network </span></strong><span data-preserver-spaces="true">– A representation of cloud networking and provides abstraction and logical isolation. An Azure environment can contain multiple VNets.</span></li>
+</ul>
+
+<blockquote class="prompt-info">
+  <p>Note: Providing vCenter Server and NSX-T credentials during a private cloud deployment is no longer required, they are now auto generated. If they need to be rotated you will currently need to open a support request.</p>
+</blockquote>
+
+<p><strong>[Previous private cloud creation screen]</strong></p>
+
+<p><a href="https://emadyounis.com/assets/img/2020/09/Create-Private-Cloud-Final-Image.jpg?resize=1718%2C1810" class="popup img-link shimmer"><img src="https://emadyounis.com/assets/img/2020/09/Create-Private-Cloud-Final-Image.jpg?resize=1718%2C1810" alt="" loading="lazy"></a></p>
+
+<p><strong>[Updated private cloud creation screen]</strong></p>
+
+<h2 id="private-cloud"><span class="me-2"><a href="https://emadyounis.com/assets/img/2020/09/Updated-AVS-Deployment.jpg?resize=1840%2C1738" class="popup img-link shimmer"><img src="https://emadyounis.com/assets/img/2020/09/Updated-AVS-Deployment.jpg?resize=1840%2C1738" alt="" loading="lazy"></a>Private Cloud</span><a href="#private-cloud" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li>
+    <p><strong><span data-preserver-spaces="true">ExpressRoute </span></strong><span data-preserver-spaces="true">– Is a private and secure connection from a customer’s physical datacenter providing dedicated bandwidth into Microsoft Azure. </span></p>
+  </li>
+  <li>
+    <p><strong><span data-preserver-spaces="true">Global Reach </span></strong><span data-preserver-spaces="true">– Connects ExpressRoute bi-directionally from a customer’s environment to Azure VMware Solution. </span></p>
+  </li>
+</ul>
+
+<p>A subscription can have 1-4 private clouds, each with a maximum of 4 clusters per cloud. An initial private cloud deployment starts with a 3-node minimum with the opportunity to add additional nodes during or scale-up later to a maximum of 16 nodes per cluster in the Azure portal. The hardware specification dropdown lists AVS36 as the current selectable node type. Below is a visual representation of the hardware specs for the AVS36, but it does not represent the actual server 🙂 An Azure Virtual Network (VNet) can be created during the initial private cloud deployment or afterward. If an existing VNet exists, it can also be used. A VNet is created to support an ExpressRoute from Azure VMware Solution to connect to other Azure services and allow connectivity back to an on-premises environment via Azure Global Reach. Once ready, click review and create. After you verify everything entered is correct, click the magical create button and wait for roughly 2+hrs for the process to complete. The process is mostly self-service from the Azure portal allowing you to get from zero to a private cloud which includes:</p>
+
+<ul>
+  <li><span data-preserver-spaces="true">Provisioning of hardware and backbone networking</span></li>
+  <li><span data-preserver-spaces="true">Installation and configuration of ESXi, vCenter Server, vSAN, NSX-T, and HCX</span></li>
+  <li><span data-preserver-spaces="true">Creation of initial cluster including vSAN datastore encryption</span></li>
+</ul>
+
+<blockquote class="prompt-info">
+  <p>Note: if you don’t have an Azure ExpressRoute, you can use a site-to-site VPN to connect to Azure VMware Solution private cloud, but you will not be able to use HCX for workload migration as this is not supported.</p>
+</blockquote>
+
+<p><a href="https://emadyounis.com/assets/img/2020/09/AVS-Server.jpg?resize=703%2C560" class="popup img-link shimmer"><img src="https://emadyounis.com/assets/img/2020/09/AVS-Server.jpg?resize=703%2C560" alt="" loading="lazy"></a></p>
+
+<h2 id="post-deployment"><span class="me-2">Post Deployment</span><a href="#post-deployment" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>When your private cloud is ready, you’ll be redirected to the overview page in the resource menu. This page is handy with valuable information; you can always come back here by searching your private cloud name or simply bookmarking. The first section we’ll want to select is identity. Here is where you’ll find your login information for NSX Manager and vCenter Server. Next is clustering, where you can edit (aka increase/decrease) the number of nodes in a private cloud, with 3 being the magic number of minimum nodes. Keep in mind increasing the number of nodes is tied to your allocation associated with the subscription used.</p>
+
+<p><a href="https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-Identity-Final-Image.jpg?resize=966%2C555" class="popup img-link shimmer"><img src="https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-Identity-Final-Image.jpg?resize=966%2C555" alt="" loading="lazy"></a></p>
+
+<p>The NSX T-1 router is where all workload network segments need to be created before VMs are deployed or being migrated to a new segment. These segments can be created in NSX manager or directly in the Azure Portal under segments, including the ability to create DHCP servers to handle DHCP requests and DHCP relay services to relay DHCP traffic to external DHCP servers. Additional workload networking options such as port mirroring and DNS are also available.</p>
+
+<p><a href="https://emadyounis.com/assets/img/2020/09/AVS-Workload-Networking-scaled.jpg?resize=2560%2C1385" class="popup img-link shimmer"><img src="https://emadyounis.com/assets/img/2020/09/AVS-Workload-Networking-scaled.jpg?resize=2560%2C1385" alt="" loading="lazy"></a></p>
+
+<p>I’ve mentioned VMware HCX; the good news, it’s automatically deployed as part of the private cloud provisioning. The HCX Cloud manager is where you’ll get the necessary HCX Connector bits to deploy in your on-premises environment, which can be found under the connectivity section in the Azure portal of your private cloud. The HCX Cloud manager address is provided, and you will use cloudadmin@vsphere.local credentials to login and download the HCX connector bits. Licensing your HCX connector is also part of the self-service offering, allowing you to request up to 3 advanced licenses. Additionally, there is an option to upgrade your HCX advanced license to an HCX enterprise license by opening a support request with Microsoft. HCX enterprise will provide features like mobility groups, replication assisted vMotion, mobility optimized networking, and more. These features make use cases like datacenter extension and evacuation easier to any VMware powered cloud.</p>
+
+<p><a href="https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-HCX-Final-Image.jpg?resize=747%2C411" class="popup img-link shimmer"><img src="https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-HCX-Final-Image.jpg?resize=747%2C411" alt="" loading="lazy"></a></p>
+
+<p>Once the HCX connector is deployed and configured on-premises, customers can access and manage directly from the vSphere client, the dedicated HCX Client, or via automation using PowerCLI or REST APIs. A site pairing can then be established with on-premises environments and an Azure VMware Solution private cloud, followed by L2 connectivity for workloads that will retain their IP addresses. Let the migration planning begin!</p>
+
+<p><a href="https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-vCenter-Final-Image.jpg?resize=1226%2C776" class="popup img-link shimmer"><img src="https://emadyounis.com/assets/img/2020/09/Azure-VMware-Solution-vCenter-Final-Image.jpg?resize=1226%2C776" alt="" loading="lazy"></a></p>
+
+<p><span data-preserver-spaces="true">There are additional support and licensing benefits that come with Azure VMware Solution. </span><a href="https://support.microsoft.com/en-us/help/4456242/end-of-support-for-sql-server-2008-and-sql-server-2008-r2"><span data-preserver-spaces="true">Microsoft</span></a><span data-preserver-spaces="true"> is providing extended support for Windows Server 2008 and SQL SQL 2008 workloads when they are migrated to Azure, including the Azure VMware Solution. There is also the </span><a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/"><span data-preserver-spaces="true">Azure Hybrid Benefit</span></a><span data-preserver-spaces="true"> which is a licensing benefit allowing customers to use their on-premises Windows Server and SQL Server licenses on Azure.</span></p>
+
+<h2 id="resources"><span class="me-2">Resources</span><a href="#resources" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Here are a few resources help get you started in learning more about Azure VMware Solution and more will be added as they are available. Also please reach out if you know of any others!</p>
+
+<ul>
+  <li><a href="http://hol.pub/avs">VMware Hands On Lab Azure VMware Solution</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates?WT.mc_id=enterprise-0000-shkuehn">Platform updates for Azure VMware Solution</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/azure-vmware/faq">FAQ: Common questions about Azure VMware Solution</a></li>
+  <li><a href="https://www.vmworld.com/en/video-library/video-landing.html?sessionid=1586528544020001TS4T">VMworld: Azure VMware Solution Networking &amp; Security in a Hybrid Cloud Environment</a></li>
+  <li><a href="https://azure.microsoft.com/en-us/services/azure-vmware/">Azure VMware Solution Product Page</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/azure-vmware/">Azure VMware Solution Documentation</a></li>
+  <li><a href="https://www.youtube.com/watch?v=qASXi5xrFzM&amp;list=PLS9k3ksxRe_l-UpfAjmi0BoDSpo6AtLyh">Video Playlist from Microsoft Global Blackbelt Trevor Davis</a></li>
+  <li><a href="https://www.virtualworkloads.com/">Virtual Workloads Blog – Trevor Davis</a></li>
+  <li><a href="https://myignite.microsoft.com/sessions/adcaabd7-9038-45d0-8e41-cf5fa3be5f1e">Microsoft Ignite 2020 Session: Accelerate your Cloud Journey with Azure VMware Solution</a></li>
+  <li><a href="https://myignite.microsoft.com/sessions/1515e183-53a5-49e0-b39a-34c81d913ed2">Microsoft Ignite 2020 Session: An introduction to Azure VMware Solution</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/azure-vmware/vrealize-operations-for-avs">Set up vRealize Operations for Azure VMware Solution</a></li>
+  <li><a href="https://docs.vmware.com/en/VMware-Horizon/2006/horizon-installation/GUID-76CF25F7-B26A-4C6D-A5C5-F18D3A56590A.html">Deploying VMware Horizon on Azure VMware Solution</a></li>
+</ul>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/azure-vmware-solution/">Azure VMware Solution</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/azure/"
+            class="post-tag no-text-decoration"
+          >Azure</a>
+        
+          <a
+            href="/tags/cloud/"
+            class="post-tag no-text-decoration"
+          >Cloud</a>
+        
+          <a
+            href="/tags/microsoft/"
+            class="post-tag no-text-decoration"
+          >Microsoft</a>
+        
+          <a
+            href="/tags/vmware-cloud/"
+            class="post-tag no-text-decoration"
+          >VMware Cloud</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://twitter.com/intent/tweet?text=Overview%20of%20Azure%20VMware%20Solution%20Next%20Evolution%20-%20emadyounis.com&url=https%3A%2F%2Fdev.emadyounis.com%2Foverview-of-azure-vmware-solution-next-evolution%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Overview%20of%20Azure%20VMware%20Solution%20Next%20Evolution%20-%20emadyounis.com&u=https%3A%2F%2Fdev.emadyounis.com%2Foverview-of-azure-vmware-solution-next-evolution%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=https%3A%2F%2Fdev.emadyounis.com%2Foverview-of-azure-vmware-solution-next-evolution%2F&text=Overview%20of%20Azure%20VMware%20Solution%20Next%20Evolution%20-%20emadyounis.com" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
+</div>
+
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
+</article>
+
+</main>
+
+          <!-- panel -->
+          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
+            <div class="access">
+              <!-- Smart Recently Updated: 4 posts total, prioritizing posts with last_modified_at -->
+
+
+
+<!-- Get posts that have explicit last_modified_at in front matter (truly updated posts) -->
+
+
+<!-- Get all posts sorted by publication date (most recent first) -->
+
+
+<!-- Create final list, starting with updated posts -->
+
+
+
+<!-- Add updated posts first (up to MAX_SIZE) -->
+
+
+<!-- Fill remaining slots with recent posts by publication date -->
+
+
+  
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      
+        
+
+
+
+  <section id="access-lastmod">
+    <h2 class="panel-heading">Recently Updated</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        <li class="text-truncate lh-lg">
+          <a href="/overview-of-azure-vmware-solution-next-evolution/">Overview of Azure VMware Solution Next Evolution</a>
+        </li>
+      
+        
+        <li class="text-truncate lh-lg">
+          <a href="/introduction-to-google-cloud-vmware-engine/">Introduction to Google Cloud VMware Engine</a>
+        </li>
+      
+        
+        <li class="text-truncate lh-lg">
+          <a href="/uniquely-identifying-virtual-machines-in-vmware-hcx/">Uniquely Identifying Virtual Machines In VMware HCX</a>
+        </li>
+      
+        
+        <li class="text-truncate lh-lg">
+          <a href="/the-next-chapter/">The Next Chapter</a>
+        </li>
+      
+    </ul>
+  </section>
+  <!-- #access-lastmod -->
+
+
+              <!-- The trending tags list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+  <section>
+    <h2 class="panel-heading">Trending Tags</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vmware/">VMware</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vsphere/">vSphere</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vcsa/">VCSA</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/appliance/">Appliance</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vcac-6-1/">vCAC 6.1</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vcac/">vCAC</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vrealize/">vRealize</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ravello/">Ravello</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vio/">VIO</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/iaas/">IaaS</a>
+      
+    </div>
+  </section>
+
+
+            </div>
+
+            
+              
+              
+
+
+
+
+
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
+          </aside>
+        </div>
+
+        <div class="row">
+          <!-- tail -->
+          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/introduction-to-google-cloud-vmware-engine/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Introduction to Google Cloud VMware Engine</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+
+            <!-- The Footer -->
+
+<footer>
+  <div class="footer-shell py-3">
+    <div class="footer-flex d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center text-muted gap-2 gap-lg-0">
+      <div class="footer-left">
+        <p class="mb-0">
+          Copyright © 2026
+          emadyounis.com
+        </p>
+      </div>
+
+  <div class="footer-right">
+        <p class="mb-0">
+          <!--Using the <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
+          -->
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+          </div>
+        </div>
+
+        <!-- The Search results -->
+
+<div id="search-result-wrapper" class="d-flex justify-content-center d-none">
+  <div class="col-11 content">
+    <div id="search-hints">
+      <!-- The trending tags list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+  <section>
+    <h2 class="panel-heading">Trending Tags</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vmware/">VMware</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vsphere/">vSphere</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vcsa/">VCSA</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/appliance/">Appliance</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vcac-6-1/">vCAC 6.1</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vcac/">vCAC</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vrealize/">vRealize</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ravello/">Ravello</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/vio/">VIO</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/iaas/">IaaS</a>
+      
+    </div>
+  </section>
+
+
+    </div>
+    <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+  </div>
+</div>
+
+      </div>
+
+      <aside aria-label="Scroll to Top">
+        <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
+          <i class="fas fa-angle-up"></i>
+        </button>
+      </aside>
+    </div>
+
+    <div id="mask" class="d-none position-fixed w-100 h-100 z-1"></div>
+
+    
+      <aside
+  id="notification"
+  class="toast"
+  role="alert"
+  aria-live="assertive"
+  aria-atomic="true"
+  data-bs-animation="true"
+  data-bs-autohide="false"
+>
+  <div class="toast-header">
+    <button
+      type="button"
+      class="btn-close ms-auto"
+      data-bs-dismiss="toast"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="toast-body text-center pt-0">
+    <p class="px-2 mb-3">A new version of content is available.</p>
+    <button type="button" class="btn btn-primary" aria-label="Update">
+      Update
+    </button>
+  </div>
+</aside>
+
+    
+
+    <!-- Embedded scripts -->
+
+    
+      
+      <!-- The comments switcher -->
+
+
+    
+
+    <!--
+  Modern Search System - CDN Compatible Version
+-->
+
+<script>
+// Wait for SimpleJekyllSearch to load, then initialize our modern search
+function initializeSearchWhenReady() {
+  if (typeof SimpleJekyllSearch === 'undefined') {
+    setTimeout(initializeSearchWhenReady, 100);
+    return;
+  }
+  
+  console.log('SimpleJekyllSearch found, initializing modern search...');
+  
+  // Get all the DOM elements needed for search UI
+  const btnSbTrigger = document.getElementById('sidebar-trigger');
+  const btnSearchTrigger = document.getElementById('search-trigger');
+  const btnCancel = document.getElementById('search-cancel');
+  const content = document.querySelectorAll('#main-wrapper>.container>.row');
+  const topbarTitle = document.getElementById('topbar-title');
+  const search = document.getElementById('search');
+  const resultWrapper = document.getElementById('search-result-wrapper');
+  const results = document.getElementById('search-results');
+  const input = document.getElementById('search-input');
+  const hints = document.getElementById('search-hints');
+  const breadcrumb = document.getElementById('breadcrumb');
+
+  // CSS class names
+  const LOADED = 'd-block';
+  const UNLOADED = 'd-none';
+  const FOCUS = 'input-focus';
+  const FLEX = 'd-flex';
+  
+  // Initialize SimpleJekyllSearch
+  SimpleJekyllSearch({
+    searchInput: input,
+    resultsContainer: results,
+    json: "/assets/js/data/search.json",
+    searchResultTemplate: '<article class="px-1 py-2"><header><h3><a href="{url}">{title}</a></h3></header><p class="text-muted">{snippet}</p></article>',
+    noResultsText: '<div class="text-center"><h5>No results found</h5></div>',
+    limit: 50,
+    fuzzy: false,
+    exclude: ['date']
+  });
+
+  // Search UI Classes
+  class MobileSearchBar {
+    static on() {
+      if (btnSbTrigger) btnSbTrigger.classList.add(UNLOADED);
+      if (topbarTitle) topbarTitle.classList.add(UNLOADED);
+      if (btnSearchTrigger) btnSearchTrigger.classList.add(UNLOADED);
+      if (breadcrumb) breadcrumb.classList.add(UNLOADED);
+      if (search) search.classList.add(FLEX);
+      if (btnCancel) btnCancel.classList.add(LOADED);
+    }
+
+    static off() {
+      if (btnCancel) btnCancel.classList.remove(LOADED);
+      if (search) search.classList.remove(FLEX);
+      if (btnSbTrigger) btnSbTrigger.classList.remove(UNLOADED);
+      if (topbarTitle) topbarTitle.classList.remove(UNLOADED);
+      if (btnSearchTrigger) btnSearchTrigger.classList.remove(UNLOADED);
+      if (breadcrumb) breadcrumb.classList.remove(UNLOADED);
+    }
+  }
+
+  class ResultSwitch {
+    static resultVisible = false;
+
+    static on() {
+      if (!this.resultVisible) {
+        if (resultWrapper) resultWrapper.classList.remove(UNLOADED);
+        content.forEach((el) => {
+          el.classList.add(UNLOADED);
+        });
+        this.resultVisible = true;
+      }
+    }
+
+    static off() {
+      if (this.resultVisible) {
+        if (results) results.innerHTML = '';
+        if (hints && hints.classList.contains(UNLOADED)) {
+          hints.classList.remove(UNLOADED);
+        }
+        if (resultWrapper) resultWrapper.classList.add(UNLOADED);
+        content.forEach((el) => {
+          el.classList.remove(UNLOADED);
+        });
+        if (input) input.value = '';
+        this.resultVisible = false;
+      }
+    }
+  }
+
+  function isMobileView() {
+    return btnCancel && btnCancel.classList.contains(LOADED);
+  }
+
+  // Set up event listeners if elements exist
+  if (btnSearchTrigger && btnCancel && input) {
+    btnSearchTrigger.addEventListener('click', () => {
+      console.log('🔍 Search trigger clicked');
+      MobileSearchBar.on();
+      ResultSwitch.on();
+      input.focus();
+    });
+
+    btnCancel.addEventListener('click', () => {
+      console.log('❌ Search cancel clicked');
+      MobileSearchBar.off();
+      ResultSwitch.off();
+    });
+
+    input.addEventListener('focus', () => {
+      console.log('📝 Search input focused');
+      if (search) search.classList.add(FOCUS);
+    });
+
+    input.addEventListener('focusout', () => {
+      console.log('📝 Search input lost focus');
+      if (search) search.classList.remove(FOCUS);
+    });
+
+    input.addEventListener('input', () => {
+      const query = input.value;
+      console.log('🔍 Search input changed:', query);
+      
+      if (query === '') {
+        console.log('Empty query - hiding results');
+        if (isMobileView()) {
+          if (hints) hints.classList.remove(UNLOADED);
+        } else {
+          ResultSwitch.off();
+        }
+      } else {
+        console.log('Non-empty query - showing results');
+        ResultSwitch.on();
+        if (isMobileView()) {
+          if (hints) hints.classList.add(UNLOADED);
+        }
+      }
+    });
+
+    // Add event handler for search result clicks
+    if (results) {
+      results.addEventListener('click', (e) => {
+        // Check if clicked element is a search result link
+        const link = e.target.closest('a[href]');
+        if (link) {
+          console.log('🎯 Search result clicked:', link.href);
+          // Close search overlay and restore hamburger menu
+          MobileSearchBar.off();
+          ResultSwitch.off();
+        }
+      });
+    }
+
+    // Add escape key handler to close search
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isMobileView()) {
+        console.log('⌨️ Escape key pressed - closing search');
+        MobileSearchBar.off();
+        ResultSwitch.off();
+      }
+    });
+
+    console.log('Search UI event listeners attached');
+  } else {
+    console.error('Required search elements not found:', {
+      btnSearchTrigger: !!btnSearchTrigger,
+      btnCancel: !!btnCancel,
+      input: !!input
+    });
+  }
+  
+  console.log('Modern search system ready!');
+  
+  // BACKUP: Force hide breadcrumb on post pages in mobile view
+  if (document.body.classList.contains('post')) {
+    const breadcrumb = document.getElementById('breadcrumb');
+    if (breadcrumb && window.innerWidth < 992) {
+      breadcrumb.style.display = 'none';
+      console.log('🎯 JavaScript backup: Breadcrumb hidden on post page');
+    }
+  }
+}
+
+// Start initialization when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM ready, starting search initialization...');
+  initializeSearchWhenReady();
+});
+</script>
+
+  </body>
+</html>
+
