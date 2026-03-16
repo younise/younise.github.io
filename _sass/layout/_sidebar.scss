@@ -112,69 +112,11 @@
     }
   }
 
-  .sidebar-bottom {
-    text-align: center;
-    margin-bottom: 2rem;
-
-    %button {
-      width: 1.75rem;
-      height: 1.75rem;
-      margin-bottom: 0.5rem;
-      border-radius: 50%;
-      color: var(--sidebar-btn-color);
-      background-color: var(--sidebar-btn-bg);
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .mode-toggle {
-      @extend %button;
-      background: none;
-      border: none;
-      cursor: pointer;
-
-      :root[data-mode="dark"] & i.fa-sun {
-        color: #ffa500 !important; /* Orange sun icon in dark mode */
-      }
-
-      &:focus {
-        outline: none;
-      }
-    }
-  }
-
   .stay-connected-wrapper {
     width: 100%;
     padding: 1.5rem;
     text-align: center;
     border-top: 1px solid var(--sidebar-border-color);
-
-    section {
-      margin-bottom: 0;
-
-      h2 {
-        font-size: 1rem;
-        margin-bottom: 0.75rem;
-        color: var(--sidebar-active-color);
-      }
-    }
-
-    .social-links-container {
-      display: flex;
-      justify-content: center;
-      gap: 0.75rem;
-
-      .social-link {
-        color: var(--text-muted-color);
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: var(--sidebar-active-color);
-        }
-      }
-    }
   }
 }
 
