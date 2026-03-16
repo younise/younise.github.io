@@ -144,13 +144,4 @@
     }
   }
 
-  // Ultra-specific rule to hide breadcrumb on post pages - MAXIMUM SPECIFICITY
-  body.post #topbar #breadcrumb {
-    display: none !important;
-  }
-}
-
-// Global backup rule for post page breadcrumb hiding
-body.post #topbar #breadcrumb {
-  display: none !important;
 }
