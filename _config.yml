@@ -201,6 +201,8 @@ exclude:
   - gulpfile.js
   - node_modules
   - package*.json
+  - _config.local.yml
+  - _config.dev.yml
   # Avoid conflicts with theme-provided static files
   - assets/robots.txt
   - assets/feed.xml
