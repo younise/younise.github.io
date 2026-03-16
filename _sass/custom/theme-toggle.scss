@@ -14,12 +14,12 @@ html[data-theme-switching] *::after {
   background: transparent !important;
   padding: 0 !important;
   box-shadow: none !important;
+  outline: none !important;
+  cursor: pointer;
 
   @include bp.lg {
     margin-right: 1rem;
   }
-  outline: none !important;
-  cursor: pointer;
 
   &:hover, &:focus {
     color: inherit;
