@@ -87,10 +87,6 @@
   width: 70%;
   word-break: keep-all;
 
-  @include bp.lt(bp.get(lg)) {
-    display: block;
-  }
-
   @include bp.lg {
     text-align: left;
   }
