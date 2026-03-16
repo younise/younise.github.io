@@ -46,7 +46,7 @@ const allowedDomains = [
     'dev.emadyounis.com',
 
     
-        'emadyounis.com',
+        'dev.emadyounis.com',
     
 
     'fonts.gstatic.com',
