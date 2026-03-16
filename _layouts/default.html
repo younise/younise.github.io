@@ -87,6 +87,7 @@ layout: compress
       (function() {
         var btn = document.getElementById('mode-toggle');
         if (btn) {
+          /* Capture phase: runs before Chirpy's own listener */
           btn.addEventListener('click', function() {
             var html = document.documentElement;
             html.setAttribute('data-theme-switching', '');
@@ -95,7 +96,7 @@ layout: compress
                 html.removeAttribute('data-theme-switching');
               });
             });
-          }, true); // capture phase — runs before Chirpy's own listener
+          }, true);
         }
       })();
     </script>
