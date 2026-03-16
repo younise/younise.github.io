@@ -27,7 +27,8 @@
     }
   }
 
-  i {
+  // Scope to .categories.card to avoid body.categories shrinking all page icons
+  &.card i {
     @extend %-category-icon-color;
 
     font-size: 86%; /* fontawesome icons */
