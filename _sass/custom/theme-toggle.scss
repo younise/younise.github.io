@@ -1,8 +1,14 @@
+@use '../abstracts/breakpoints' as bp;
+
 #mode-toggle {
   border: none !important;
   background: transparent !important;
   padding: 0 !important;
   box-shadow: none !important;
+
+  @include bp.lg {
+    margin-right: 1rem;
+  }
   outline: none !important;
   cursor: pointer;
 
@@ -11,21 +17,21 @@
     background: transparent !important;
   }
 
-  i.fas::before {
-    content: "\f186"; /* moon icon */
-  }
+  // Light mode (default): show sun, hide moon
+  .sun-icon  { display: inline-block; color: #FF8C00; font-size: 1.25rem; }
+  .moon-icon { display: none; color: #4169E1; font-size: 1.25rem; }
 
+  // Dark mode (explicit toggle): show moon, hide sun
   html[data-mode="dark"] & {
-    i.fas::before {
-      content: "\f185"; /* sun icon */
-      color: #FF8C00; /* Orange color */
-    }
+    .sun-icon  { display: none; }
+    .moon-icon { display: inline-block; }
   }
 
-  html:not([data-mode="dark"]) & {
-    i.fas::before {
-      content: "\f186"; /* moon icon */
-      color: #4169E1; /* Blue color */
+  // Dark mode (system preference, no explicit toggle yet)
+  @media (prefers-color-scheme: dark) {
+    html:not([data-mode="light"]) & {
+      .sun-icon  { display: none; }
+      .moon-icon { display: inline-block; }
     }
   }
 }
