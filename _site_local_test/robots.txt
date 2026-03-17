@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: {{ site.url | append: site.baseurl }}/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /vendor/
+Disallow: /node_modules/
+
+# Allow all search engines to index the site
+# This helps with SEO

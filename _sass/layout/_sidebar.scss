@@ -122,6 +122,10 @@
     padding: 1.5rem;
     text-align: center;
     border-top: 1px solid var(--sidebar-border-color);
+    position: sticky;
+    bottom: 0;
+    background: var(--sidebar-bg);
+    z-index: 1;
   }
 }
 
