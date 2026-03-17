@@ -10,8 +10,6 @@ emadyounis.com is the personal blog of Emad Younis. It is dedicated to my views 
 # **Author**
 Emad Younis is a Staff Cloud Solutions Architect working in the Cloud Services Business Unit, part of the R&D organization at VMware. He currently focuses on workload mobility and hybrid connectivity across cloud infrastructures. Emad works with engineering and product management to help provide early feedback on usability, design, and architecture. He also advocates for customers and partners through the product feedback he collects. Prior to VMware, he worked as a cloud architect designing and implementing large enterprise vSphere environments, both as a customer and partner. Emad has over 15 years of experience in the IT field in a variety of hypervisors, storage, networks, and hardware platforms. His experience spans many data centers, industries, and job roles. He currently holds several certifications, including VCAP-DCD and VCAP-DCA. For his contributions to the virtualization community, Emad has earned recognition as a VMware vExpert.
 
-<img src="https://vexpert.vmware.com/directory/1573/vexpert-badge-stars.png" width="256" alt="vExpert Badge" title="vExpert Badge"/>
-
 # **Certifications**
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="795d60a5-bb43-43bc-8737-a44588ce68ef" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
