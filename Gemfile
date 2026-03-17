@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.0"
-gem "jekyll-theme-chirpy", "~> 7.3"
+gem "jekyll-theme-chirpy", "~> 7.5"
 gem "jekyll-remote-theme"             # fetch the theme updates automatically
 gem "webrick", "~> 1.7" 
 
