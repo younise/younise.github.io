@@ -3,5 +3,6 @@
 **/.DS_Store
 
 # Jekyll
-## Ignore site directory.
+## Ignore site directories.
 _site
+_site_dev
