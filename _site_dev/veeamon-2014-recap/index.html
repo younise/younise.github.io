@@ -5857,6 +5857,19 @@ Overall the vibe of the conference was great as most did not know what to expect
 
 
     <script>
+      /* Open external links in a new tab */
+      document.querySelectorAll('a[href]').forEach(function(link) {
+        try {
+          var url = new URL(link.href);
+          if (url.hostname && url.hostname !== window.location.hostname) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+          }
+        } catch (e) { /* relative or invalid href — skip */ }
+      });
+    </script>
+
+    <script>
       (function() {
         var btn = document.getElementById('mode-toggle');
         if (btn) {
