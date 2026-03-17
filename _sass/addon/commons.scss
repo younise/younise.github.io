@@ -535,7 +535,9 @@ i {
   }
 } /* .post-content */
 
-.tag:hover {
+#tags .tag:hover,
+#page-tag .tag:hover,
+#trending-tags .tag:hover {
   @extend %tag-hover;
 }
 
