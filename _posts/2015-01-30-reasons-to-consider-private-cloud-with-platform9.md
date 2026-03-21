@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=336'
 permalink: /reasons-to-consider-private-cloud-with-platform9/
-image: 'https://emadyounis.com/assets/img/2015/01/Platform9.jpg'
+image:
+  path: assets/img/2015/01/Platform9.jpg
+  alt: "Platform9"
 categories:
     - 'Tech Field Day'
 tags:

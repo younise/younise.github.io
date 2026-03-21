@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=603'
 permalink: /vmware-integrated-openstack-vio-sso-error/
-image: 'https://emadyounis.com/assets/img/2015/08/SSO-with-VIO-Graphic.png'
+image:
+  path: assets/img/2015/08/SSO-with-VIO-Graphic.png
+  alt: "SSO with VIO Graphic"
 categories:
     - OpenStack
 tags:

@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1101'
 permalink: /learning-hybrid-cloud-extension-hcx-part-1-overview/
-image: 'https://emadyounis.com/assets/img/2018/09/HCX-Blog-Feature-IMG.png'
+image:
+  path: assets/img/2018/09/HCX-Blog-Feature-IMG.png
+  alt: "HCX Blog Feature IMG"
 categories:
     - 'Hybrid Cloud Extension'
 tags:

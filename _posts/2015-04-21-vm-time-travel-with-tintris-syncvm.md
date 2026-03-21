@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=482'
 permalink: /vm-time-travel-with-tintris-syncvm/
-image: 'https://emadyounis.com/assets/img/2015/04/sync_vm.jpg'
+image:
+  path: assets/img/2015/04/sync_vm.jpg
+  alt: "sync vm"
 categories:
     - Storage
 tags:

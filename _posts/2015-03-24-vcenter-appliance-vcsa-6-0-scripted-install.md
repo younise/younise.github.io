@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=366'
 permalink: /vcenter-appliance-vcsa-6-0-scripted-install/
-image: 'https://emadyounis.com/assets/img/2015/03/Scripted-Install.jpg'
+image:
+  path: assets/img/2015/03/Scripted-Install.jpg
+  alt: "Scripted Install"
 categories:
     - vCenter
 tags:

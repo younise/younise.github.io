@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1013'
 permalink: /new-resource-vmware-vsphere-6-5-upgrade-ebook/
-image: 'https://emadyounis.com/assets/img/2018/03/vSphere-Upgrade-ebook.png'
+image:
+  path: assets/img/2018/03/vSphere-Upgrade-ebook.png
+  alt: "vSphere Upgrade ebook"
 categories:
     - Upgrade
 tags:

@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=976'
 permalink: /configuring-hybrid-linked-mode-hlm-for-vmware-cloud-on-aws/
-image: 'https://emadyounis.com/assets/img/2017/10/Hybrid-Linked-Mode.png'
+image:
+  path: assets/img/2017/10/Hybrid-Linked-Mode.png
+  alt: "Hybrid Linked Mode"
 categories:
     - 'VMware Cloud on AWS'
 tags:

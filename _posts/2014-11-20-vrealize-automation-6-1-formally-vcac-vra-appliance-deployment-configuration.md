@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=182'
 permalink: /vrealize-automation-6-1-formally-vcac-vra-appliance-deployment-configuration/
-image: 'https://emadyounis.com/assets/img/2014/11/vcac-logo.jpg'
+image:
+  path: assets/img/2014/11/vcac-logo.jpg
+  alt: "vcac logo"
 categories:
     - 'vRealize Automation'
 tags:

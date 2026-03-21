@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=639'
 permalink: /vcenter-server-appliance-vcsa-6-0-update-1-rundown/
-image: 'https://emadyounis.com/assets/img/2015/09/VCSA-Update-1-Main-Image.png'
+image:
+  path: assets/img/2015/09/VCSA-Update-1-Main-Image.png
+  alt: "VCSA Update 1 Main Image"
 categories:
     - vCenter
 tags:

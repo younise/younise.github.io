@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=509'
 permalink: /ravello-lab-setup-for-vmware-integrated-openstack-vio-part-1/
-image: 'https://emadyounis.com/assets/img/2015/06/Ravello-with-VIO.png'
+image:
+  path: assets/img/2015/06/Ravello-with-VIO.png
+  alt: "Ravello with VIO"
 categories:
     - OpenStack
 tags:

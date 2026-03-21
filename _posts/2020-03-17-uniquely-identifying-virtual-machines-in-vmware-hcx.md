@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=2457'
 permalink: /uniquely-identifying-virtual-machines-in-vmware-hcx/
-image: 'https://emadyounis.com/assets/img/2020/03/HCX-VM-IDs-Feature-Image.jpg'
+image:
+  path: assets/img/2020/03/HCX-VM-IDs-Feature-Image.jpg
+  alt: "HCX VM IDs Feature Image"
 categories:
     - 'VMware HCX'
 tags:

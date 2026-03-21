@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=872'
 permalink: /vcenter-server-appliance-vcsa-6-5-installer-macos-ovftool-error/
-image: 'https://emadyounis.com/assets/img/2016/11/macOS-feature-Image.png'
+image:
+  path: assets/img/2016/11/macOS-feature-Image.png
+  alt: "macOS feature Image"
 categories:
     - vCenter
 tags:

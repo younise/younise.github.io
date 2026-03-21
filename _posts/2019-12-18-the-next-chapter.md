@@ -8,7 +8,9 @@ guid: 'http://emadyounis.com/?p=2396'
 permalink: /the-next-chapter/
 enclosure:
     - "https://s3.us-east-2.amazonaws.com/vmworld-europe-2019/HBI1973BE.mp4\r\n1780472914\r\nvideo/mp4\r\n"
-image: 'https://emadyounis.com/assets/img/2019/12/Next-Chapter.png'
+image:
+  path: assets/img/2019/12/Next-Chapter.png
+  alt: "Next Chapter"
 categories:
     - Blog
 ---

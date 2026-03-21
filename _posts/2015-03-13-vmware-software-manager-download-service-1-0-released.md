@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=426'
 permalink: /vmware-software-manager-download-service-1-0-released/
-image: 'https://emadyounis.com/assets/img/2015/03/Interface-7.jpg'
+image:
+  path: assets/img/2015/03/Interface-7.jpg
+  alt: "Interface 7"
 categories:
     - VMware
 tags:

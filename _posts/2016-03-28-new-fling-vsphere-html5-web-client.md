@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=787'
 permalink: /new-fling-vsphere-html5-web-client/
-image: 'https://emadyounis.com/assets/img/2016/03/HTML5-Fling-icon.png'
+image:
+  path: assets/img/2016/03/HTML5-Fling-icon.png
+  alt: "HTML5 Fling icon"
 categories:
     - vCenter
 tags:

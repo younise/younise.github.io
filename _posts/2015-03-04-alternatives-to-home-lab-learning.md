@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=414'
 permalink: /alternatives-to-home-lab-learning/
-image: 'https://emadyounis.com/assets/img/2015/03/Home-Lab-4.jpg'
+image:
+  path: assets/img/2015/03/Home-Lab-4.jpg
+  alt: "Home Lab 4"
 categories:
     - Tools
 tags:

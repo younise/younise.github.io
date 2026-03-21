@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1050'
 permalink: /stretched-clusters-overview/
-image: 'https://emadyounis.com/assets/img/2018/05/Stretch-Clusters-for-VMWonAWS.png'
+image:
+  path: assets/img/2018/05/Stretch-Clusters-for-VMWonAWS.png
+  alt: "Stretch Clusters for VMWonAWS"
 categories:
     - 'VMware Cloud on AWS'
 ---

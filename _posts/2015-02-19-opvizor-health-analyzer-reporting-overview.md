@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=384'
 permalink: /opvizor-health-analyzer-reporting-overview/
-image: 'https://emadyounis.com/assets/img/2015/02/Opvizor.jpg'
+image:
+  path: assets/img/2015/02/Opvizor.jpg
+  alt: "Opvizor"
 categories:
     - Tools
 tags:

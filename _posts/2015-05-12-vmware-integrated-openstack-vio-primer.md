@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=503'
 permalink: /vmware-integrated-openstack-vio-primer/
-image: 'https://emadyounis.com/assets/img/2015/05/VIO-1.jpeg'
+image:
+  path: assets/img/2015/05/VIO-1.jpeg
+  alt: "VIO 1"
 categories:
     - OpenStack
 tags:

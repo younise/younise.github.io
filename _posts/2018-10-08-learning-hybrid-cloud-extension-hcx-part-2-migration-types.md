@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=1119'
 permalink: /learning-hybrid-cloud-extension-hcx-part-2-migration-types/
-image: 'https://emadyounis.com/assets/img/2018/10/HCX-Migration-Types-Blog-Logo.png'
+image:
+  path: assets/img/2018/10/HCX-Migration-Types-Blog-Logo.png
+  alt: "HCX Migration Types Blog Logo"
 categories:
     - 'Hybrid Cloud Extension'
 ---

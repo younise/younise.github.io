@@ -6,7 +6,9 @@ author: 'eyounis'
 layout: post
 guid: 'http://emadyounis.com/?p=695'
 permalink: /deploying-vcenter-server-appliance-vcsa-6-0-u1-on-ravello/
-image: 'https://emadyounis.com/assets/img/2015/12/VCSA-Ravello-feature-e1449433742639.jpg'
+image:
+  path: assets/img/2015/12/VCSA-Ravello-feature-e1449433742639.jpg
+  alt: "VCSA Ravello feature"
 categories:
     - vCenter
 tags:
