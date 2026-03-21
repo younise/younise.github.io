@@ -64,6 +64,10 @@ layout: default
         <a href="{{ post.url | relative_url }}" class="post-thumb" tabindex="-1" aria-hidden="true">
           <img src="{{ src }}" alt="{{ alt }}" loading="lazy">
         </a>
+      {%- else -%}
+        <a href="{{ post.url | relative_url }}" class="post-thumb post-thumb-placeholder" tabindex="-1" aria-hidden="true">
+          <span class="placeholder-icon"><i class="fas fa-file-alt"></i></span>
+        </a>
       {%- endif -%}
 
       <div class="post-content">

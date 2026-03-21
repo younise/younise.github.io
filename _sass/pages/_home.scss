@@ -59,6 +59,29 @@
   }
 }
 
+// Placeholder shown when a post has no image
+.post-thumb-placeholder {
+  background: linear-gradient(
+    135deg,
+    var(--card-bg) 0%,
+    var(--main-border-color) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .placeholder-icon {
+    font-size: 2rem;
+    color: var(--text-muted-color);
+    opacity: 0.35;
+    transition: opacity 0.2s;
+  }
+
+  &:hover .placeholder-icon {
+    opacity: 0.55;
+  }
+}
+
 .post-content {
   flex: 1;
   min-width: 0;
