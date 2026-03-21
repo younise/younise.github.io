@@ -29,11 +29,16 @@
 // Thumbnail — only visible when post has an image
 .post-thumb {
   flex-shrink: 0;
-  width: 110px;
-  height: 76px;
+  width: 200px;
+  height: 105px;
   border-radius: 8px;
   overflow: hidden;
   display: block;
+
+  @include bp.lt(bp.get(md)) {
+    width: 120px;
+    height: 63px;
+  }
 
   img {
     width: 100%;
