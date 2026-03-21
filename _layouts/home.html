@@ -61,6 +61,9 @@ layout: default
           {%- endunless -%}
         {%- endif -%}
         {%- assign alt = post.image.alt | xml_escape | default: 'Preview Image' -%}
+        {%- unless src contains '://' -%}
+          {%- assign src = src | relative_url -%}
+        {%- endunless -%}
         <a href="{{ post.url | relative_url }}" class="post-thumb" tabindex="-1" aria-hidden="true">
           <img src="{{ src }}" alt="{{ alt }}" loading="lazy">
         </a>
