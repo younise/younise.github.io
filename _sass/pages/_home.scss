@@ -13,9 +13,14 @@
 
 .post-item {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   padding: 1.5rem 0;
   border-bottom: 1px solid var(--main-border-color);
+
+  @include bp.lt(bp.get(md)) {
+    flex-direction: column;
+    gap: 0;
+  }
 
   &:first-child {
     padding-top: 0.25rem;
@@ -28,16 +33,18 @@
 
 // Thumbnail — only visible when post has an image
 .post-thumb {
-  flex-shrink: 0;
-  width: 200px;
-  height: 105px;
-  border-radius: 8px;
+  flex: 0 0 42%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
   overflow: hidden;
   display: block;
+  align-self: flex-start;
 
   @include bp.lt(bp.get(md)) {
-    width: 120px;
-    height: 63px;
+    flex: 0 0 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 0.75rem;
   }
 
   img {
@@ -48,7 +55,7 @@
   }
 
   &:hover img {
-    transform: scale(1.04);
+    transform: scale(1.03);
   }
 }
 
