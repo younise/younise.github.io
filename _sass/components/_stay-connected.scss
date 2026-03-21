@@ -1,5 +1,11 @@
 /* Stay Connected Section Styling */
 
+// Brand colors (used in light mode)
+$color-linkedin: #0077b5;
+$color-twitter:  #000000;
+$color-github:   #24292e;
+$color-rss:      #f26522;
+
 .sidebar-bottom .stay-connected {
   .stay-connected-title {
     font-size: 14.4px;
@@ -8,34 +14,108 @@
   }
 
   .social-icons {
-    gap: 0.5rem;
-    
+    gap: 0.6rem;
+
     a, button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      border: 1px solid var(--btn-border-color);
+      background: var(--button-bg);
       color: var(--text-muted-color);
       text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 1.1rem;
+      transition: all 0.2s ease;
+      font-size: 1rem;
 
       // Prevent body.categories page rule (.categories i { font-size: 86% }) from shrinking sidebar icons
       i {
         font-size: inherit;
       }
-      
+
       &:hover {
-        color: var(--link-color);
-        transform: translateY(-2px);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.18);
       }
     }
-    
+
     button {
-      background: none;
-      border: none;
-      padding: 0;
-      
+      cursor: pointer;
+
       &:focus {
         outline: none;
         box-shadow: none;
       }
     }
   }
+}
+
+// ── Light mode: brand-colored icons ──────────────────────────────
+// Matches Chirpy's pattern: explicit override + media query for system-auto
+
+@mixin stay-connected-brand-colors {
+  .social-linkedin {
+    color: $color-linkedin;
+    border-color: rgba($color-linkedin, 0.3);
+    &:hover { background: rgba($color-linkedin, 0.08); border-color: $color-linkedin; }
+  }
+  .social-twitter {
+    color: $color-twitter;
+    border-color: rgba($color-twitter, 0.2);
+    &:hover { background: rgba($color-twitter, 0.06); border-color: $color-twitter; }
+  }
+  .social-github {
+    color: $color-github;
+    border-color: rgba($color-github, 0.2);
+    &:hover { background: rgba($color-github, 0.06); border-color: $color-github; }
+  }
+  .social-rss {
+    color: $color-rss;
+    border-color: rgba($color-rss, 0.3);
+    &:hover { background: rgba($color-rss, 0.08); border-color: $color-rss; }
+  }
+}
+
+@mixin stay-connected-muted-colors {
+  a,
+  button,
+  .social-linkedin,
+  .social-twitter,
+  .social-github,
+  .social-rss {
+    background: rgb(36, 37, 43);
+    border-color: rgb(55, 57, 66);
+    color: rgb(120, 125, 135);
+
+    &:hover {
+      color: rgb(190, 195, 205);
+      border-color: rgb(90, 93, 105);
+      background: rgb(44, 46, 54);
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-mode]) .sidebar-bottom .stay-connected .social-icons {
+    @include stay-connected-brand-colors;
+  }
+}
+
+html[data-mode="light"] .sidebar-bottom .stay-connected .social-icons {
+  @include stay-connected-brand-colors;
+}
+
+// ── Dark mode: muted gray icons (as in reference image) ──────────
+// Uses html[data-mode="dark"] (specificity 0,5,1) to match light mode's
+// html:not([data-mode="dark"]) specificity and win via cascade order.
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) .sidebar-bottom .stay-connected .social-icons {
+    @include stay-connected-muted-colors;
+  }
+}
+
+html[data-mode="dark"] .sidebar-bottom .stay-connected .social-icons {
+  @include stay-connected-muted-colors;
 }
