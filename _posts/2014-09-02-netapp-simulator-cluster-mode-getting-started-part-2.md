@@ -12,6 +12,9 @@ tags:
     - CMODE
     - NetApp
     - vSphere
+image:
+  path: assets/img/2014/08/NetApp-P2-1.jpg
+  alt: "NetApp Data ONTAP Simulator node configuration"
 ---
 
 The<span style="color: #0000ff;"> [<span style="color: #0000ff;">first post</span>](http://emadyounis.com/storage/netapp-simulator-cluster-mode-getting-started-part-1/ "NetApp Simulator Cluster Mode Getting Started Part 1")</span> in this series discussed how to deploy the NetApp Simulator in your vSphere environment. Now we will move forward with the configuration of the first node &amp; cluster.

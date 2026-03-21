@@ -8,6 +8,9 @@ guid: 'http://emadyounis.com/?p=462'
 permalink: /im-going-west/
 categories:
     - Blog
+image:
+  path: assets/img/2015/04/sync_vm.jpg
+  alt: "Joining Tintri in Mountain View California"
 ---
 
 During my career I have had the opportunity to work as both a customer and partner. As a customer I worked for large enterprise environments. I did design, implementation, and troubleshooting. This was great but was all done within a silo, with a limited scope. When I went to work for a partner things changed. I got to see different environments and had to develop a different mind set. I got exposure and access to tools and portals that I wouldn’t have as a customer. Also there was more focus on learning and training. In each role I developed new skills and grew. I also had the opportunity to work and learn from a lot of amazing people.

@@ -8,6 +8,9 @@ guid: 'http://emadyounis.com/?p=781'
 permalink: /with-a-new-year-comes-change/
 categories:
     - Blog
+image:
+  path: assets/img/2015/01/vCenter-6.0.jpg
+  alt: "Joining VMware as Senior Technical Marketing Engineer"
 ---
 
 A New Year not only represents a new calendar year, for many it also symbolizes a time of change. Reassessing what’s going on in their lives and what change, if any do they want to introduce. It’s usually the most common time for new job opportunities or changes to occur. Recently several members in the community have made some significant moves. Anything from different companies, geographic locations, roles, and others just taking a sabbatical. While these types of job changes aren’t easy, they’re needed to get us to the next step of our journey.

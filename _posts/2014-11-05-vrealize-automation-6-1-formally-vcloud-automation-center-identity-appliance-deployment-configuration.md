@@ -15,6 +15,9 @@ tags:
     - 'vCAC 6.1'
     - VMware
     - vRealize
+image:
+  path: assets/img/2014/11/vcac-logo.jpg
+  alt: "vRealize Automation identity appliance deployment"
 ---
 
 The introduction of Single Sign On (SSO) in vSphere 5.1 has provided a new major dependency of the infrastructure. SSO provides a secure way of authenticating to your vSphere environment. It not only serves as an authentication broker but also a token exchange, so what does this all mean you? In a nutshell this is a handshake.

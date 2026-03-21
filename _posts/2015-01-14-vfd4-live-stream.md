@@ -13,6 +13,9 @@ tags:
     - VFD
     - VFD4
     - 'Virtualization Field Day'
+image:
+  path: assets/img/2014/12/VFD-Logo-400x398.png
+  alt: "Virtualization Field Day 4 live stream"
 ---
 
 For the next 3 days you can catch the live feed of VDF4. Please feel free to tweet using the #VFD4 hashtag or DM your questions and we will make sure they get answered.  

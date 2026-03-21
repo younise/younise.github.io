@@ -14,6 +14,9 @@ tags:
     - VMware
     - vSphere
     - Windows
+image:
+  path: assets/img/2015/01/vRealize.jpg
+  alt: "vRealize Automation offline appliance updates"
 ---
 
 To take advantage of the new features that vRA 6.2 has to offer, it’s time to upgrade. The upgrade will make it easier to transition from the vCAC branding to vRA. This was also a good time to start thinking about how to go about the process.

@@ -15,6 +15,9 @@ tags:
     - 'vCAC 6.1'
     - VMware
     - vRealize
+image:
+  path: assets/img/2014/11/vcac-logo.jpg
+  alt: "vRealize Automation identity appliance high availability"
 ---
 
 In a [previous post](http://emadyounis.com/vrealize-automation/vrealize-automation-6-1-formally-vcloud-automation-center-identity-appliance-deployment-configuration/ "vRealize Automation 6.1 (formally vCloud Automation Center) – Identity Appliance – Deployment / Configuration"), we discussed the importance of SSO as it relates to vRA (vRealize Automation). We also demonstrated how to deploy &amp; configure the vRA identity appliance. Due to the nature of the identity appliance we need to make sure that SSO is in a high available state. There currently is no native HA feature built in, so what are our options for protecting the identity appliance you ask? Here are some options:
