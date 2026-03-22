@@ -5,5 +5,8 @@
 # Jekyll
 ## Ignore site directories.
 _site
-_site_devTODO.md
+_site_dev
+TODO.md
 blog-ideas.md
+site-analysis.md
+_drafts/
