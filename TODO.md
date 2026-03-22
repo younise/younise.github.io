@@ -33,7 +33,7 @@
 
 ## Content & Engagement
 - [ ] **Add a new blog post** — no new content since the HCX/AVS era; fresh content is the biggest SEO driver
-- [ ] **Post preview images** — add `image:` front matter to existing posts for better Open Graph/social sharing cards
+- [X] **Post preview images** — add `image:` front matter to existing posts for better Open Graph/social sharing cards
 - [ ] **Enable Giscus comments** — enable GitHub Discussions on `younise/younise.github.io` repo, then fill in `_config.yml` giscus section
 
 ## Maintenance
