@@ -10,7 +10,7 @@
 - [ ] **Custom accent color** — override `$link-color` in `variables-hook.scss` to replace Chirpy's default blue with a personal brand color
 - [ ] **Refined typography** — swap to a modern font stack (e.g. Inter or Geist) via `variables-hook.scss`; currently uses system font
 - [ ] **Wider content column** — increase `$main-content-max-width` beyond 1250px for large screens; better use of widescreen real estate
-- [ ] **Post card hover effects** — add subtle lift/shadow on home page post cards (`_sass/pages/_home.scss`)
+- [X] **Post card hover effects** — add subtle lift/shadow on home page post cards (`_sass/pages/_home.scss`)
 - [ ] **Code block improvements** — add filename labels and copy-button styling enhancements to `_sass/addon/syntax.scss`
 
 ### Structural Improvements (local, medium effort)
@@ -28,7 +28,7 @@
 
 ## High Impact / Quick Wins
 - [ ] **Update About page** — bio still says "Staff Cloud Solutions Architect at VMware"; update to current Product Manager role and remove pre-Broadcom references
-- [ ] **SEO description** — still the Chirpy placeholder in `_config.yml`; agree on final wording and update
+- [X] **SEO description** — updated to keyword-rich personal brand copy in `_config.yml`
 - [ ] **Google Search Console** — connect to GA to see actual search keywords driving traffic (free, ~10 min setup)
 
 ## Content & Engagement
