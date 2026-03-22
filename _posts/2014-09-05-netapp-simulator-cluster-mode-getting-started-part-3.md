@@ -13,8 +13,8 @@ tags:
     - NetApp
     - vSphere
 image:
-  path: assets/img/2014/09/NetApp-P3-1.jpg
-  alt: "NetApp Data ONTAP Simulator second node setup"
+  path: assets/img/2014/09/NetApp-Feature-Part3.png
+  alt: "NetApp Simulator Cluster Mode Getting Started Part 3"
 ---
 
 <span style="text-decoration: underline;">**Preparing the ****DataONTAP**** 2nd Simulator Node** </span>

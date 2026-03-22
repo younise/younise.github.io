@@ -13,8 +13,8 @@ tags:
     - NetApp
     - vSphere
 image:
-  path: assets/img/2014/08/NetApp-P2-1.jpg
-  alt: "NetApp Data ONTAP Simulator cluster mode setup"
+  path: assets/img/2014/08/NetApp-Feature-Part1.png
+  alt: "NetApp Simulator Cluster Mode Getting Started Part 1"
 ---
 
 Simulators can be very useful tools to learn most of a products features. They can also serve as test platforms for updates, scripts, migrations, etc without the fear of affecting your production environment and causing a resume generating event. NetApp simulates its Data ONTAP software allowing for support for a majority of its functionality within a virtual environment. Supported VMware environments consists of Workstation, Player, Fusion and vSphere. This install process covers deploying the Data ONTAP simulator in cluster mode on a vSphere 5.5 lab environment.
