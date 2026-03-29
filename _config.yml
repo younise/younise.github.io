@@ -21,7 +21,7 @@ timezone: America/Los_Angeles
 
 title: emadyounis.com                          # the main title
 
-#tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: Simplifying data center virtualization   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Deep dives on VMware, multi-cloud, workload mobility, and data center architecture — by Emad Younis, technologist with 20+ years of hands-on experience.
